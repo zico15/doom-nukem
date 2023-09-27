@@ -2,22 +2,36 @@
 NAME = doom-nukem
 CC = gcc
 CFLAGS = -Wall -Wextra
-FRAMEWORK_PATH = 'Library/mac'
+INCLUDES	= 	-Iheaders/
+FRAMEWORK_PATH = Library/mac
 FRAMEWORK_FLAGS = -F $(FRAMEWORK_PATH) -framework SDL2
-# src/*
-SRC = 
-
-OBJ = $(SRC:.c=.o)
+SRCS		=   $(shell find . -name "*.c")
+OBJS		= 	$(SRCS:.c=.o)
 
 all: $(NAME)
 
-$(NAME): $(OBJ)
-	$(CC) $(CFLAGS) -o $@ $^ $(FRAMEWORK_FLAGS)
+$(NAME): $(OBJS) 
+	@$(CC)  -o $@ $^ $(FRAMEWORK_FLAGS)
 
 %.o: %.c
-	$(CC) $(CFLAGS) -c $^
+	@$(CC) $(INCLUDES) -c $(^) -o $(@)
+
+bonus: all
 
 clean:
-	rm -f *.o
+	@$(RM) $(OBJS)
+	@echo "\033[0;31mREMOVED OBJECT FILES\033[0m"
 
-re: clean all
+fclean: clean
+	@$(RM) $(NAME)
+	@echo "\033[0;31mREMOVED cub3D EXECUTABLE\033[0m"
+
+re: fclean all
+
+
+m: fclean
+
+r:
+	@make re && make clean && clear && ./${NAME}
+
+.PHONY: all re clean fclean m
