@@ -1,8 +1,8 @@
 
 NAME = doom-nukem
 CC = gcc
-CFLAGS = -Wall -Wextra 
-INCLUDES	= 	-ILibrary/mac/SDL2.framework/Headers
+CFLAGS = -Wall -Wextra -fsanitize=leak
+INCLUDES	= 	-ILibrary/mac/SDL2.framework/Headers -Iheaders
 FRAMEWORK_PATH = Library/mac
 FRAMEWORK_FLAGS = -F $(FRAMEWORK_PATH) -framework SDL2
 SRCS		=   $(shell find . -name "*.c")
