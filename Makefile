@@ -2,11 +2,22 @@
 NAME = doom-nukem
 CC = gcc
 CFLAGS = -Wall -Wextra -fsanitize=leak
-INCLUDES	= 	-ILibrary/mac/SDL2.framework/Headers -Iheaders
+INCLUDES	= 	-Iheaders
 FRAMEWORK_PATH = Library/mac
 FRAMEWORK_FLAGS = -F $(FRAMEWORK_PATH) -framework SDL2
 SRCS		=   $(shell find . -name "*.c")
 OBJS		= 	$(SRCS:.c=.o)
+
+ifeq ($(shell uname 2>/dev/null),Darwin) # Mac OS X
+	INCLUDES	+= -ILibrary/mac/SDL2.framework/Headers
+	INCLUDES 	+= -ILibrary/mac/SDL2_image.framework/Headers
+	FRAMEWORK_PATH = Library/mac
+	FRAMEWORK_FLAGS = -F $(FRAMEWORK_PATH) -framework SDL2 -framework SDL2_image
+endif
+ifeq ($(shell uname 2>/dev/null),Linux)
+	FRAMEWORK_PATH = Library/linux
+	FRAMEWORK_FLAGS = -F $(FRAMEWORK_PATH) -framework SDL2 -framework SDL2_image
+endif
 
 all: $(NAME)
 

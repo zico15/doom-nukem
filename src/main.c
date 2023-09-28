@@ -9,17 +9,12 @@
 #define FPS 60
 #define JUMP -1200
 
-void render(SDL_Renderer *renderer, t_sdl *sdl)
-{
-}
-
 int main(int argc, char *argv[])
 {
-    // t_sdl *sdl;
-    char *msg = strdup("Error initializing SDL");
-    // sdl = new_sdl(WIDTH, HEIGHT);
-    // sdl->render =render;
-    // sdl_loop(sdl);
+    t_sdl *sdl;
+
+    sdl = new_sdl(WIDTH, HEIGHT);
+    sdl_loop(sdl);
     return (0);
 }
 

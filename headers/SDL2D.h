@@ -14,6 +14,7 @@ struct s_sdl
     SDL_Window *win;
     SDL_Renderer *renderer;
     SDL_Event event;
+    SDL_Surface *surface;
     bool running;
     bool fullscreen;
     int width;
@@ -24,5 +25,6 @@ struct s_sdl
 
 void sdl_loop(t_sdl *sdl);
 t_sdl *new_sdl(int width, int height);
+SDL_Surface *new_image(int width, int height);
 
 #endif
