@@ -6,6 +6,10 @@
     "string": "c",
     "string_view": "c",
     "vector": "c",
-    "core.h": "c"
+    "core.h": "c",
+    "memory_resource": "c",
+    "__bit_reference": "c",
+    "ios": "c",
+    "__string": "c"
   }
 }

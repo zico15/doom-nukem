@@ -1,38 +1,36 @@
 #include "Core.h"
 
-static void key_pressed(t_key key)
+static void key_pressed(bool *key)
 {
-    // printf("Key pressed: %i\n", sdl->event.key.keysym.scancode);
-    // if (sdl->event.key.keysym.scancode == SDL_SCANCODE_W)
-    //     engine()->object->move(engine()->object, 0, -1);
-    // if (sdl->event.key.keysym.scancode == SDL_SCANCODE_A)
-    //     engine()->object->move(engine()->object, -1, 0);
-    // if (sdl->event.key.keysym.scancode == SDL_SCANCODE_S)
-    //     engine()->object->move(engine()->object, 0, 1);
-    // if (sdl->event.key.keysym.scancode == SDL_SCANCODE_D)
-    //     engine()->object->move(engine()->object, 1, 0);
+
+    engine()->scene->key(engine()->scene, key, SDL_KEYDOWN);
+    // engine()->object->move(engine()->object,
+    //                        key[SDL_SCANCODE_D] - key[SDL_SCANCODE_A], key[SDL_SCANCODE_S] - key[SDL_SCANCODE_W]);
 }
 
-static void key_released(t_key key)
+static void key_released(bool *key)
 {
-    // printf("Key released: %i\n", sdl->event.key.keysym.scancode);
+    engine()->scene->key(engine()->scene, key, SDL_KEYUP);
 }
 
-static void key_down(t_key key)
+static void key_down(bool *key)
 {
-    if (key == SDL_SCANCODE_ESCAPE)
+    if (key[SDL_SCANCODE_ESCAPE])
         engine()->sdl->running = false;
 }
 
 void key_handler(t_sdl *sdl)
 {
+    static bool keys[SDL_NUM_SCANCODES] = {0};
+
+    keys[sdl->event.key.keysym.scancode] = (sdl->event.type == SDL_KEYDOWN);
     if (sdl->event.type == SDL_QUIT)
         sdl->running = false;
     else if (sdl->event.type == SDL_KEYUP)
-        key_released(sdl);
+        key_released(keys);
     else if (sdl->event.type == SDL_KEYDOWN)
     {
-        key_pressed(sdl);
-        key_down(sdl);
+        key_pressed(keys);
+        key_down(keys);
     }
 }

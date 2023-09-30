@@ -9,7 +9,7 @@ typedef struct s_engine t_engine;
 struct s_engine
 {
     t_sdl *sdl;
-    t_object *object;
+    t_scene *scene;
     float delta_time;
     void (*init)(int argc, char **argv, int width, int height);
     void (*run)();

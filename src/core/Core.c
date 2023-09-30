@@ -16,6 +16,8 @@ static void run()
 
 static void destroy(char *msg)
 {
+    printf("Destroy engine\n");
+    engine()->scene->destroy(engine()->scene);
     if (msg)
         printf("%s\n", msg);
     if (engine()->sdl->renderer)
@@ -37,8 +39,7 @@ t_engine *engine()
         run,
         NULL,
         NULL,
-        destroy
-    };
+        destroy};
 
     return (&e);
 }

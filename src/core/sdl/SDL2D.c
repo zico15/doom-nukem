@@ -8,7 +8,7 @@ static void render_defaul(SDL_Renderer *renderer)
 {
     SDL_SetRenderDrawColor(renderer, 255, 0, 0, 255);
     // Desenhe a textura na tela
-    engine()->object->render(engine()->object, renderer);
+    engine()->scene->render(engine()->scene, renderer);
 }
 
 static void update_default(t_sdl *sdl)
@@ -66,6 +66,7 @@ void sdl_loop(t_sdl *sdl)
     int i = 0;
     while (sdl->running)
     {
+        // printf("FPS: %i\n", prevTime);
         sdl->currentTime = SDL_GetTicks();
         engine()->delta_time = (sdl->currentTime - prevTime) / 1000.0f;
         prevTime = sdl->currentTime;
