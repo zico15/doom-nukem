@@ -1,7 +1,7 @@
 
 NAME = doom-nukem
 CC = gcc
-CFLAGS = -Wall -Wextra -fsanitize=leak
+CFLAGS = -Wall -Wextra -fsanitize=leak -lSDL2 -lSDL2_image -lm -lpthread
 INCLUDES	= 	-Iheaders
 FRAMEWORK_PATH = Library/mac
 FRAMEWORK_FLAGS = -F $(FRAMEWORK_PATH) -framework SDL2
@@ -9,10 +9,9 @@ SRCS		=   $(shell find . -name "*.c")
 OBJS		= 	$(SRCS:.c=.o)
 
 ifeq ($(shell uname 2>/dev/null),Darwin) # Mac OS X
-	INCLUDES	+= -ILibrary/mac/SDL2.framework/Headers
-	INCLUDES 	+= -ILibrary/mac/SDL2_image.framework/Headers
-	FRAMEWORK_PATH = Library/mac
-	FRAMEWORK_FLAGS = -F $(FRAMEWORK_PATH) -framework SDL2 -framework SDL2_image
+	CFLAGS = -c -ILibrary/mac/SDL2.framework/Headers  -ILibrary/mac/SDL2_image.framework/Headers -ILibrary/mac/SDL2_ttf.framework/Headers
+	INCLUDES = -Iheaders -ILibrary/mac/SDL2.framework/Headers -ILibrary/mac/SDL2_image.framework/Headers -ILibrary/mac/SDL2_ttf.framework/Headers
+	FRAMEWORK_FLAGS = Library/mac/SDL2.framework/SDL2 Library/mac/SDL2_image.framework/SDL2_image Library/mac/SDL2_ttf.framework/SDL2_ttf
 endif
 ifeq ($(shell uname 2>/dev/null),Linux)
 	FRAMEWORK_PATH = Library/linux

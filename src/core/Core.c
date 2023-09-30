@@ -1,15 +1,44 @@
 #include "Core.h"
 
-void *game_exit(t_sdl *sdl, char *msg)
+static void init(int argc, char **argv, int width, int height)
 {
-    if (sdl->renderer)
-        SDL_DestroyRenderer(sdl->renderer);
-    if (sdl->win)
-        SDL_DestroyWindow(sdl->win);
-    if (sdl->surface)
-        SDL_FreeSurface(sdl->surface);
+    (void)argc;
+    (void)argv;
+    engine()->sdl = new_sdl(width, height);
+    if (!engine()->sdl)
+        return;
+}
+
+static void run()
+{
+    sdl_loop(engine()->sdl);
+}
+
+static void destroy(char *msg)
+{
+    if (msg)
+        printf("%s\n", msg);
+    if (engine()->sdl->renderer)
+        SDL_DestroyRenderer(engine()->sdl->renderer);
+    if (engine()->sdl->win)
+        SDL_DestroyWindow(engine()->sdl->win);
     SDL_Quit();
-    printf("%s\n", msg);
-    free(sdl);
-    return (NULL);
+    free(engine()->sdl);
+    exit(0);
+}
+
+t_engine *engine()
+{
+    static t_engine e = {
+        NULL,
+        NULL,
+        0,
+        init,
+        run,
+        NULL,
+        NULL,
+        destroy
+    };
+
+    return (&e);
 }
