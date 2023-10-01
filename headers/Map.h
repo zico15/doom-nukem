@@ -14,6 +14,7 @@ struct s_map
     char layout[20][501][501];
     char *path;
     bool (*save)(t_map *map);
+    void (*destroy)(t_map *map);
 };
 
 struct s_map_data

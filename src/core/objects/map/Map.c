@@ -54,7 +54,11 @@ void set_layout(t_map *map, char c)
         }
     }
 }
-
+static void __destroy(t_map *map)
+{
+    free(map->path);
+    free(map);
+}
 t_map *new_map(char *path)
 {
     int fd;
@@ -68,12 +72,10 @@ t_map *new_map(char *path)
         map->path = string().join(MAP_PATH, path);
         fd = open(map->path, O_RDONLY);
         printf("Mapa carregado: %s fd: %i\n", map->path, fd);
-        if (fd >= 0)
-        {
-            read(fd, map, sizeof(struct s_map_data));
+        if (fd >= 0 && read(fd, map, sizeof(struct s_map_data)) >= 0)
             close(fd);
-        }
     }
+    map->destroy = __destroy;
     map->save = __save;
     return (map);
 }

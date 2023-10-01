@@ -52,5 +52,6 @@ int main(int argc, char *argv[])
     print_layout(map);
 
     // map->save(map);
+    map->destroy(map);
     return (0);
 }
