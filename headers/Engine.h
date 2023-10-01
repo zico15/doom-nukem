@@ -1,7 +1,8 @@
-#ifndef CORE_H
-#define CORE_H
+#ifndef ENGINE_H
+#define ENGINE_H
 
 #include "SDL2D.h"
+#include "ft_util.h"
 #include "Objects.h"
 
 typedef struct s_engine t_engine;
@@ -16,6 +17,7 @@ struct s_engine
     void (*update)();
     void (*render)(SDL_Renderer *renderer);
     void (*destroy)(char *msg);
+    t_scene *(*add)(t_scene *scene);
 };
 
 t_engine *engine();

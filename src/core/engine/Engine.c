@@ -1,4 +1,6 @@
-#include "Core.h"
+#include "Engine.h"
+
+t_scene *__add_scene(t_scene *scene);
 
 static void init(int argc, char **argv, int width, int height)
 {
@@ -39,7 +41,9 @@ t_engine *engine()
         run,
         NULL,
         NULL,
-        destroy};
+        destroy,
+        __add_scene,
+    };
 
     return (&e);
 }

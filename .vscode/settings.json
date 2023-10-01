@@ -10,6 +10,12 @@
     "memory_resource": "c",
     "__bit_reference": "c",
     "ios": "c",
-    "__string": "c"
+    "__string": "c",
+    "engine.h": "c",
+    "arraylist.h": "c",
+    "string.h": "c",
+    "stdlib.h": "c",
+    "objects.h": "c",
+    "istream": "c"
   }
 }

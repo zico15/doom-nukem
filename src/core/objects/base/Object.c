@@ -1,5 +1,5 @@
 
-#include "Core.h"
+#include "Engine.h"
 
 static void move(t_object *this, float x, float y)
 {
@@ -37,14 +37,14 @@ t_object *new_object(size_t size)
 {
     t_object *obj;
 
-    obj = calloc(size, 1);
+    obj = ft_calloc(size);
     if (!obj)
         return NULL;
     obj->render = render;
     obj->move = move;
     obj->key = key;
     obj->image = new_image_file("resources/textures/player.png");
-    obj->rect = (SDL_Rect){100.0f, 100.0f, 100.0f, 100.0f};
+    obj->rect = (SDL_Rect){100.0f, 100.0f, 32.0f, 32.0f};
     obj->speed = 550.0f;
     obj->destroy = destroy;
     return obj;

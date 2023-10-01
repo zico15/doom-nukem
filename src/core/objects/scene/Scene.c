@@ -1,4 +1,4 @@
-#include "Core.h"
+#include "Engine.h"
 
 static void key(t_scene *this, bool *key, SDL_EventType event)
 {
@@ -37,7 +37,6 @@ t_object *add(t_scene *this, t_object *object)
 }
 static void destroy(t_scene *this)
 {
-    printf("Destroy scene\n");
     for (int i = 0; i < 2; i++)
     {
         if (this->objects[i])
