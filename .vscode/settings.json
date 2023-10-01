@@ -29,6 +29,7 @@
     "tuple": "c",
     "type_traits": "c",
     "chrono": "c",
-    "cstddef": "c"
+    "cstddef": "c",
+    "ft_util.h": "c"
   }
 }

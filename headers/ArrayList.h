@@ -14,12 +14,11 @@
 #define ARRAY_LIST_H
 
 #include "ft_util.h"
+#include <stdbool.h>
 
 typedef struct s_node t_node;
 typedef struct s_array t_array;
 typedef int (*t_cmp)(void *a, void *b);
-
-
 
 typedef enum e_type_node
 {
@@ -40,12 +39,10 @@ struct s_node
 
 struct s_array
 {
-	t_node *begin;
-	t_node *end;
-	int size;
+	size_t size;
 	int is_value_destroy;
 	t_node *(*add)(void *value);
-	t_node *(*remove)(void *value);
+	void (*remove)(void *value);
 	void *(*get)(int index);
 	t_node *(*set)(int index, void *value);
 	void (*remove_index)(int index);
@@ -56,7 +53,8 @@ struct s_array
 	void (*remove_value)(void *value);
 	void (*remove_all)(void);
 	int (*cmp)(void *a, void *b);
-	t_node *next;
+	size_t vsize;
+	t_node **array;
 };
 
 typedef struct s_hashmap

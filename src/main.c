@@ -15,10 +15,10 @@ int main(int argc, char *argv[])
 
     a = new_array(STR);
 
-    array(a)->add("Hello");
-    array(a)->add("World");
-    array(a)->add("!");
-    array(a)->remove("!");
+    array(a)->add(strdup("Hello"));
+    array(a)->add(strdup("World"));
+    array(a)->add(strdup("Hello"));
+    array(a)->remove("Hello");
     array(a)->for_each(print_node, NULL);
 
     // engine()->init(argc, argv, 640, 480);

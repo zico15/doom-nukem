@@ -11,27 +11,28 @@
 /* ************************************************************************** */
 #include "ArrayList.h"
 
-
 static void *get(int index)
+{
+	t_array *a;
 
+	a = *this();
+	if (!a || index < 0 || index >= a->size)
+		return (NULL);
+	return (a->array[index]->value);
+}
 
 static void __for_each(void (*fun)(t_node *node, void *v), void *o)
 {
-	t_node *e;
+	size_t i;
 	t_array *a;
 
 	a = *this();
 	if (!a || !fun)
 		return;
-	e = a->begin;
-	while (e)
-	{
-		fun(e, o);
-		e = e->next;
-	}
+	i = -1;
+	while (a->array[++i])
+		fun(a->array[i], o);
 }
-
-
 
 static t_node *__add(void *value)
 {
@@ -45,45 +46,44 @@ static t_node *__add(void *value)
 	if (!e)
 		return (NULL);
 	e->value = value;
-	if (!a->begin)
-		a->begin = e;
-	else
-	{
-		e->prev = a->end;
-		a->end->next = e;
-	}
-	a->end = e;
+	e->index = a->size;
 	a->size++;
+	if (a->size >= a->vsize)
+	{
+		a->vsize += 10;
+		a->array = ft_realloc(a->array, a->vsize * sizeof(t_node *));
+	}
+	a->array[e->index] = e;
 	return (e);
 }
 
-static t_node *__remove(void *value)
+static void __remove(void *value)
 {
-	t_node *node;
+	size_t i;
+	bool is_realloc;
 	t_array *a;
 
 	a = *this();
 	if (!a || !value)
-		return (NULL);
-	node = a->begin;
-	while (node)
+		return;
+	i = -1;
+	is_realloc = false;
+	while (a->array[++i])
 	{
-		if (a->cmp(node->value, value) && a->size-- >= 0)
+		if (is_realloc)
 		{
-			if (a->end == node)
-				a->end = node->prev;
-			if (node->prev)
-				node->prev->next = node->next;
-			else
-			{
-				a->begin = node->next;
-				a->begin->prev = NULL;
-			}
-			return (node);
+			a->array[i - 1] = a->array[i];
+			a->array[i - 1]->index = i - 1;
+			a->array[i] = NULL;
 		}
-		node = node->next;
+		else if (a->cmp(a->array[i]->value, value))
+		{
+			is_realloc = true;
+			if (a->array[i]->destroy)
+				a->array[i]->destroy(a->array[i]);
+			a->array[i] = NULL;
+		}
 	}
-	return (NULL);
 }
 
 void *new_array(t_type_node type)
@@ -116,8 +116,14 @@ void *new_array(t_type_node type)
 	return (a);
 }
 
+// rdi, rsi, rdx, rcx, r8, e r9
 t_array *array(t_array *array)
 {
+	unsigned long long int rsi_value = 0;
 	(*this()) = array;
+	asm volatile("movq %%rsi, %0\n\t"
+				 : "=r"(rsi_value)
+				 :
+				 : "memory");
 	return (array);
 }
