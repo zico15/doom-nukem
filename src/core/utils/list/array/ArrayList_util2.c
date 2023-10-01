@@ -27,3 +27,26 @@ t_node *__set_array(int index, void *value)
     a->array[index]->value = value;
     return (a->array[index]);
 }
+
+void __destroy_array()
+{
+    t_array_private *a;
+    size_t i;
+
+    a = *this();
+    if (!a)
+        return;
+    if (a->array)
+    {
+        i = -1;
+        while (a->array[++i])
+        {
+            if (a->array[i]->destroy)
+                a->array[i]->destroy(a->array[i]->value);
+            free(a->array[i]);
+        }
+        free(a->array);
+    }
+    free(a);
+    *this() = NULL;
+}

@@ -3,19 +3,33 @@
 static void key(t_scene *this, bool *key, SDL_EventType event)
 {
     printf("Key pressed: %d\n", event);
-    for (int i = 0; i < 2; i++)
+    t_node **nodes;
+    t_object *object;
+
+    nodes = array(this->event_key)->array;
+    if (!nodes)
+        return;
+    while (*nodes)
     {
-        if (this->objects[i])
-            this->objects[i]->key(this->objects[i], key, event);
+        object = (*nodes)->value;
+        object->key(object, key, event);
+        nodes++;
     }
 }
 
 static void render(t_scene *this, SDL_Renderer *renderer)
 {
-    for (int i = 0; i < 2; i++)
+    t_node **nodes;
+    t_object *object;
+
+    nodes = array(this->event_render)->array;
+    if (!nodes)
+        return;
+    while (*nodes)
     {
-        if (this->objects[i])
-            this->objects[i]->render(this->objects[i], renderer);
+        object = (*nodes)->value;
+        object->render(object, renderer);
+        nodes++;
     }
 }
 
@@ -23,25 +37,18 @@ t_object *add(t_scene *this, t_object *object)
 {
     if (!object)
         return (NULL);
-    for (int i = 0; i < 2; i++)
-    {
-        if (!this->objects[i])
-        {
-            this->objects[i] = object;
-            // if (object->key)
-            //     engine()->scene->event_key.add(object->key);
-            return (object);
-        }
-    }
-    return (NULL);
+    array(this->objects)->add(object)->destroy = (void *)object->destroy;
+    if (object->key)
+        array(this->event_key)->add(object)->destroy = NULL;
+    if (object->render)
+        array(this->event_render)->add(object)->destroy = NULL;
+    return (object);
 }
 static void destroy(t_scene *this)
 {
-    for (int i = 0; i < 2; i++)
-    {
-        if (this->objects[i])
-            this->objects[i]->destroy(this->objects[i]);
-    }
+    array(this->objects)->destroy();
+    array(this->event_key)->destroy();
+    array(this->event_render)->destroy();
     free(this);
 }
 
@@ -52,6 +59,9 @@ t_scene *new_scene(int width, int height)
     scene = (t_scene *)new_object(sizeof(t_scene));
     if (!scene)
         return (NULL);
+    scene->objects = new_array(OBJECT);
+    scene->event_key = new_array(OBJECT);
+    scene->event_render = new_array(OBJECT);
     scene->render = render;
     scene->key = key;
     scene->rect.w = width;

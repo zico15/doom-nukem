@@ -15,6 +15,7 @@
 typedef struct s_array_private t_array_private;
 
 t_node *__set_array(int index, void *value);
+void __destroy_array();
 
 static void *__get(int index)
 {
@@ -114,13 +115,13 @@ void *new_array(t_type_node type)
 	a->cmp = get_cmp(type);
 	a->for_each = __for_each;
 	a->test = test;
+	a->destroy = __destroy_array;
 	// a->size = 0;
 	// a->begin = NULL;
 	// a->end = NULL;
 	// a->add = base_add_element;
 	// a->get = base_get_element;
 	// a->remove = base_remove_element;
-	// a->destroy = base_destroy;
 	// a->for_each = __base_for_each;
 	// a->set = __base_set_element;
 	// a->remove_index = __base_remove_element_index;

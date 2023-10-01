@@ -11,7 +11,7 @@ static int cmp_int(void *a, void *b)
 }
 t_cmp get_cmp(t_type_node type)
 {
-    if (type == VOID)
+    if (type == OBJECT)
         return (cmp_void);
     if (type == INT)
         return (cmp_int);

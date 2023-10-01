@@ -2,6 +2,7 @@
 #define ENGINE_H
 
 #include "SDL2D.h"
+#include "Map.h"
 #include "ft_util.h"
 #include "Objects.h"
 

@@ -47,8 +47,9 @@ struct s_scene
     void (*mouse)(t_scene *this, t_sdl *sdl, SDL_Event event);
     void (*damage)(t_object *this, int damage);
     t_object *(*add)(t_scene *this, t_object *object);
-    t_object *objects[2];
-    t_object **event_key;
+    void *objects;
+    void *event_render;
+    void *event_key;
 };
 
 t_object *new_object(size_t size);

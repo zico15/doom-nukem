@@ -18,6 +18,7 @@
 #include <stdlib.h>
 #include "ft_string.h"
 #include "ArrayList.h"
+#include <stdbool.h>
 
 int free_list(void **values);
 void *ft_calloc(size_t __size);

@@ -22,7 +22,7 @@ typedef int (*t_cmp)(void *a, void *b);
 
 typedef enum e_type_node
 {
-	VOID,
+	OBJECT,
 	INT,
 	STR
 } t_type_node;
@@ -40,6 +40,7 @@ struct s_node
 struct s_array
 {
 	size_t size;
+	t_node **array;
 	int is_value_destroy;
 	t_node *(*add)(void *value);
 	void (*remove)(void *value, bool is_free_value);
@@ -59,6 +60,7 @@ struct s_array
 struct s_array_private
 {
 	size_t size;
+	t_node **array;
 	int is_value_destroy;
 	t_node *(*add)(void *value);
 	void (*remove)(void *value, bool is_free_value);
@@ -74,7 +76,6 @@ struct s_array_private
 	void (*test)();
 	int (*cmp)(void *a, void *b);
 	size_t vsize;
-	t_node **array;
 };
 
 typedef struct s_hashmap
