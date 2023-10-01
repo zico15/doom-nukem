@@ -21,14 +21,16 @@ void print_layout(t_map *map)
     }
 }
 
-static bool __save(t_map *map, char *path)
+static bool __save(t_map *map)
 {
     int fd;
 
-    fd = open(path, O_WRONLY | O_CREAT, 0644);
+    if (!map->path)
+        return (false);
+    fd = open(map->path, O_WRONLY | O_CREAT, 0644);
+    printf("Mapa salvo: %s fd: %i\n", map->path, fd);
     if (fd == -1)
         return (false);
-    printf("Mapa salvo: %i\n", map->id);
     write(fd, map, sizeof(struct s_map_data));
     close(fd);
     return (true);
@@ -63,12 +65,14 @@ t_map *new_map(char *path)
         return (NULL);
     if (path)
     {
-        map->path = path;
-        fd = open(path, O_RDONLY);
-        if (fd == -1)
-            return (NULL);
-        read(fd, map, sizeof(struct s_map_data));
-        close(fd);
+        map->path = string().join(MAP_PATH, path);
+        fd = open(map->path, O_RDONLY);
+        printf("Mapa carregado: %s fd: %i\n", map->path, fd);
+        if (fd >= 0)
+        {
+            read(fd, map, sizeof(struct s_map_data));
+            close(fd);
+        }
     }
     map->save = __save;
     return (map);

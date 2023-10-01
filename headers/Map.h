@@ -4,6 +4,8 @@
 #include "Engine.h"
 #include <fcntl.h>
 
+#define MAP_PATH "resources/maps/"
+
 typedef struct s_map t_map;
 
 struct s_map
@@ -11,7 +13,7 @@ struct s_map
     int id;
     char layout[20][501][501];
     char *path;
-    bool (*save)(t_map *map, char *path);
+    bool (*save)(t_map *map);
 };
 
 struct s_map_data

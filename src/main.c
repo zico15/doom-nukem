@@ -47,8 +47,10 @@ int main(int argc, char *argv[])
     t_map *map = new_map("mapa.txt");
     // save(map, );
     // t_map *map_load = load("mapa.txt");
+    // print_layout(map);
+    // set_layout(map, 'd');
     print_layout(map);
-    set_layout(map, 'd');
-    map->save(map, "mapa.txt");
+
+    // map->save(map);
     return (0);
 }
