@@ -18,7 +18,6 @@ static void key(t_object *this, bool *key, SDL_EventType event)
 static void render(t_object *this, SDL_Renderer *renderer)
 {
     SDL_RenderCopy(renderer, this->image->textura, NULL, &this->rect);
-    // SDL_RenderPresent(renderer);
 }
 
 static void destroy(t_object *this)
