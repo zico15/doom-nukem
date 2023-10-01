@@ -11,41 +11,19 @@
 // /* ************************************************************************** */
 // #include <ft_base_array.h>
 // #include <ft_base_array_util.h>
-// #include <ft_util.h>
+#include "ArrayList.h"
 
-// void	__base_remove_element_value(void *value)
-// {
-// 	t_element	*prev;
-// 	t_element	*atual;
+typedef struct s_array_private t_array_private;
 
-// 	if (!fthis()->array || !value)
-// 		return ;
-// 	atual = (fthis()->array)->begin;
-// 	prev = NULL;
-// 	while (atual)
-// 	{
-// 		if (atual->value == value)
-// 		{
-// 			if ((fthis()->array)->end == atual)
-// 				(fthis()->array)->end = prev;
-// 			if (prev)
-// 				prev->next = atual->next;
-// 			else
-// 				(fthis()->array)->begin = atual->next;
-// 			if (atual->destroy)
-// 				atual->destroy(atual);
-// 			(fthis()->array)->size--;
-// 			break ;
-// 		}
-// 		prev = atual;
-// 		atual = atual->next;
-// 	}
-// }
+t_node *__set_array(int index, void *value)
+{
+    t_array_private *a;
 
-// void	__base_remove_element_all(void)
-// {
-// 	if (!fthis()->array || array(fthis()->array)->size <= 0)
-// 		return ;
-// 	while (array(fthis()->array)->size)
-// 		array(fthis()->array)->remove_index(0);
-// }
+    a = *this();
+    if (!a || index < 0 || index >= a->size)
+        return (NULL);
+    if (a->array[index]->destroy)
+        a->array[index]->destroy(a->array[index]->value);
+    a->array[index]->value = value;
+    return (a->array[index]);
+}

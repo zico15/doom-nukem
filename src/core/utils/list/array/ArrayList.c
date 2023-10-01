@@ -10,10 +10,15 @@
 /*                                                                            */
 /* ************************************************************************** */
 #include "ArrayList.h"
+#include <stdlib.h>
 
-static void *get(int index)
+typedef struct s_array_private t_array_private;
+
+t_node *__set_array(int index, void *value);
+
+static void *__get(int index)
 {
-	t_array *a;
+	t_array_private *a;
 
 	a = *this();
 	if (!a || index < 0 || index >= a->size)
@@ -23,21 +28,23 @@ static void *get(int index)
 
 static void __for_each(void (*fun)(t_node *node, void *v), void *o)
 {
-	size_t i;
-	t_array *a;
+	t_node **list;
+	t_array_private *a;
 
 	a = *this();
 	if (!a || !fun)
 		return;
-	i = -1;
-	while (a->array[++i])
-		fun(a->array[i], o);
+	list = a->array;
+	if (!list)
+		return;
+	while (*list)
+		fun(*list++, o);
 }
 
 static t_node *__add(void *value)
 {
 	t_node *e;
-	t_array *a;
+	t_array_private *a;
 
 	a = *this();
 	if (!a || !value)
@@ -46,6 +53,7 @@ static t_node *__add(void *value)
 	if (!e)
 		return (NULL);
 	e->value = value;
+	e->destroy = &free;
 	e->index = a->size;
 	a->size++;
 	if (a->size >= a->vsize)
@@ -57,11 +65,11 @@ static t_node *__add(void *value)
 	return (e);
 }
 
-static void __remove(void *value)
+static void __remove(void *value, bool is_free)
 {
 	size_t i;
 	bool is_realloc;
-	t_array *a;
+	t_array_private *a;
 
 	a = *this();
 	if (!a || !value)
@@ -76,27 +84,36 @@ static void __remove(void *value)
 			a->array[i - 1]->index = i - 1;
 			a->array[i] = NULL;
 		}
-		else if (a->cmp(a->array[i]->value, value))
+		else if (a->cmp(a->array[i]->value, value) && ++is_realloc)
 		{
-			is_realloc = true;
-			if (a->array[i]->destroy)
-				a->array[i]->destroy(a->array[i]);
+			if (is_free && a->array[i]->destroy)
+				a->array[i]->destroy(a->array[i]->value);
+			free(a->array[i]);
 			a->array[i] = NULL;
 		}
 	}
 }
 
+void test(int a, int b, int c, int d)
+{
+
+	printf("a: %d b: %d c: %d d: %d\n", a, b, c, d);
+}
+
 void *new_array(t_type_node type)
 {
-	t_array *a;
+	t_array_private *a;
 
-	a = ft_calloc(sizeof(t_array));
+	a = ft_calloc(sizeof(t_array_private));
 	if (!a)
 		return (NULL);
 	a->add = __add;
+	a->get = __get;
+	a->set = __set_array;
 	a->remove = __remove;
 	a->cmp = get_cmp(type);
 	a->for_each = __for_each;
+	a->test = test;
 	// a->size = 0;
 	// a->begin = NULL;
 	// a->end = NULL;
@@ -116,14 +133,8 @@ void *new_array(t_type_node type)
 	return (a);
 }
 
-// rdi, rsi, rdx, rcx, r8, e r9
 t_array *array(t_array *array)
 {
-	unsigned long long int rsi_value = 0;
 	(*this()) = array;
-	asm volatile("movq %%rsi, %0\n\t"
-				 : "=r"(rsi_value)
-				 :
-				 : "memory");
 	return (array);
 }

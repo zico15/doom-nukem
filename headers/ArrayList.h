@@ -30,7 +30,7 @@ typedef enum e_type_node
 struct s_node
 {
 	int index;
-	void (*destroy)(t_node *e);
+	void (*destroy)(void *value);
 	t_node *next;
 	t_node *prev;
 	char *key;
@@ -42,16 +42,36 @@ struct s_array
 	size_t size;
 	int is_value_destroy;
 	t_node *(*add)(void *value);
-	void (*remove)(void *value);
+	void (*remove)(void *value, bool is_free_value);
 	void *(*get)(int index);
 	t_node *(*set)(int index, void *value);
 	void (*remove_index)(int index);
-	int (*destroy)();
+	void (*destroy)();
 	void (*destroy_element)(t_node *e);
 	void (*for_each)(void (*fun)(t_node *e, void *v), void *o);
 	void **(*to_array)(void);
 	void (*remove_value)(void *value);
 	void (*remove_all)(void);
+	void (*test)();
+	int (*cmp)(void *a, void *b);
+};
+
+struct s_array_private
+{
+	size_t size;
+	int is_value_destroy;
+	t_node *(*add)(void *value);
+	void (*remove)(void *value, bool is_free_value);
+	void *(*get)(int index);
+	t_node *(*set)(int index, void *value);
+	void (*remove_index)(int index);
+	void (*destroy)();
+	void (*destroy_element)(t_node *e);
+	void (*for_each)(void (*fun)(t_node *e, void *v), void *o);
+	void **(*to_array)(void);
+	void (*remove_value)(void *value);
+	void (*remove_all)(void);
+	void (*test)();
 	int (*cmp)(void *a, void *b);
 	size_t vsize;
 	t_node **array;
