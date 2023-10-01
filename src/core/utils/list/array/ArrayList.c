@@ -11,139 +11,74 @@
 /* ************************************************************************** */
 #include "ArrayList.h"
 
-// void	__base_remove_element_all(void);
 
-// static t_element	*base_add_element(void *value)
-// {
-// 	t_element	*e;
+static void *get(int index)
 
-// 	if (!fthis()->array || !value)
-// 		return (NULL);
-// 	e = malloc_ob(sizeof(t_element));
-// 	if (!e)
-// 		return (NULL);
-// 	e->key = NULL;
-// 	e->value = value;
-// 	e->next = NULL;
-// 	e->destroy = fthis()->array->destroy_element;
-// 	if (!(fthis()->array)->begin)
-// 		(fthis()->array)->begin = e;
-// 	else
-// 		(fthis()->array)->end->next = e;
-// 	(fthis()->array)->end = e;
-// 	(fthis()->array)->size++;
-// 	return (e);
-// }
 
-// static void	*base_get_element(int index)
-// {
-// 	int			i;
-// 	t_element	*e;
-
-// 	i = 0;
-// 	if (!fthis()->array || index < 0 || index >= fthis()->array->size)
-// 		return (NULL);
-// 	e = (fthis()->array)->begin;
-// 	while (e)
-// 	{
-// 		if (i == index)
-// 			return (e->value);
-// 		e = e->next;
-// 		i++;
-// 	}
-// 	return (0);
-// }
-
-// static void	base_remove_element(t_element	*e)
-// {
-// 	t_element	*prev;
-// 	t_element	*atual;
-
-// 	if (!fthis()->array || !e)
-// 		return ;
-// 	atual = (fthis()->array)->begin;
-// 	prev = NULL;
-// 	while (atual)
-// 	{
-// 		if (atual == e)
-// 		{
-// 			if ((fthis()->array)->end == e)
-// 				(fthis()->array)->end = prev;
-// 			if (prev)
-// 				prev->next = atual->next;
-// 			else
-// 				(fthis()->array)->begin = atual->next;
-// 			if (e->destroy)
-// 				e->destroy(e);
-// 			(fthis()->array)->size--;
-// 		}
-// 		prev = atual;
-// 		atual = atual->next;
-// 	}
-// }
-
-// static int	base_destroy(void)
-// {
-// 	t_element	*b;
-// 	t_element	*temp;
-
-// 	if (!fthis()->array)
-// 		return (0);
-// 	b = (fthis()->array)->begin;
-// 	(fthis()->array)->begin = NULL;
-// 	fthis()->array->size = 0;
-// 	while (b)
-// 	{
-// 		temp = b;
-// 		b = b->next;
-// 		if (temp && temp->destroy)
-// 			temp->destroy(temp);
-// 	}
-// 	(fthis()->array)->end = NULL;
-// 	free_ob(fthis()->array);
-// 	fthis()->array = NULL;
-// 	return (1);
-// }
-
-static t_node *__add(t_array *a, void *value)
+static void __for_each(void (*fun)(t_node *node, void *v), void *o)
 {
 	t_node *e;
+	t_array *a;
 
+	a = *this();
+	if (!a || !fun)
+		return;
+	e = a->begin;
+	while (e)
+	{
+		fun(e, o);
+		e = e->next;
+	}
+}
+
+
+
+static t_node *__add(void *value)
+{
+	t_node *e;
+	t_array *a;
+
+	a = *this();
 	if (!a || !value)
 		return (NULL);
 	e = ft_calloc(sizeof(t_node));
 	if (!e)
 		return (NULL);
-	e->key = NULL;
 	e->value = value;
-	e->next = NULL;
 	if (!a->begin)
 		a->begin = e;
 	else
+	{
+		e->prev = a->end;
 		a->end->next = e;
+	}
 	a->end = e;
 	a->size++;
 	return (e);
 }
 
-static t_node *__remove(t_array *a, void *value)
+static t_node *__remove(void *value)
 {
 	t_node *node;
+	t_array *a;
 
+	a = *this();
 	if (!a || !value)
 		return (NULL);
 	node = a->begin;
 	while (node)
 	{
-		if (a->cmp(node->value, value) == 0)
+		if (a->cmp(node->value, value) && a->size-- >= 0)
 		{
 			if (a->end == node)
 				a->end = node->prev;
 			if (node->prev)
 				node->prev->next = node->next;
 			else
+			{
 				a->begin = node->next;
-			a->size--;
+				a->begin->prev = NULL;
+			}
 			return (node);
 		}
 		node = node->next;
@@ -161,6 +96,7 @@ void *new_array(t_type_node type)
 	a->add = __add;
 	a->remove = __remove;
 	a->cmp = get_cmp(type);
+	a->for_each = __for_each;
 	// a->size = 0;
 	// a->begin = NULL;
 	// a->end = NULL;
@@ -178,4 +114,10 @@ void *new_array(t_type_node type)
 	// a->remove_all = __base_remove_element_all;
 	// array(a);
 	return (a);
+}
+
+t_array *array(t_array *array)
+{
+	(*this()) = array;
+	return (array);
 }

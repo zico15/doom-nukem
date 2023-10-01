@@ -9,12 +9,6 @@ static int cmp_int(void *a, void *b)
 {
     return (*(int *)a == *(int *)b);
 }
-
-// static int cmp_str(void *a, void *b)
-// {
-//     return (string().equals((char *)a, (char *)b));
-// }
-
 t_cmp get_cmp(t_type_node type)
 {
     if (type == VOID)

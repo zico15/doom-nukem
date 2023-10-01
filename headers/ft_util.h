@@ -22,4 +22,6 @@
 int free_list(void **values);
 void *ft_calloc(size_t __size);
 char *get_next_line(int fd);
+void *ft_realloc(void *ptr, size_t newsize);
+void **this();
 #endif

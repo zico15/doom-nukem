@@ -19,6 +19,8 @@ typedef struct s_node t_node;
 typedef struct s_array t_array;
 typedef int (*t_cmp)(void *a, void *b);
 
+
+
 typedef enum e_type_node
 {
 	VOID,
@@ -42,9 +44,9 @@ struct s_array
 	t_node *end;
 	int size;
 	int is_value_destroy;
-	t_node *(*add)(t_array *a, void *value);
-	t_node *(*remove)(t_array *a, void *value);
-	void *(*get)(t_array *a, int index);
+	t_node *(*add)(void *value);
+	t_node *(*remove)(void *value);
+	void *(*get)(int index);
 	t_node *(*set)(int index, void *value);
 	void (*remove_index)(int index);
 	int (*destroy)();
@@ -74,7 +76,7 @@ typedef struct s_hashmap
 void *new_array(t_type_node type);
 t_cmp get_cmp(t_type_node type);
 
-// t_array *array(t_array *this);
+t_array *array(t_array *this);
 // void *new_hashmap(void);
 // t_hashmap *hashmap(t_hashmap *this);
 

@@ -42,3 +42,31 @@ void *ft_calloc(size_t __size)
 		*(temp++) = (unsigned char)0;
 	return (v);
 }
+
+void *ft_realloc(void *ptr, size_t newsize)
+{
+	char *newptr;
+	unsigned char *tmp;
+	int i;
+	size_t cursize;
+
+	if (ptr == 0)
+		return (ft_calloc(newsize));
+	cursize = sizeof(ptr);
+	if (newsize <= cursize)
+		return (ptr);
+	newptr = malloc(newsize);
+	tmp = (unsigned char *)ptr;
+	i = -1;
+	while (tmp[i++])
+		newptr[i] = tmp[i];
+	free(ptr);
+	return (newptr);
+}
+
+void **this()
+{
+	static void *v;
+
+	return (&v);
+}

@@ -16,6 +16,19 @@
     "string.h": "c",
     "stdlib.h": "c",
     "objects.h": "c",
-    "istream": "c"
+    "istream": "c",
+    "__node_handle": "c",
+    "atomic": "c",
+    "bitset": "c",
+    "__memory": "c",
+    "limits": "c",
+    "locale": "c",
+    "optional": "c",
+    "ratio": "c",
+    "system_error": "c",
+    "tuple": "c",
+    "type_traits": "c",
+    "chrono": "c",
+    "cstddef": "c"
   }
 }
