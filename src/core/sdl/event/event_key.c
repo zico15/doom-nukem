@@ -3,14 +3,16 @@
 static void key_pressed(bool *key)
 {
 
-    engine()->scene->key(engine()->scene, key, SDL_KEYDOWN);
+    if (engine()->scene->key)
+        engine()->scene->key(engine()->scene, key, SDL_KEYDOWN);
     // engine()->object->move(engine()->object,
     //                        key[SDL_SCANCODE_D] - key[SDL_SCANCODE_A], key[SDL_SCANCODE_S] - key[SDL_SCANCODE_W]);
 }
 
 static void key_released(bool *key)
 {
-    engine()->scene->key(engine()->scene, key, SDL_KEYUP);
+    if (engine()->scene->key)
+        engine()->scene->key(engine()->scene, key, SDL_KEYUP);
 }
 
 static void key_down(bool *key)
@@ -23,6 +25,8 @@ void key_handler(t_sdl *sdl)
 {
     static bool keys[SDL_NUM_SCANCODES] = {0};
 
+    if (!engine()->scene->key)
+        return;
     keys[sdl->event.key.keysym.scancode] = (sdl->event.type == SDL_KEYDOWN);
     if (sdl->event.type == SDL_QUIT)
         sdl->running = false;

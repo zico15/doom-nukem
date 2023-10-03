@@ -54,5 +54,6 @@ struct s_scene
 
 t_object *new_object(size_t size);
 t_scene *new_scene(int width, int height);
+t_object *new_camera();
 
 #endif

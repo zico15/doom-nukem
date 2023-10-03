@@ -22,6 +22,8 @@ static void mouse_move(t_sdl *sdl)
 
 void mouse_handler(t_sdl *sdl)
 {
+    if (!engine()->scene->mouse)
+        return;
     if (sdl->event.type == SDL_MOUSEBUTTONUP)
         mouse_released(sdl);
     else if (sdl->event.type == SDL_MOUSEBUTTONDOWN)
