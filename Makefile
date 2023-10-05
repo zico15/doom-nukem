@@ -15,9 +15,9 @@ ifeq ($(shell uname 2>/dev/null),Darwin) # Mac OS X
 endif
 ifeq ($(shell uname 2>/dev/null),Linux)
 	FRAMEWORK_PATH = Library/linux/sdl2
-	CFLAGS = -c -ILibrary/linux/sdl2/include -ILibrary/linux/sdl_image/includes
+	CFLAGS = -c -I/usr/local/include/SDL2
 	INCLUDES = -Iheaders -ILibrary/linux/sdl2/include -ILibrary/linux/sdl_image/includes
-	FRAMEWORK_FLAGS = Library/linux/sdl_image/libSDL2_image.a Library/linux/sdl_image/libSDL2.a Library/linux/sdl_image/libSDL2main.a
+	FRAMEWORK_FLAGS = Library/linux/libSDL2.a Library/linux/libSDL2main.a Library/linux/libSDL2_image.a
 endif
 
 all: $(NAME)
