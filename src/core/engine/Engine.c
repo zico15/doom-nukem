@@ -8,7 +8,10 @@ static void init(int argc, char **argv, int width, int height)
     (void)argv;
     engine()->sdl = new_sdl(width, height);
     if (!engine()->sdl)
-        return;
+   {    
+        printf("error\n");
+     exit(-1);
+     }
 }
 
 static void run()

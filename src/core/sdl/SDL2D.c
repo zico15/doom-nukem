@@ -28,11 +28,13 @@ static void even_handler(t_sdl *sdl)
             mouse_handler(sdl);
     }
 }
+
+// SDL_INIT_VIDEO linux mac SDL_INIT_EVERYTHING, SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED
 t_sdl *new_sdl(int width, int height)
 {
     t_sdl *sdl;
 
-    if (SDL_Init(SDL_INIT_EVERYTHING) != 0 || IMG_Init(IMG_INIT_PNG) != IMG_INIT_PNG)
+    if (SDL_Init(SDL_INIT_VIDEO) != 0 || IMG_Init(IMG_INIT_PNG) != IMG_INIT_PNG)
         return (NULL);
     sdl = malloc(sizeof(t_sdl));
     if (!sdl)
@@ -41,11 +43,16 @@ t_sdl *new_sdl(int width, int height)
     sdl->height = height;
     engine()->render = render_defaul;
     engine()->update = update_default;
-    sdl->win = SDL_CreateWindow("Hello Platformer!",
-                                SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, width, height, 0);
-    if (!sdl->win)
-        engine()->destroy("Error creating window");
-    sdl->renderer = SDL_CreateRenderer(sdl->win, -1, RENDER_FLAGS);
+    // sdl->win = SDL_CreateWindow("Hello Platformer!",
+    //                             SDL_WINDOW_RESIZABLE, SDL_WINDOWPOS_CENTERED, width, height, 0);
+    // if (!sdl->win)
+    //     engine()->destroy("Error creating window");
+    // sdl->renderer = SDL_CreateRenderer(sdl->win, -1, RENDER_FLAGS);
+    if (SDL_CreateWindowAndRenderer(320, 240, SDL_WINDOW_RESIZABLE, &sdl->win, &sdl->renderer)) {
+        SDL_LogError(SDL_LOG_CATEGORY_APPLICATION, "Couldn't create window and renderer: %s", SDL_GetError());
+        return NULL;
+    }
+
     if (!sdl->renderer)
         engine()->destroy("Error creating renderer");
     sdl->surface = SDL_GetWindowSurface(sdl->win);
@@ -62,11 +69,11 @@ void sdl_loop(t_sdl *sdl)
     Uint32 prevTime;
 
     prevTime = SDL_GetTicks();
+    printf("sld: %i\n", (sdl != NULL));
     sdl->running = true;
     int i = 0;
     while (sdl->running)
     {
-        // printf("FPS: %i\n", prevTime);
         sdl->currentTime = SDL_GetTicks();
         engine()->delta_time = (sdl->currentTime - prevTime) / 1000.0f;
         prevTime = sdl->currentTime;
