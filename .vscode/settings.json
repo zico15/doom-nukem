@@ -30,6 +30,7 @@
     "type_traits": "c",
     "chrono": "c",
     "cstddef": "c",
-    "ft_util.h": "c"
+    "ft_util.h": "c",
+    "_real_sdl_config.h": "c"
   }
 }
