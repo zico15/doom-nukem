@@ -48,5 +48,43 @@ void __destroy_array()
         free(a->array);
     }
     free(a);
+    free(a->matrix);
     *this() = NULL;
+}
+
+void **__to_array()
+{
+    t_array_private *a;
+    size_t i;
+
+    a = *this();
+    if (!a)
+        return (NULL);
+    if (a->is_update)
+        return (a->matrix);
+    free(a->matrix);
+    a->matrix = ft_calloc(sizeof(void *) * (a->size + 1));
+    if (!a->matrix)
+        return (NULL);
+    i = -1;
+    while (a->array[++i])
+        a->matrix[i] = a->array[i]->value;
+    a->is_update = true;
+    return (a->matrix);
+}
+
+void *_int_void_(int value)
+{
+    void *ptr;
+
+    ptr = malloc(sizeof(int));
+    if (!ptr)
+        return (NULL);
+    *(int *)ptr = value;
+    return (ptr);
+}
+
+int _void_int_(void *value)
+{
+    return (*((int *)value));
 }

@@ -16,6 +16,7 @@ typedef struct s_array_private t_array_private;
 
 t_node *__set_array(int index, void *value);
 void __destroy_array();
+void **__to_array();
 
 static void *__get(int index)
 {
@@ -63,6 +64,7 @@ static t_node *__add(void *value)
 		a->array = ft_realloc(a->array, a->vsize * sizeof(t_node *));
 	}
 	a->array[e->index] = e;
+	a->is_update = false;
 	return (e);
 }
 
@@ -93,6 +95,7 @@ static void __remove(void *value, bool is_free)
 			a->array[i] = NULL;
 		}
 	}
+	a->is_update = false;
 }
 
 void test(int a, int b, int c, int d)
@@ -105,7 +108,7 @@ void *new_array(t_type_node type)
 {
 	t_array_private *a;
 
-	a = ft_calloc(sizeof(t_array_private));
+	a = extender_array(type, sizeof(t_array_private));
 	if (!a)
 		return (NULL);
 	a->add = __add;
@@ -116,6 +119,7 @@ void *new_array(t_type_node type)
 	a->for_each = __for_each;
 	a->test = test;
 	a->destroy = __destroy_array;
+	a->to_array = __to_array;
 	// a->size = 0;
 	// a->begin = NULL;
 	// a->end = NULL;
@@ -138,4 +142,38 @@ t_array *array(t_array *array)
 {
 	(*this()) = array;
 	return (array);
+}
+
+void *extender_array(t_type_node type, size_t size)
+{
+	t_array_private *a;
+
+	a = ft_calloc(size);
+	if (!a)
+		return (NULL);
+	a->add = __add;
+	a->get = __get;
+	a->set = __set_array;
+	a->remove = __remove;
+	a->cmp = get_cmp(type);
+	a->for_each = __for_each;
+	a->test = test;
+	a->destroy = __destroy_array;
+	a->to_array = __to_array;
+	// a->size = 0;
+	// a->begin = NULL;
+	// a->end = NULL;
+	// a->add = base_add_element;
+	// a->get = base_get_element;
+	// a->remove = base_remove_element;
+	// a->for_each = __base_for_each;
+	// a->set = __base_set_element;
+	// a->remove_index = __base_remove_element_index;
+	// a->to_str = __to_str;
+	// a->destroy_element = __destroy_element;
+	// a->is_value_destroy = 1;
+	// a->remove_value = __base_remove_element_value;
+	// a->remove_all = __base_remove_element_all;
+	// array(a);
+	return ((void *)a);
 }

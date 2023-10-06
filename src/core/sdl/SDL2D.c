@@ -34,8 +34,8 @@ t_sdl *new_sdl(int width, int height)
 {
     t_sdl *sdl;
 
-    if (SDL_Init(SDL_INIT_VIDEO) != 0 || IMG_Init(IMG_INIT_PNG) != IMG_INIT_PNG)
-        return (NULL);
+    if (SDL_Init(SDL_INIT_EVERYTHING) != 0 || IMG_Init(IMG_INIT_PNG) != IMG_INIT_PNG)
+        engine()->destroy("Error initializing SDL");
     sdl = malloc(sizeof(t_sdl));
     if (!sdl)
         engine()->destroy("Error initializing SDL");
@@ -43,23 +43,14 @@ t_sdl *new_sdl(int width, int height)
     sdl->height = height;
     engine()->render = render_defaul;
     engine()->update = update_default;
-    // sdl->win = SDL_CreateWindow("Hello Platformer!",
-    //                             SDL_WINDOW_RESIZABLE, SDL_WINDOWPOS_CENTERED, width, height, 0);
-    // if (!sdl->win)
-    //     engine()->destroy("Error creating window");
-    // sdl->renderer = SDL_CreateRenderer(sdl->win, -1, RENDER_FLAGS);
-    if (SDL_CreateWindowAndRenderer(320, 240, SDL_WINDOW_RESIZABLE, &sdl->win, &sdl->renderer)) {
+    if (SDL_CreateWindowAndRenderer(width, height, SDL_WINDOW_RESIZABLE, &sdl->win, &sdl->renderer))
+    {
         SDL_LogError(SDL_LOG_CATEGORY_APPLICATION, "Couldn't create window and renderer: %s", SDL_GetError());
-        return NULL;
+        engine()->destroy("Error initializing Window");
     }
-
     if (!sdl->renderer)
         engine()->destroy("Error creating renderer");
     sdl->surface = SDL_GetWindowSurface(sdl->win);
-    // sdl->image = IMG_Load("resources/textures/player.png");
-    // sdl->textura = SDL_CreateTextureFromSurface(sdl->renderer, sdl->image);
-    // SDL_FreeSurface(sdl->image);
-    // printf("image: %i\n", sdl->image->w);
     return (sdl);
 }
 
@@ -69,7 +60,6 @@ void sdl_loop(t_sdl *sdl)
     Uint32 prevTime;
 
     prevTime = SDL_GetTicks();
-    printf("sld: %i\n", (sdl != NULL));
     sdl->running = true;
     int i = 0;
     while (sdl->running)

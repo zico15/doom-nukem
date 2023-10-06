@@ -31,6 +31,11 @@
     "chrono": "c",
     "cstddef": "c",
     "ft_util.h": "c",
-    "_real_sdl_config.h": "c"
+    "_real_sdl_config.h": "c",
+    "__tuple": "c",
+    "__hash_table": "c",
+    "__split_buffer": "c",
+    "initializer_list": "c",
+    "unordered_map": "c"
   }
 }
