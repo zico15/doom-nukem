@@ -6,7 +6,6 @@ void mouse_handler(t_sdl *sdl);
 
 static void render_defaul(SDL_Renderer *renderer)
 {
-    SDL_SetRenderDrawColor(renderer, 255, 0, 0, 255);
     // Desenhe a textura na tela
     engine()->scene->render(engine()->scene, renderer);
 }

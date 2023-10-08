@@ -1,8 +1,10 @@
 #ifndef SDL2D_H
 #define SDL2D_H
 
-#include "../Library/linux/include/SDL2/SDL.h"
-#include "../Library/linux/include/SDL2/SDL_image.h"
+// #include "../Library/linux/include/SDL2/SDL.h"
+// #include "../Library/linux/include/SDL2/SDL_image.h"
+#include <SDL.h>
+#include <SDL_image.h>
 #include <stdbool.h>
 
 #define RENDER_FLAGS SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC

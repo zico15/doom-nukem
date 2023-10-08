@@ -1,0 +1,7 @@
+{
+  "files.associations": {
+    "stdbool.h": "c",
+    "__node_handle": "c",
+    "engine.h": "c"
+  }
+}
