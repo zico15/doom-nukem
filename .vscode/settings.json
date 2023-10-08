@@ -36,6 +36,8 @@
     "__hash_table": "c",
     "__split_buffer": "c",
     "initializer_list": "c",
-    "unordered_map": "c"
+    "unordered_map": "c",
+    "sdl_image.h": "c",
+    "stdbool.h": "c"
   }
 }
