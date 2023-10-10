@@ -4,8 +4,8 @@
 #ifdef _WIN32
 #include <SDL/SDL.h> 
 #elif __linux__
-#include "../Library/linux/include/SDL2/SDL.h"
-#include "../Library/linux/include/SDL2/SDL_image.h"
+#include <SDL2/SDL.h>
+#include <SDL_image/SDL_image.h>
 #elif __APPLE__
 #include <SDL2/SDL.h>
 #include <SDL_image/SDL_image.h>

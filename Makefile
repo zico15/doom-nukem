@@ -18,8 +18,8 @@ endif
 ifeq ($(shell uname 2>/dev/null),Linux)
 	CC = gcc
 	CFLAGS = `./Library/linux/bin/sdl2-config --cflags`
-	INCLUDES = -I./headers -I./Library/linux/include/SDL2
-	LIBS = `./Library/linux/bin/sdl2-config --libs`
+	INCLUDES = -I./headers -I./Library/linux/include
+	LIBS = -L./Library/linux/lib -lSDL2 -lSDL2_image -lm -ldl -lpthread -lrt
 endif
 ifeq ($(OS),Windows_NT)
 	CC = gcc
@@ -55,7 +55,7 @@ r:
 ifeq ($(shell uname 2>/dev/null),Darwin)
 	@make re && make clean && clear && DYLD_FRAMEWORK_PATH=./Library/mac/frameworks ./${NAME}
 else
-	./${NAME}
+	@make re && make clean && clear && ./${NAME}
 endif
 
 .PHONY: all re clean fclean m
