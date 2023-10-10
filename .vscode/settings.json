@@ -2,6 +2,10 @@
   "files.associations": {
     "stdbool.h": "c",
     "__node_handle": "c",
-    "engine.h": "c"
+    "engine.h": "c",
+    "sdl.h": "c",
+    "sdl_image.h": "c",
+    "close_code.h": "c",
+    "sdl_main.h": "c"
   }
 }

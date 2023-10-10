@@ -1,31 +1,40 @@
 
 NAME = doom-nukem
 CC = gcc
-CFLAGS = -Wall -Wextra -fsanitize=leak -lSDL2 -lSDL2_image -lm -lpthread
-INCLUDES	= 	-Iheaders
-FRAMEWORK_PATH = Library/mac
-FRAMEWORK_FLAGS = -F $(FRAMEWORK_PATH) -framework SDL2
-SRCS		=   $(shell find . -name "*.c")
-OBJS		= 	$(SRCS:.c=.o)
+CFLAGS = 
+INCLUDES =
+LIBS = 
+SRCS =   $(shell find . -name "*.c")
+OBJS = 	$(SRCS:.c=.o)
+FRAMEWORKS = 
 
 ifeq ($(shell uname 2>/dev/null),Darwin) # Mac OS X
-	CFLAGS = -c -ILibrary/mac/SDL2.framework/Headers  -ILibrary/mac/SDL2_image.framework/Headers -ILibrary/mac/SDL2_ttf.framework/Headers
-	INCLUDES = -Iheaders -ILibrary/mac/SDL2.framework/Headers -ILibrary/mac/SDL2_image.framework/Headers -ILibrary/mac/SDL2_ttf.framework/Headers
-	FRAMEWORK_FLAGS = Library/mac/SDL2.framework/SDL2 Library/mac/SDL2_image.framework/SDL2_image Library/mac/SDL2_ttf.framework/SDL2_ttf
+	CC = clang
+	# CFLAGS = `./Library/mac/bin/sdl2-config --cflags`
+	INCLUDES = -Iheaders -I./Library/mac/include  -ILibrary/mac/frameworks/SDL2_image.framework/Headers -ILibrary/mac/frameworks/SDL2.framework/Headers
+	# LIBS = `./Library/mac/bin/sdl2-config --libs`
+	FRAMEWORKS = -F./Library/mac/frameworks -framework SDL2 -framework SDL2_image
 endif
 ifeq ($(shell uname 2>/dev/null),Linux)
-	CFLAGS = -Iheaders  -I./Library/linux/include
-	INCLUDES = -I./headers -I./Library/linux/include
-	FRAMEWORK_FLAGS = -L./Library/linux/lib -lSDL2 -lSDL2_image -lm -ldl -lpthread -lrt
+	CC = gcc
+	CFLAGS = `./Library/linux/bin/sdl2-config --cflags`
+	INCLUDES = -I./headers -I./Library/linux/include/SDL2
+	LIBS = `./Library/linux/bin/sdl2-config --libs`
+endif
+ifeq ($(OS),Windows_NT)
+	CC = gcc
+	CFLAGS = `./Library/windows/bin/sdl2-config --cflags`
+	INCLUDES = -Iheaders -I./Library/windows/include/SDL2
+	LIBS = `./Library/windows/bin/sdl2-config --libs`
 endif
 
 all: $(NAME)
 
 $(NAME): $(OBJS) 
-	@$(CC)  -o $@ $^ $(FRAMEWORK_FLAGS)
+	@$(CC) $(CFLAGS) -o $@ $^ $(LIBS) $(FRAMEWORKS)
 
 %.o: %.c
-	@$(CC) $(INCLUDES) -c $(^) -o $(@)
+	@$(CC) $(CFLAGS) $(INCLUDES) -c $(^) -o $(@)
 
 bonus: all
 
@@ -43,6 +52,10 @@ re: fclean all
 m: fclean
 
 r:
-	@make re && make clean && clear && ./${NAME}
+ifeq ($(shell uname 2>/dev/null),Darwin)
+	@make re && make clean && clear && DYLD_FRAMEWORK_PATH=./Library/mac/frameworks ./${NAME}
+else
+	./${NAME}
+endif
 
 .PHONY: all re clean fclean m
