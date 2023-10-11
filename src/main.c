@@ -75,16 +75,13 @@ int main(int argc, char *argv[])
     // test_binary_tree();
 
     // test_binary_tree();
-    engine()->init(argc, argv, 640, 480);
+    engine()->init(argc, argv, GLSW, GLSH);
 
     t_scene *scene = new_scene(0, 0);
 
-    t_object *object = new_object(sizeof(t_object));
+    scene->add(scene, new_camera());
 
-    object->key = NULL;
-
-    scene->add(scene, object);
-    scene->add(scene, new_object(sizeof(t_object)))->rect.x = 300;
+    // scene->add(scene, new_plane(1.0f, 0.0f, 0.0f, -200.0f));
 
     engine()->scene = scene;
 

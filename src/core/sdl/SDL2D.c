@@ -6,7 +6,6 @@ void mouse_handler(t_sdl *sdl);
 
 static void render_defaul(SDL_Renderer *renderer)
 {
-    SDL_SetRenderDrawColor(renderer, 255, 0, 0, 255);
     // Desenhe a textura na tela
     engine()->scene->render(engine()->scene, renderer);
 }
@@ -35,7 +34,7 @@ t_sdl *new_sdl(int width, int height)
     t_sdl *sdl;
 
     if (SDL_Init(SDL_INIT_VIDEO) != 0 || IMG_Init(IMG_INIT_PNG) != IMG_INIT_PNG)
-        engine()->destroy("Error initializing SDL");
+            engine()->destroy("Error initializing SDL");
     sdl = malloc(sizeof(t_sdl));
     if (!sdl)
         engine()->destroy("Error initializing SDL");
