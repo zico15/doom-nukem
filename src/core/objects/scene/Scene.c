@@ -30,6 +30,23 @@ static void __render(t_scene *this, SDL_Renderer *renderer)
         object->render(object, renderer);
         nodes++;
     }
+    SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
+}
+
+static void __update(t_scene *this, t_sdl *sdl)
+{
+    t_node **nodes;
+    t_object *object;
+
+    nodes = array(this->event_update)->array;
+    if (!nodes)
+        return;
+    while (*nodes)
+    {
+        object = (*nodes)->value;
+        object->update(object, sdl);
+        nodes++;
+    }
 }
 
 t_object *__add(t_scene *this, t_object *object)
@@ -41,13 +58,18 @@ t_object *__add(t_scene *this, t_object *object)
         array(this->event_key)->add(object)->destroy = NULL;
     if (object->render)
         array(this->event_render)->add(object)->destroy = NULL;
+    if (object->update)
+        array(this->event_update)->add(object)->destroy = NULL;
     return (object);
 }
 static void __destroy(t_scene *this)
 {
-    array(this->objects)->destroy();
+    printf("destroy scene\n");
     array(this->event_key)->destroy();
     array(this->event_render)->destroy();
+    array(this->event_update)->destroy();
+    array(this->objects)->destroy();
+
     free(this);
 }
 
@@ -61,7 +83,9 @@ t_scene *new_scene(int width, int height)
     scene->objects = new_array(OBJECT);
     scene->event_key = new_array(OBJECT);
     scene->event_render = new_array(OBJECT);
+    scene->event_update = new_array(OBJECT);
     scene->render = __render;
+    scene->update = __update;
     scene->key = __key;
     scene->rect.w = width;
     scene->rect.h = height;

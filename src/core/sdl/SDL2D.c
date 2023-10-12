@@ -12,7 +12,7 @@ static void render_defaul(SDL_Renderer *renderer)
 
 static void update_default(t_sdl *sdl)
 {
-    (void)sdl;
+    engine()->scene->update(engine()->scene, sdl);
 }
 
 static void even_handler(t_sdl *sdl)
@@ -34,7 +34,7 @@ t_sdl *new_sdl(int width, int height)
     t_sdl *sdl;
 
     if (SDL_Init(SDL_INIT_VIDEO) != 0 || IMG_Init(IMG_INIT_PNG) != IMG_INIT_PNG)
-            engine()->destroy("Error initializing SDL");
+        engine()->destroy("Error initializing SDL");
     sdl = malloc(sizeof(t_sdl));
     if (!sdl)
         engine()->destroy("Error initializing SDL");

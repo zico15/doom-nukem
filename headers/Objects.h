@@ -17,13 +17,6 @@ typedef struct s_camera t_camera;
 #define GLSW (SW * pixelScale)
 #define GLSH (SH * pixelScale)
 
-typedef struct s_vector3
-{
-    float x;
-    float y;
-    float z;
-} t_vector3;
-
 typedef struct s_math
 {
     float cos[360];
@@ -42,9 +35,9 @@ struct s_object
 {
     t_type type;
     SDL_Rect rect;
-    t_vector3 position;
+    t_vector2 position;
+    t_vector2 direction;
     t_image *image;
-    float speed;
     int life;
     void (*move)(t_object *this, float x, float y);
     void (*render)(t_object *this, SDL_Renderer *renderer);
@@ -60,9 +53,9 @@ struct s_scene
 {
     t_type type;
     SDL_Rect rect;
-    t_vector3 position;
+    t_vector2 position;
+    t_vector2 direction;
     t_image *image;
-    float speed;
     int life;
     void (*move)(t_scene *this, float x, float y);
     void (*render)(t_scene *this, SDL_Renderer *renderer);
@@ -75,6 +68,7 @@ struct s_scene
     t_object *(*add)(t_scene *this, void *object);
     void *objects;
     void *event_render;
+    void *event_update;
     void *event_key;
 };
 
@@ -82,9 +76,9 @@ struct s_plane
 {
     t_type type;
     SDL_Rect rect;
-    t_vector3 position;
+    t_vector2 position;
+    t_vector2 direction;
     t_image *image;
-    float speed;
     int life;
     void (*move)(t_plane *this, float x, float y);
     void (*render)(t_plane *this, SDL_Renderer *renderer);
@@ -104,9 +98,9 @@ struct s_camera
 {
     t_type type;
     SDL_Rect rect;
-    t_vector3 position;
+    t_vector2 position;
+    t_vector2 direction;
     t_image *image;
-    float speed;
     int life;
     void (*move)(t_camera *this, float x, float y);
     void (*render)(t_camera *this, SDL_Renderer *renderer);
@@ -116,10 +110,9 @@ struct s_camera
     void (*key)(t_camera *this, bool *key, SDL_Event *event);
     void (*mouse)(t_camera *this, t_sdl *sdl, SDL_Event *event);
     void (*damage)(t_camera *this, int damage);
-    int w, s, a, d;
-    int m;
-    int sr, sl;
-    int angle;
+    double angSpeed;
+    double speed;
+    double angle;
     int look;
     t_math math;
 };

@@ -75,6 +75,7 @@ int main(int argc, char *argv[])
     // test_binary_tree();
 
     // test_binary_tree();
+    argv[1] = "resources/maps/DOOM1.WAD";
     engine()->init(argc, argv, GLSW, GLSH);
 
     t_scene *scene = new_scene(0, 0);
@@ -83,8 +84,7 @@ int main(int argc, char *argv[])
 
     // scene->add(scene, new_plane(1.0f, 0.0f, 0.0f, -200.0f));
 
-    engine()->scene = scene;
-
+    engine()->add(scene);
     engine()->run();
     engine()->destroy(NULL);
 

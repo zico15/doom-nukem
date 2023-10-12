@@ -2,7 +2,7 @@
 #define SDL2D_H
 
 #ifdef _WIN32
-#include <SDL/SDL.h> 
+#include <SDL/SDL.h>
 #elif __linux__
 #include <SDL2/SDL.h>
 #include <SDL_image/SDL_image.h>
@@ -15,6 +15,7 @@
 
 #define RENDER_FLAGS SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC
 #define FPS 60
+#define MAP_SCALE 0.15f
 
 typedef struct s_sdl t_sdl;
 typedef struct s_image t_image;

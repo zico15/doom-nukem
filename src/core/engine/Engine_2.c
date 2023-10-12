@@ -2,12 +2,10 @@
 
 t_scene *__add_scene(t_scene *scene)
 {
-    t_scene *new_scene;
-
-    new_scene = malloc(sizeof(t_scene));
-    if (!new_scene)
+    if (!scene)
         return (NULL);
-    // new_scene->object = object;
-    // new_scene->next = scene;
-    return (new_scene);
+    array(engine()->scenes)->add(scene)->destroy = (void *)scene->destroy;
+    if (engine()->scene == NULL)
+        engine()->scene = scene;
+    return (scene);
 }

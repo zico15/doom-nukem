@@ -8,10 +8,11 @@ static void init(int argc, char **argv, int width, int height)
     (void)argv;
     engine()->sdl = new_sdl(width, height);
     if (!engine()->sdl)
-   {    
+    {
         printf("error\n");
-     exit(-1);
-     }
+        exit(-1);
+    }
+    engine()->scenes = new_array(OBJECT);
 }
 
 static void run()
@@ -22,7 +23,7 @@ static void run()
 static void destroy(char *msg)
 {
     printf("Destroy engine\n");
-    engine()->scene->destroy(engine()->scene);
+    array(engine()->scenes)->destroy();
     if (msg)
         printf("%s\n", msg);
     if (engine()->sdl->renderer)
@@ -46,7 +47,7 @@ t_engine *engine()
         NULL,
         destroy,
         __add_scene,
-    };
+        NULL};
 
     return (&e);
 }
