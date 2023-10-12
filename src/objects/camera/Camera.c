@@ -8,26 +8,19 @@ static void move(t_camera *this, double speed, double strafe)
 
 static void __key(t_camera *this, bool *key, SDL_Event *event)
 {
-    printf("key: %i\n", event->key.keysym.sym == SDLK_LEFT);
-    bool strafe = event->key.keysym.sym == SDLK_LCTRL;
-    if (strafe && event->key.keysym.sym == SDLK_LEFT)
-        move(this, 2.0f * this->speed, toRadians(90));
-    else if (strafe && event->key.keysym.sym == SDLK_RIGHT)
-        move(this, 2.0f * this->speed, toRadians(-90));
+    //printf("key: %i\n", event->key.keysym.sym);
+    // bool strafe = event->key.keysym.sym == SDL_SCANCODE_RIGHT;
+    // if (strafe && event->key.keysym.sym == SDL_SCANCODE_LEFT)
+    //     move(this, 2.0f * this->speed, toRadians(90));
+    // else if (strafe && event->key.keysym.sym == SDLK_RIGHT)
+    //     move(this, 2.0f * this->speed, toRadians(-90));
 
-    if (!strafe && event->key.keysym.sym == SDLK_LEFT)
-        this->angle += this->angSpeed;
-    else if (!strafe && event->key.keysym.sym == SDLK_RIGHT)
-        this->angle -= this->angSpeed;
+    // if (!strafe && event->key.keysym.sym == SDLK_LEFT)
+    //     this->angle += this->angSpeed;
+    // else if (!strafe && event->key.keysym.sym == SDLK_RIGHT)
+    //     this->angle -= this->angSpeed;
 
-    if (event->key.keysym.sym == SDLK_w)
-        move(this, this->speed, 0.0);
-    else if (event->key.keysym.sym == SDLK_s)
-        move(this, -this->speed, 0.0);
-    else if (event->key.keysym.sym == SDLK_d)
-        move(this, this->speed, toRadians(90));
-    else if (event->key.keysym.sym == SDLK_a)
-        move(this, this->speed, toRadians(-90));
+    
 }
 
 static void __render(t_camera *this, SDL_Renderer *renderer)
@@ -56,6 +49,22 @@ static void __render(t_camera *this, SDL_Renderer *renderer)
     // fundo branco
 }
 
+
+static void __update(t_camera *this, t_sdl *sdl)
+{
+    if (sdl->keys[SDL_SCANCODE_W])
+        move(this, this->speed, 0.0);
+    if (sdl->keys[SDL_SCANCODE_S])
+        move(this, -this->speed, 0.0);
+    if (sdl->keys[SDL_SCANCODE_D])
+        move(this, this->speed, toRadians(90));
+    if (sdl->keys[SDL_SCANCODE_A])
+        move(this, this->speed, toRadians(-90));
+    if (sdl->keys[SDL_SCANCODE_LEFT])
+        this->angle -= this->angSpeed;
+    if (sdl->keys[SDL_SCANCODE_RIGHT])
+        this->angle += this->angSpeed;
+}
 t_vector2 getDirection(t_camera *this)
 {
     double dx = cos(this->angle);
@@ -72,6 +81,7 @@ t_camera *new_camera()
     camera = (t_camera *)new_object(sizeof(t_camera));
     camera->render = __render;
     camera->key = __key;
+    camera->update = __update;
     camera->rect.x = 0;
     camera->rect.y = 0;
     camera->rect.w = 640;

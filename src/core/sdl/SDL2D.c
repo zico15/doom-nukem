@@ -67,7 +67,7 @@ void sdl_loop(t_sdl *sdl)
         engine()->delta_time = (sdl->currentTime - prevTime) / 1000.0f;
         prevTime = sdl->currentTime;
         even_handler(sdl);
-        engine()->update();
+        update_default(sdl);
         SDL_RenderClear(sdl->renderer);
         engine()->render(sdl->renderer);
         /* Draw to window and loop */
