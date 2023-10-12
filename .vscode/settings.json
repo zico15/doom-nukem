@@ -26,6 +26,7 @@
     "typeinfo": "c",
     "vector": "c",
     "complex": "c",
-    "new": "c"
+    "new": "c",
+    "vector.h": "c"
   }
 }

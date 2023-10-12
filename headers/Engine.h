@@ -2,6 +2,8 @@
 #define ENGINE_H
 
 #include "SDL2D.h"
+#include <Vector.h>
+#include <WADData.h>
 #include "Map.h"
 #include "ft_util.h"
 #include "Objects.h"
@@ -19,6 +21,7 @@ struct s_engine
     void (*render)(SDL_Renderer *renderer);
     void (*destroy)(char *msg);
     t_scene *(*add)(t_scene *scene);
+    void *scenes;
 };
 
 t_engine *engine();
