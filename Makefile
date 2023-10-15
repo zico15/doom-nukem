@@ -53,7 +53,7 @@ m: fclean
 
 r:
 ifeq ($(shell uname 2>/dev/null),Darwin)
-	@make re && make clean && clear && DYLD_FRAMEWORK_PATH=./Library/mac/frameworks ./${NAME}
+	@make re && make clean && clear && DYLD_FRAMEWORK_PATH=./Library/mac/frameworks ./${NAME} > test.log
 else
 	@make re && make clean && clear && ./${NAME}
 endif

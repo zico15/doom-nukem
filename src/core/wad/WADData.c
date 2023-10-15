@@ -1,149 +1,98 @@
-#include <WADData.h>
+#include <Engine.h>
 
-static void init(char *wad_path)
+#pragma pack(1)
+
+// static void extract_thing(t_wad_directory *directory)
+// {
+
+//     // t_wadd_thing *thing;
+
+//     if (string().equals(directory->name, "THINGS"))
+//     {
+//         // thing = ft_calloc(sizeof(t_wadd_thing));
+
+//         // thing->xPosition = directory->data[0];
+//         // thing->yPosition = directory->data[2];
+//         // thing->angle = directory->data[4];
+//         // thing->type = directory->data[6];
+//         // thing->flags = directory->data[8];
+//         // array(directory->data)->add(thing);
+//         // printf("x: %d y: %d angle: %d type: %d flags: %d\n", thing->xPosition, thing->yPosition, thing->angle, thing->type, thing->flags);
+//         // printf("offset: %u length: %u name: %.8s data: { %d , %d, %d}\n", directory->offset, directory->length, directory->name, thing->xPosition, thing->yPosition, thing->angle);
+//     }
+// }
+
+// static void extract_data(t_node *e, t_wadd_data *wad)
+// {
+//     t_wadd_directory *directory;
+
+//     directory = (t_wadd_directory *)e->value;
+//     directory->data = ft_calloc(directory->length + 1);
+//     printf("name: %.8s\n", directory->name);
+//     readDataFromFile(wad->file, directory->offset, directory->length, directory->data);
+// }
+
+static void extractDirectories(t_wadd_data *wad, t_wad_directory *directorys)
 {
-    WADData()->wad_file = fopen(wad_path, "rb");
-    if (WADData()->wad_file == NULL)
+    size_t i;
+    // t_wadd_directory *directory;
+
+    i = -1;
+    while (++i < wad->header.numLumps)
     {
-        fprintf(stderr, "Value of errno: %d\n", errno);
-        perror("Error printed by DoomEngine init instance");
-        printf("Error opening file: %s\n", wad_path);
-    }
-    WADData()->header = malloc(sizeof(WADHeader));
-    WADData()->read_header();
-    printf("WAD Type: %s\n", WADData()->header->wadid);
-    printf("Lump Count: %d\n", WADData()->header->length);
-    printf("Init Offset: %d\n", WADData()->header->offset);
-}
+        // fseek(wad->file, directorys[i].offset, SEEK_SET);
+        // uint8_t *data = malloc(lumps[i].size);
+        // if (fread(data, 1, directorys[i].size, wad->file) != directorys[i].size)
+        // {
+        //     perror("Erro ao ler dados do lump");
+        //     free(data);
+        //     continue;
+        // }
+        // directory = ft_calloc(sizeof(t_wadd_directory));
+        // directory->offset = lumps[i].filePos;
+        // directory->length = lumps[i].size;
+        // // memcpy(directory->name, lumps[i].name, 8);
+        // // directory->data = data;
+        // // extract_thing(directory);
+        // array(wad->directory)->add(directory);
 
-static void close(void)
-{
-    fclose(WADData()->wad_file);
-}
-
-// Function to read a specified number of bytes from a file
-static int read_bytes(FILE *file, long offset, size_t num_bytes, void *buffer)
-{
-    if (fseek(file, offset, SEEK_SET) != 0)
-    {
-        // Error handling: Unable to set the file pointer to the specified offset
-        return -1;
-    }
-
-    size_t read_size = fread(buffer, 1, num_bytes, file);
-
-    if (read_size != num_bytes)
-    {
-        // Error handling: Unable to read the specified number of bytes
-        return -1;
-    }
-
-    return 0; // Success
-}
-
-// Function to read and interpret a single byte
-static uint8_t read_1_byte(FILE *file, long offset)
-{
-    uint8_t value;
-    if (read_bytes(file, offset, 1, &value) == 0)
-    {
-        return value;
-    }
-    // Error handling: Unable to read the byte
-    return 0;
-}
-
-// Function to read and interpret a 2-byte integer
-static int16_t read_2_bytes(FILE *file, long offset)
-{
-    int16_t value;
-    if (read_bytes(file, offset, 2, &value) == 0)
-    {
-        return value;
-    }
-    // Error handling: Unable to read the 2 bytes
-    return 0;
-}
-
-// Function to read and interpret a 4-byte integer
-static int32_t read_4_bytes(FILE *file, long offset)
-{
-    int32_t value;
-    if (read_bytes(file, offset, 4, &value) == 0)
-    {
-        return value;
-    }
-    // Error handling: Unable to read the 4 bytes
-    return 0;
-}
-
-// Function to read and interpret a string
-static char *read_string(FILE *file, long offset, size_t num_bytes)
-{
-    char *result = (char *)malloc(num_bytes + 1);
-    if (result == NULL)
-    {
-        // Error handling: Unable to allocate memory
-        return NULL;
-    }
-
-    if (read_bytes(file, offset, num_bytes, result) == 0)
-    {
-        result[num_bytes] = '\0';
-
-        // Handle string termination (e.g., remove null characters)
-        for (size_t i = 0; i < num_bytes; i++)
-        {
-            if (result[i] == '\0')
-            {
-                result[i] = ' ';
-            }
-        }
-        return result;
-    }
-    else
-    {
-        // Error handling: Unable to set the file pointer or read the string
-        free(result);
-        return NULL;
+        // "WADDirectory{" + "offset=" + offset + ", length=" + length   + ", name=" + name + ", data=" + data + '}';
+        // convert para printf
+        printf("length: %u offset: %u name: %.8s\n", directorys[i].size, directorys[i].offset, directorys[i].name);
     }
 }
 
-// It will read the header information and populate the WADHeader structure
-static void read_header()
+static void loadWad(t_wadd_data *wad, char *wad_path)
 {
-    if (WADData()->header == NULL)
-    {
-        // Handle an invalid argument
+    long file_size;
+
+    wad->file = fopen(wad_path, "rb");
+    if (wad->file == NULL)
         return;
-    }
-
-    if (read_bytes(WADData()->wad_file, 0, 4, WADData()->header->wadid) != 0)
-    {
-        // Error handling: Unable to read the WAD type string
+    fseek(wad->file, 0, SEEK_END);
+    file_size = ftell(wad->file);
+    fseek(wad->file, 0, SEEK_SET);
+    wad->data = (uint8_t *)malloc(file_size);
+    if (wad->data == NULL)
         return;
-    }
-
-    WADData()->header->length = read_4_bytes(WADData()->wad_file, 4);
-    WADData()->header->offset = read_4_bytes(WADData()->wad_file, 8);
-    printf("length: %i offset: %i\n", WADData()->header->length, WADData()->header->offset);
-    // WADData()->header->d = read_4_bytes(WADData()->wad_file, 8);
+    fread(wad->data, 1, file_size, wad->file);
+    fclose(wad->file);
+    read_header(wad->data, 0, &wad->header);
+    printf("name: %s numLumps: %i directoryOffset: %i\n", wad->header.identification, wad->header.numLumps, wad->header.directoryOffset);
+    wad->directory = malloc(sizeof(t_wad_directory) * wad->header.numLumps);
+    wad->directory = (t_wad_directory *)(wad->data + wad->header.directoryOffset);
+    extractDirectories(wad, wad->directory);
+    printf("map: %i\n", find_map_index(wad, "E1M1"));
 }
 
-t_WADData *WADData()
+t_wadd_data init_wad_data(char *wad_path)
 {
-    static t_WADData e = {
-        NULL,
-        NULL,
-        init,
-        close,
-        read_bytes,
-        read_1_byte,
-        read_2_bytes,
-        read_4_bytes,
-        read_string,
-        read_header,
-    };
+    t_wadd_data e;
 
-    return (&e);
+    e.file = NULL;
+    e.is_valid = wad_path == NULL;
+    e.things = new_array(OBJECT);
+    if (wad_path != NULL)
+        loadWad(&e, wad_path);
+    return (e);
 }

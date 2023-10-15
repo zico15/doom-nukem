@@ -6,7 +6,7 @@ t_scene *new_login();
 
 void print_node(t_node *e, void *v)
 {
-    printf((char *)v, _void_int_(e->value));
+    printf((char *)v, e->value);
 }
 
 void __key(t_object *this, bool *key, SDL_EventType event)
@@ -22,7 +22,7 @@ void test_array()
     array(a)->add("Hello")->destroy = NULL;
     array(a)->add(strdup("World"));
     array(a)->add(strdup("Hello"));
-    // array(a)->remove("World");
+    array(a)->remove("World", true);
     array(a)->for_each(print_node, "%s\n");
     printf("================================\n");
     // // array(a)->set(0, " sdsd");
@@ -71,18 +71,19 @@ void test_binary_tree()
 
 int main(int argc, char *argv[])
 {
+    // test_array();
 
     // test_binary_tree();
 
     // test_binary_tree();
     argv[1] = "resources/maps/DOOM1.WAD";
 
-    WADData()->init(argv[1]);
-    engine()->init(argc, argv, GLSW, GLSH);
+    // // WADData()->init(argv[1]);
+    engine()->init(argc, argv, 320, 200);
 
-    t_scene *scene = new_scene(0, 0);
+    t_scene *scene = new_scene(argv[1]);
 
-    scene->add(scene, new_camera());
+    // scene->add(scene, new_camera());
 
     // scene->add(scene, new_plane(1.0f, 0.0f, 0.0f, -200.0f));
 

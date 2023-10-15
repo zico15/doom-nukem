@@ -55,7 +55,7 @@ struct s_array
 	void (*remove_all)(void);
 	void (*test)();
 	int (*cmp)(void *a, void *b);
-	t_node **array;
+	t_node *array;
 };
 
 struct s_array_private
@@ -75,7 +75,7 @@ struct s_array_private
 	void (*remove_all)(void);
 	void (*test)();
 	int (*cmp)(void *a, void *b);
-	t_node **array;
+	t_node *array;
 	size_t vsize;
 	void **matrix;
 	bool is_update;

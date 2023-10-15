@@ -27,6 +27,15 @@
     "vector": "c",
     "complex": "c",
     "new": "c",
-    "vector.h": "c"
+    "vector.h": "c",
+    "cstdio": "c",
+    "ios": "c",
+    "stdlib.h": "c",
+    "waddata.h": "c",
+    "objects.h": "c",
+    "stdio.h": "c",
+    "map.h": "c",
+    "fcntl.h": "c",
+    "limits.h": "c"
   }
 }

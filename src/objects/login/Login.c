@@ -15,7 +15,7 @@ t_scene *new_login()
 {
     t_scene *scene;
 
-    scene = new_scene(0, 0);
+    scene = new_scene(NULL);
     scene->render = __render;
     return (scene);
 }

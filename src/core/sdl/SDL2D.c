@@ -67,9 +67,10 @@ void sdl_loop(t_sdl *sdl)
         engine()->delta_time = (sdl->currentTime - prevTime) / 1000.0f;
         prevTime = sdl->currentTime;
         even_handler(sdl);
-        engine()->update();
+        // engine()->update();
         SDL_RenderClear(sdl->renderer);
         engine()->render(sdl->renderer);
+        // printf("render\n");
         /* Draw to window and loop */
         SDL_RenderPresent(sdl->renderer);
         SDL_Delay(1000 / FPS);

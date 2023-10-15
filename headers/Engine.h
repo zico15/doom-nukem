@@ -7,6 +7,7 @@
 #include "Map.h"
 #include "ft_util.h"
 #include "Objects.h"
+#include <limits.h>
 
 typedef struct s_engine t_engine;
 

@@ -2,50 +2,65 @@
 
 static void __key(t_scene *this, bool *key, SDL_Event *event)
 {
-    t_node **nodes;
+    t_node *nodes;
+    size_t i;
+    size_t size;
     t_object *object;
 
     nodes = array(this->event_key)->array;
+    i = 0;
+    size = array(this->event_key)->size;
     if (!nodes)
         return;
-    while (*nodes)
+    while (i < size)
     {
-        object = (*nodes)->value;
+        object = nodes[i].value;
         object->key(object, key, event);
-        nodes++;
+        i++;
     }
 }
 
 static void __render(t_scene *this, SDL_Renderer *renderer)
 {
-    t_node **nodes;
+    t_node *nodes;
+    size_t i;
+    size_t size;
     t_object *object;
 
-    nodes = array(this->event_render)->array;
-    if (!nodes)
+    i = 0;
+    SDL_SetRenderDrawColor(renderer, 0x00, 0x00, 0x00, 0x00);
+    SDL_RenderClear(renderer);
+    if (this->map)
+        this->map->render(this->map, renderer);
+    size = array(this->event_render)->size;
+    if (!size)
         return;
-    while (*nodes)
+    nodes = array(this->event_render)->array;
+    while (i < size)
     {
-        object = (*nodes)->value;
+        object = nodes[i].value;
         object->render(object, renderer);
-        nodes++;
+        i++;
     }
-    SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
 }
 
 static void __update(t_scene *this, t_sdl *sdl)
 {
-    t_node **nodes;
+    t_node *nodes;
+    size_t i;
+    size_t size;
     t_object *object;
 
     nodes = array(this->event_update)->array;
+    i = 0;
+    size = array(this->event_update)->size;
     if (!nodes)
         return;
-    while (*nodes)
+    while (i < size)
     {
-        object = (*nodes)->value;
+        object = nodes[i].value;
         object->update(object, sdl);
-        nodes++;
+        i++;
     }
 }
 
@@ -73,7 +88,7 @@ static void __destroy(t_scene *this)
     free(this);
 }
 
-t_scene *new_scene(int width, int height)
+t_scene *new_scene(char *wad_path)
 {
     t_scene *scene;
 
@@ -87,9 +102,9 @@ t_scene *new_scene(int width, int height)
     scene->render = __render;
     scene->update = __update;
     scene->key = __key;
-    scene->rect.w = width;
-    scene->rect.h = height;
     scene->add = (void *)__add;
     scene->destroy = __destroy;
+    scene->wad = init_wad_data(wad_path);
+    scene->map = new_map(&scene->wad, "E1M1");
     return (scene);
 }

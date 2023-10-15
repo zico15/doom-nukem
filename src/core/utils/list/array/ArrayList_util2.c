@@ -22,10 +22,10 @@ t_node *__set_array(int index, void *value)
     a = *this();
     if (!a || index < 0 || index >= a->size)
         return (NULL);
-    if (a->array[index]->destroy)
-        a->array[index]->destroy(a->array[index]->value);
-    a->array[index]->value = value;
-    return (a->array[index]);
+    if (a->array[index].destroy)
+        a->array[index].destroy(a->array[index].value);
+    a->array[index].value = value;
+    return (&a->array[index]);
 }
 
 void __destroy_array()
@@ -38,12 +38,12 @@ void __destroy_array()
         return;
     if (a->array)
     {
-        i = -1;
-        while (a->array[++i])
+        i = 0;
+        while (i < a->size)
         {
-            if (a->array[i]->destroy)
-                a->array[i]->destroy(a->array[i]->value);
-            free(a->array[i]);
+            if (a->array[i].destroy)
+                a->array[i].destroy(a->array[i].value);
+            i++;
         }
         free(a->array);
     }
@@ -66,9 +66,12 @@ void **__to_array()
     a->matrix = ft_calloc(sizeof(void *) * (a->size + 1));
     if (!a->matrix)
         return (NULL);
-    i = -1;
-    while (a->array[++i])
-        a->matrix[i] = a->array[i]->value;
+    i = 0;
+    while (i < a->size)
+    {
+        a->matrix[i] = a->array[i].value;
+        i++;
+    }
     a->is_update = true;
     return (a->matrix);
 }

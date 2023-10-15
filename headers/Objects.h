@@ -70,6 +70,8 @@ struct s_scene
     void *event_render;
     void *event_update;
     void *event_key;
+    t_map *map;
+    t_wadd_data wad;
 };
 
 struct s_plane
@@ -118,7 +120,7 @@ struct s_camera
 };
 
 t_object *new_object(size_t size);
-t_scene *new_scene(int width, int height);
+t_scene *new_scene(char *wad_path);
 t_camera *new_camera();
 t_plane *new_plane(float a, float b, float c, float d);
 

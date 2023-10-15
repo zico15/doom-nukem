@@ -25,13 +25,14 @@ static void *__get(int index)
 	a = *this();
 	if (!a || index < 0 || index >= a->size)
 		return (NULL);
-	return (a->array[index]->value);
+	return (a->array[index].value);
 }
 
 static void __for_each(void (*fun)(t_node *node, void *v), void *o)
 {
-	t_node **list;
+	t_node *list;
 	t_array_private *a;
+	size_t i;
 
 	a = *this();
 	if (!a || !fun)
@@ -39,33 +40,49 @@ static void __for_each(void (*fun)(t_node *node, void *v), void *o)
 	list = a->array;
 	if (!list)
 		return;
-	while (*list)
-		fun(*list++, o);
+	i = 0;
+	while (i < a->size)
+		fun(&(list[i++]), o);
+}
+
+static void realloc_list(t_array_private *a)
+{
+	t_node *new_list;
+	size_t i;
+
+	new_list = ft_calloc((a->vsize + 1) * sizeof(t_node));
+	if (!new_list)
+		return;
+	i = 0;
+	while (i < a->size)
+	{
+		new_list[i] = a->array[i];
+		i++;
+	}
+	free(a->array);
+	a->array = new_list;
 }
 
 static t_node *__add(void *value)
 {
-	t_node *e;
 	t_array_private *a;
+	size_t index;
 
 	a = *this();
 	if (!a || !value)
 		return (NULL);
-	e = ft_calloc(sizeof(t_node));
-	if (!e)
-		return (NULL);
-	e->value = value;
-	e->destroy = &free;
-	e->index = a->size;
-	a->size++;
-	if (a->size >= a->vsize)
+	index = a->size;
+	if ((a->size + 1) >= a->vsize)
 	{
 		a->vsize += 10;
-		a->array = ft_realloc(a->array, a->vsize * sizeof(t_node *));
+		realloc_list(a);
 	}
-	a->array[e->index] = e;
+	a->size++;
+	a->array[index].value = value;
+	a->array[index].destroy = &free;
+	a->array[index].index = a->size;
 	a->is_update = false;
-	return (e);
+	return (&a->array[index]);
 }
 
 static void __remove(void *value, bool is_free)
@@ -73,35 +90,32 @@ static void __remove(void *value, bool is_free)
 	size_t i;
 	bool is_realloc;
 	t_array_private *a;
+	size_t size;
 
 	a = *this();
 	if (!a || !value)
 		return;
-	i = -1;
+	i = 0;
 	is_realloc = false;
-	while (a->array[++i])
+	size = a->size;
+	while (i < size)
 	{
 		if (is_realloc)
 		{
 			a->array[i - 1] = a->array[i];
-			a->array[i - 1]->index = i - 1;
-			a->array[i] = NULL;
+			a->array[i - 1].index = i - 1;
+			a->array[i].value = NULL;
 		}
-		else if (a->cmp(a->array[i]->value, value) && ++is_realloc)
+		else if (a->cmp(a->array[i].value, value) && ++is_realloc)
 		{
-			if (is_free && a->array[i]->destroy)
-				a->array[i]->destroy(a->array[i]->value);
-			free(a->array[i]);
-			a->array[i] = NULL;
+			if (is_free && a->array[i].destroy)
+				a->array[i].destroy(a->array[i].value);
+			a->array[i].value = NULL;
+			a->size--;
 		}
+		i++;
 	}
 	a->is_update = false;
-}
-
-void test(int a, int b, int c, int d)
-{
-
-	printf("a: %d b: %d c: %d d: %d\n", a, b, c, d);
 }
 
 void *new_array(t_type_node type)
@@ -117,7 +131,6 @@ void *new_array(t_type_node type)
 	a->remove = __remove;
 	a->cmp = get_cmp(type);
 	a->for_each = __for_each;
-	a->test = test;
 	a->destroy = __destroy_array;
 	a->to_array = __to_array;
 	// a->size = 0;
@@ -157,7 +170,6 @@ void *extender_array(t_type_node type, size_t size)
 	a->remove = __remove;
 	a->cmp = get_cmp(type);
 	a->for_each = __for_each;
-	a->test = test;
 	a->destroy = __destroy_array;
 	a->to_array = __to_array;
 	// a->size = 0;
