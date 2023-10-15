@@ -49,6 +49,8 @@ t_sdl *new_sdl(int width, int height)
     }
     if (!sdl->renderer)
         engine()->destroy("Error creating renderer");
+    if (SDL_RenderSetLogicalSize(sdl->renderer, width, height) != 0)
+        engine()->destroy("Error initializing Window");
     sdl->surface = SDL_GetWindowSurface(sdl->win);
     return (sdl);
 }

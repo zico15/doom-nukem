@@ -6,6 +6,17 @@
 
 #define MAP_PATH "resources/maps/"
 
+typedef struct s_player t_player;
+
+struct s_player
+{
+    int x_position;
+    int y_position;
+    int angle;
+    int type;
+    int flags;
+};
+
 typedef struct s_map t_map;
 
 struct s_map
@@ -20,6 +31,9 @@ struct s_map
     int scale;
     void *vertexes;
     void *linedefs;
+    void *things;
+    t_player player;
+    int direction[9][2];
     bool (*save)(t_map *map);
     void (*destroy)(t_map *map);
     void (*render)(t_map *this, SDL_Renderer *renderer);

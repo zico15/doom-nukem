@@ -36,6 +36,8 @@
     "stdio.h": "c",
     "map.h": "c",
     "fcntl.h": "c",
-    "limits.h": "c"
+    "limits.h": "c",
+    "tuple": "c",
+    "type_traits": "c"
   }
 }

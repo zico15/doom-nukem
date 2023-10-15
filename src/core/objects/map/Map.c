@@ -1,30 +1,12 @@
 #include "Map.h"
 
+void __render_map_wall(t_map *this, SDL_Renderer *renderer, int iXShift, int iYShift);
+void __render_map_wall_player(t_map *this, SDL_Renderer *renderer, int iXShift, int iYShift);
+
 static void __render(t_map *this, SDL_Renderer *renderer)
 {
-    t_node *linedefs;
-    t_node *vertexes;
-    size_t size;
-    size_t i;
-    int iXShift = -this->x_min; // Invert the min X value
-    int iYShift = -this->y_min; // Invert the min Y value
-
-    SDL_SetRenderDrawColor(renderer, 255, 255, 255, SDL_ALPHA_OPAQUE);
-    linedefs = array(this->linedefs)->array;
-    vertexes = array(this->vertexes)->array;
-    i = 0;
-    size = array(this->linedefs)->size;
-    while (i < size)
-    {
-        t_vertex *vStart = (t_vertex *)vertexes[((t_linedef *)linedefs[i].value)->start_vertex].value; // Read the first point
-        t_vertex *vEnd = (t_vertex *)vertexes[((t_linedef *)linedefs[i].value)->end_vertex].value;     // Read the second point
-        SDL_RenderDrawLine(renderer,
-                           (vStart->x_position + iXShift) / this->scale,
-                           (vStart->y_position + iYShift) / this->scale,
-                           (vEnd->x_position + iXShift) / this->scale,
-                           (vEnd->y_position + iYShift) / this->scale);
-        i++;
-    }
+    __render_map_wall(this, renderer, -this->x_min, -this->y_min);
+    __render_map_wall_player(this, renderer, -this->x_min, -this->y_min);
 }
 
 t_map *new_map(t_wadd_data *wad, char *name)
@@ -38,6 +20,7 @@ t_map *new_map(t_wadd_data *wad, char *name)
     map->render = __render;
     map->linedefs = new_array(OBJECT);
     map->vertexes = new_array(OBJECT);
+    map->things = new_array(OBJECT);
     map->name = name;
     map->x_min = INT_MAX;
     map->y_min = INT_MAX;
@@ -45,8 +28,28 @@ t_map *new_map(t_wadd_data *wad, char *name)
     map->y_max = INT_MIN;
     map->scale = 15;
     map->map_index = find_map_index(wad, name);
+    map->direction[0][0] = -1;
+    map->direction[0][1] = -1;
+    map->direction[1][0] = 0;
+    map->direction[1][1] = -1;
+    map->direction[2][0] = +1;
+    map->direction[2][1] = -1;
+    map->direction[3][0] = -1;
+    map->direction[3][1] = 0;
+    map->direction[4][0] = 0;
+    map->direction[4][1] = 0;
+    map->direction[5][0] = +1;
+    map->direction[5][1] = 0;
+    map->direction[6][0] = -1;
+    map->direction[6][1] = +1;
+    map->direction[7][0] = 0;
+    map->direction[7][1] = +1;
+    map->direction[8][0] = +1;
+    map->direction[8][1] = +1;
     read_map_vertex(wad, map);
     normalize_vertex(map);
     read_map_linedef(wad, map);
+    read_map_things(wad, map);
+    // exit(0);
     return (map);
 }

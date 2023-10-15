@@ -2208,6 +2208,1014 @@ start_vertex: 365, end_vertex: 383, flags: 1, line_type: 0, sector_tag: 0, right
 start_vertex: 383, end_vertex: 369, flags: 1, line_type: 0, sector_tag: 0, right_sidedef: 645, left_sidedef: 65535
 start_vertex: 367, end_vertex: 384, flags: 1, line_type: 0, sector_tag: 0, right_sidedef: 646, left_sidedef: 65535
 start_vertex: 384, end_vertex: 348, flags: 1, line_type: 0, sector_tag: 0, right_sidedef: 647, left_sidedef: 65535
+read_map_things
+THINGS: THINGS
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1008 y_position: -3600 angle: 90 type: 2 flags: 7
+x_position: 1104 y_position: -3600 angle: 90 type: 3 flags: 7
+x_position: 960 y_position: -3600 angle: 90 type: 4 flags: 7
+x_position: 288 y_position: -3104 angle: 90 type: 48 flags: 7
+x_position: 288 y_position: -3360 angle: 90 type: 48 flags: 7
+x_position: 528 y_position: -3312 angle: 90 type: 2028 flags: 7
+x_position: 528 y_position: -3152 angle: 90 type: 2028 flags: 7
+x_position: 3440 y_position: -3472 angle: 135 type: 3001 flags: 15
+x_position: 3360 y_position: -3504 angle: 135 type: 3001 flags: 12
+x_position: 2912 y_position: -2816 angle: 90 type: 3004 flags: 15
+x_position: 3056 y_position: -3584 angle: 90 type: 3004 flags: 14
+x_position: 3136 y_position: -3408 angle: 90 type: 3004 flags: 12
+x_position: 1824 y_position: -3280 angle: 180 type: 2019 flags: 7
+x_position: 2736 y_position: -4256 angle: 0 type: 3004 flags: 12
+x_position: 3280 y_position: -4256 angle: 180 type: 3004 flags: 12
+x_position: 3008 y_position: -4416 angle: 90 type: 3001 flags: 15
+x_position: 3280 y_position: -4304 angle: 180 type: 3004 flags: 12
+x_position: 2736 y_position: -4304 angle: 0 type: 3004 flags: 12
+x_position: 2880 y_position: -4416 angle: 0 type: 2012 flags: 15
+x_position: 2736 y_position: -4160 angle: 0 type: 2007 flags: 15
+x_position: 3280 y_position: -4160 angle: 0 type: 2007 flags: 15
+x_position: 2784 y_position: -2944 angle: 90 type: 2008 flags: 23
+x_position: 144 y_position: -3136 angle: 90 type: 2014 flags: 7
+x_position: 144 y_position: -3328 angle: 90 type: 2014 flags: 7
+x_position: 96 y_position: -3392 angle: 90 type: 2014 flags: 7
+x_position: 96 y_position: -3072 angle: 90 type: 2014 flags: 7
+x_position: 432 y_position: -3040 angle: 90 type: 2015 flags: 7
+x_position: 432 y_position: -3424 angle: 90 type: 2015 flags: 7
+x_position: 32 y_position: -3232 angle: 90 type: 2015 flags: 7
+x_position: -32 y_position: -3232 angle: 90 type: 2015 flags: 7
+x_position: 1312 y_position: -3520 angle: 90 type: 2014 flags: 7
+x_position: 736 y_position: -3520 angle: 90 type: 2014 flags: 7
+x_position: 736 y_position: -2976 angle: 90 type: 2015 flags: 7
+x_position: 976 y_position: -2912 angle: 90 type: 2015 flags: 7
+x_position: 1312 y_position: -3264 angle: 90 type: 2035 flags: 7
+x_position: 1152 y_position: -2912 angle: 90 type: 2035 flags: 7
+x_position: 864 y_position: -3328 angle: 90 type: 2035 flags: 7
+x_position: 2672 y_position: -2752 angle: 90 type: 2014 flags: 7
+x_position: 2752 y_position: -2640 angle: 90 type: 2014 flags: 7
+x_position: 3232 y_position: -3040 angle: 90 type: 2028 flags: 7
+x_position: 2800 y_position: -3040 angle: 90 type: 2028 flags: 7
+x_position: 2848 y_position: -3584 angle: 90 type: 2008 flags: 7
+x_position: 3008 y_position: -3968 angle: 90 type: 2008 flags: 7
+x_position: 2912 y_position: -4176 angle: 180 type: 2028 flags: 15
+x_position: 3104 y_position: -4176 angle: 180 type: 2028 flags: 15
+x_position: 2720 y_position: -4352 angle: 180 type: 2028 flags: 15
+x_position: 3296 y_position: -4352 angle: 180 type: 2028 flags: 15
+x_position: 2944 y_position: -4320 angle: 180 type: 2035 flags: 15
+x_position: 3184 y_position: -4224 angle: 180 type: 2035 flags: 15
+x_position: 2832 y_position: -4240 angle: 180 type: 2035 flags: 15
+x_position: 3184 y_position: -4176 angle: 180 type: 2014 flags: 15
+x_position: 2832 y_position: -4176 angle: 180 type: 2014 flags: 15
+x_position: 2736 y_position: -4192 angle: 180 type: 2014 flags: 15
+x_position: 3280 y_position: -4192 angle: 180 type: 2014 flags: 12
+x_position: 3280 y_position: -4448 angle: 180 type: 2014 flags: 15
+x_position: 2736 y_position: -4448 angle: 180 type: 2015 flags: 15
+x_position: 3072 y_position: -4832 angle: 180 type: 2015 flags: 7
+x_position: 2944 y_position: -4832 angle: 180 type: 2015 flags: 7
+x_position: 3072 y_position: -4704 angle: 180 type: 2015 flags: 7
+x_position: 2944 y_position: -4704 angle: 180 type: 2015 flags: 7
+x_position: 3088 y_position: -4528 angle: 180 type: 35 flags: 7
+x_position: 2928 y_position: -4528 angle: 180 type: 35 flags: 7
+x_position: 3008 y_position: -4816 angle: 90 type: 3001 flags: 12
+x_position: 3072 y_position: -4768 angle: 90 type: 2011 flags: 15
+x_position: 2304 y_position: -4032 angle: 90 type: 2012 flags: 15
+x_position: 2176 y_position: -4000 angle: 90 type: 2049 flags: 15
+x_position: 2432 y_position: -4000 angle: 90 type: 2048 flags: 15
+x_position: -224 y_position: -3232 angle: 90 type: 2018 flags: 7
+x_position: -288 y_position: -3232 angle: 0 type: 11 flags: 7
+x_position: 1056 y_position: -3552 angle: 90 type: 11 flags: 7
+x_position: 1856 y_position: -2912 angle: 270 type: 11 flags: 7
+x_position: 3408 y_position: -3504 angle: 135 type: 11 flags: 7
+x_position: 2784 y_position: -4160 angle: 270 type: 11 flags: 7
+x_position: 1712 y_position: -3264 angle: 270 type: 2003 flags: 23
+x_position: 1936 y_position: -3264 angle: 270 type: 2046 flags: 23
+x_position: 1920 y_position: -3712 angle: 270 type: 2046 flags: 23
+x_position: 2304 y_position: -3712 angle: 270 type: 2046 flags: 23
+x_position: 3232 y_position: -4160 angle: 270 type: 2002 flags: 23
+x_position: 3232 y_position: -4192 angle: 270 type: 2048 flags: 23
+x_position: 2784 y_position: -4192 angle: 270 type: 2048 flags: 23
+x_position: 2560 y_position: -3904 angle: 270 type: 2048 flags: 23
+x_position: 3360 y_position: -3536 angle: 270 type: 2048 flags: 23
+x_position: 3008 y_position: -4768 angle: 270 type: 2048 flags: 23
+x_position: 1408 y_position: -3584 angle: 270 type: 2049 flags: 23
+x_position: 1408 y_position: -3456 angle: 270 type: 2049 flags: 23
+x_position: 1408 y_position: -3328 angle: 270 type: 2049 flags: 23
+x_position: 2272 y_position: -2432 angle: 180 type: 3004 flags: 15
+x_position: 2272 y_position: -2352 angle: 180 type: 3004 flags: 14
+x_position: 2272 y_position: -2512 angle: 180 type: 9 flags: 12
+x_position: 2464 y_position: -2432 angle: 180 type: 9 flags: 12
+x_position: 2224 y_position: -2320 angle: 180 type: 2015 flags: 7
+x_position: 2224 y_position: -2544 angle: 180 type: 2015 flags: 7
+x_position: 2288 y_position: -2544 angle: 180 type: 2015 flags: 7
+x_position: 2288 y_position: -2320 angle: 180 type: 2015 flags: 7
+x_position: 1712 y_position: -2144 angle: 180 type: 2015 flags: 7
+x_position: 2240 y_position: -2256 angle: 180 type: 2015 flags: 7
+x_position: 3264 y_position: -3856 angle: 270 type: 2049 flags: 7
+x_position: 3264 y_position: -3936 angle: 270 type: 2001 flags: 7
+x_position: 3232 y_position: -3808 angle: 270 type: 2012 flags: 7
+x_position: 3216 y_position: -3888 angle: 0 type: 9 flags: 12
+x_position: -160 y_position: -3232 angle: 0 type: 9 flags: 12
+x_position: 240 y_position: -3376 angle: 135 type: 9 flags: 12
+x_position: 240 y_position: -3088 angle: 225 type: 9 flags: 12
+x_position: 1696 y_position: -2688 angle: 90 type: 9 flags: 12
+x_position: 1920 y_position: -2176 angle: 270 type: 9 flags: 12
+x_position: 2976 y_position: -3264 angle: 90 type: 9 flags: 12
+x_position: 3008 y_position: -3520 angle: 90 type: 9 flags: 12
+x_position: 3008 y_position: -3072 angle: 90 type: 9 flags: 12
+x_position: 2816 y_position: -2688 angle: 0 type: 9 flags: 12
+x_position: 2496 y_position: -3968 angle: 0 type: 9 flags: 12
+x_position: 2256 y_position: -4064 angle: 0 type: 9 flags: 4
+x_position: 3072 y_position: -4256 angle: 90 type: 9 flags: 12
+x_position: -192 y_position: -3296 angle: 0 type: 9 flags: 12
+x_position: 1024 y_position: -3264 angle: 270 type: 10 flags: 7
+x_position: 1088 y_position: -2944 angle: 270 type: 15 flags: 7
+x_position: 448 y_position: -3328 angle: 270 type: 24 flags: 7
+x_position: -96 y_position: -3296 angle: 270 type: 10 flags: 7
+x_position: 1504 y_position: -2496 angle: 270 type: 15 flags: 7
+x_position: 2240 y_position: -2480 angle: 270 type: 15 flags: 7
+x_position: 2112 y_position: -2688 angle: 270 type: 24 flags: 7
+x_position: 1792 y_position: -2144 angle: 270 type: 24 flags: 7
+x_position: 2368 y_position: -2336 angle: 270 type: 24 flags: 7
+x_position: 2800 y_position: -2992 angle: 270 type: 15 flags: 7
+x_position: 3072 y_position: -3488 angle: 270 type: 12 flags: 7
+x_position: 2944 y_position: -4256 angle: 270 type: 12 flags: 7
+x_position: 2976 y_position: -3840 angle: 270 type: 24 flags: 7
+x_position: 3264 y_position: -4512 angle: 270 type: 24 flags: 7
+x_position: 2272 y_position: -4000 angle: 270 type: 24 flags: 7
+x_position: 3648 y_position: -3648 angle: 0 type: 2049 flags: 7
+x_position: 3616 y_position: -3392 angle: 0 type: 2015 flags: 7
+x_position: 3712 y_position: -3264 angle: 0 type: 2015 flags: 7
+x_position: 3472 y_position: -2960 angle: 0 type: 2015 flags: 7
+x_position: 3376 y_position: -3024 angle: 0 type: 2015 flags: 7
+x_position: 3568 y_position: -2992 angle: 0 type: 2015 flags: 7
+x_position: 3616 y_position: -3088 angle: 0 type: 2015 flags: 7
+x_position: 3664 y_position: -3168 angle: 0 type: 2015 flags: 7
+x_position: 3648 y_position: -3840 angle: 0 type: 2015 flags: 7
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
+__render_map_wall_player:70 / 140
 Destroy engine
 destroy scene
 Exiting...

@@ -1,6 +1,6 @@
 #include "Engine.h"
 
-t_vertex *read_vertex_data(const uint8_t *pWADData, int offset)
+static t_vertex *read_vertex_data(const uint8_t *pWADData, int offset)
 {
     t_vertex *vertex;
 

@@ -42,7 +42,7 @@ enum e_ELINEDEFFLAGS
 typedef struct s_wadd_data t_wadd_data;
 typedef struct s_wad_header t_wad_header;
 typedef struct s_map t_map;
-// typedef struct s_wadd_thing t_wadd_thing;
+typedef struct s_wadd_thing t_wadd_thing;
 typedef struct s_wad_directory t_wad_directory;
 
 typedef struct s_vertex
@@ -90,23 +90,21 @@ struct s_wadd_data
 
 struct s_wadd_thing
 {
-    int xPosition;
-    int yPosition;
-    int angle;
-    int type;
-    int flags;
+    int16_t x_position;
+    int16_t y_position;
+    uint16_t angle;
+    uint16_t type;
+    uint16_t flags;
 };
 
 t_wadd_data init_wad_data(char *wad_path);
-int read_bytes(FILE *file, long offset, size_t num_bytes, void *buffer);
 uint8_t read_1_byte(const uint8_t *data, long offset);
 int16_t read_2_bytes(const uint8_t *data, long offset);
 int32_t read_4_bytes(const uint8_t *data, long offset);
-void read_header(const uint8_t *data, long offset, t_wad_header *header);
-t_linedef *read_linedef_data(const uint8_t *pWADData, int offset);
-t_vertex *read_vertex_data(const uint8_t *pWADData, int offset);
 int find_map_index(t_wadd_data *wad_data, char *map_name);
-void read_map_vertex(t_wadd_data *wad_data, t_map *map);
 void normalize_vertex(t_map *map);
+void read_map_vertex(t_wadd_data *wad_data, t_map *map);
+void read_header(const uint8_t *data, long offset, t_wad_header *header);
+void read_map_things(t_wadd_data *wad_data, t_map *map);
 void read_map_linedef(t_wadd_data *wad_data, t_map *map);
 #endif

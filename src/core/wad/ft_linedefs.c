@@ -1,6 +1,6 @@
 #include "Engine.h"
 
-t_linedef *read_linedef_data(const uint8_t *pWADData, int offset)
+static t_linedef *read_linedef_data(const uint8_t *pWADData, int offset)
 {
     t_linedef *linedef;
 
@@ -37,13 +37,4 @@ void read_map_linedef(t_wadd_data *wad_data, t_map *map)
         i++;
         printf("start_vertex: %i, end_vertex: %i, flags: %i, line_type: %i, sector_tag: %i, right_sidedef: %i, left_sidedef: %i\n", linedef->start_vertex, linedef->end_vertex, linedef->flags, linedef->line_type, linedef->sector_tag, linedef->right_sidedef, linedef->left_sidedef);
     }
-    // int size = array(map->vertexes)->size;
-    // t_node *node = array(map->vertexes)->array;
-    // i = -1;
-    // while (++i < size)
-    // {
-    //     // vertex = node[i];
-    //     // printf("(%i,%i)\n", vertex->x_position, vertex->y_position);
-    //     printf("%p\n", node[i].value);
-    // }
 }
