@@ -50,6 +50,8 @@ t_sdl *new_sdl(int width, int height)
     if (!sdl->renderer)
         engine()->destroy("Error creating renderer");
     sdl->surface = SDL_GetWindowSurface(sdl->win);
+    for (int i = 0; i < SDL_NUM_SCANCODES; i++)
+        sdl->keys[i] = false;
     return (sdl);
 }
 
