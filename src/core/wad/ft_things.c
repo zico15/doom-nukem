@@ -36,13 +36,13 @@ void read_map_things(t_wadd_data *wad_data, t_map *map)
         i++;
         if (thing->type == 1)
         {
-            map->player.x_position = thing->x_position;
-            map->player.y_position = thing->y_position;
+            map->player.x_position = thing->x_position - map->min_x;
+            map->player.y_position = thing->y_position - map->min_y;
             map->player.angle = thing->angle;
             map->player.type = thing->type;
             map->player.flags = thing->flags;
         }
         printf("x_position: %i y_position: %i angle: %i type: %i flags: %i\n",
-               thing->x_position, thing->y_position, thing->angle, thing->type, thing->flags);
+               map->player.x_position, map->player.y_position, map->player.angle, map->player.type, map->player.flags);
     }
 }

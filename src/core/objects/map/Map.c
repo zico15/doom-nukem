@@ -26,6 +26,8 @@ t_map *new_map(t_wadd_data *wad, char *name)
     map->y_min = INT_MAX;
     map->x_max = INT_MIN;
     map->y_max = INT_MIN;
+    map->min_x = __INT16_MAX__;
+    map->min_y = __INT16_MAX__;
     map->scale = 15;
     map->map_index = find_map_index(wad, name);
     map->direction[0][0] = -1;

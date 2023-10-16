@@ -12,29 +12,25 @@ static t_vertex *read_vertex_data(const uint8_t *pWADData, int offset)
 
 void normalize_vertex(t_map *map)
 {
-    int16_t min_x;
-    int16_t min_y;
     size_t i;
     size_t size;
     t_node *node;
 
     node = array(map->vertexes)->array;
-    min_x = __INT16_MAX__;
-    min_y = __INT16_MAX__;
     i = -1;
     size = array(map->vertexes)->size;
     while (++i < size)
     {
-        if (min_x > ((t_vertex *)(node[i]).value)->x_position)
-            min_x = ((t_vertex *)(node[i]).value)->x_position;
-        if (min_y > ((t_vertex *)(node[i]).value)->y_position)
-            min_y = ((t_vertex *)(node[i]).value)->y_position;
+        if (map->min_x > ((t_vertex *)(node[i]).value)->x_position)
+            map->min_x = ((t_vertex *)(node[i]).value)->x_position;
+        if (map->min_y > ((t_vertex *)(node[i]).value)->y_position)
+            map->min_y = ((t_vertex *)(node[i]).value)->y_position;
     }
     i = -1;
     while (++i < size)
     {
-        ((t_vertex *)(node[i]).value)->x_position -= min_x;
-        ((t_vertex *)(node[i]).value)->y_position -= min_y;
+        ((t_vertex *)(node[i]).value)->x_position -= map->min_x;
+        ((t_vertex *)(node[i]).value)->y_position -= map->min_y;
         if (map->x_min > ((t_vertex *)(node[i]).value)->x_position)
             map->x_min = ((t_vertex *)(node[i]).value)->x_position;
         if (map->y_min > ((t_vertex *)(node[i]).value)->y_position)

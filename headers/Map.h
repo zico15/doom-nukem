@@ -28,6 +28,8 @@ struct s_map
     int y_min;
     int x_max;
     int y_max;
+    int16_t min_x;
+    int16_t min_y;
     int scale;
     void *vertexes;
     void *linedefs;
