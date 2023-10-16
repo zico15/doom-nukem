@@ -91,6 +91,7 @@ int main(int argc, char *argv[])
     engine()->run();
     engine()->destroy(NULL);
 
+    //test
     // t_map *map = new_map("mapa.txt");
     // save(map, );
     // t_map *map_load = load("mapa.txt");
