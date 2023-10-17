@@ -76,7 +76,7 @@ int main(int argc, char *argv[])
     // test_binary_tree();
 
     // test_binary_tree();
-    argv[1] = "resources/maps/DOOM1.WAD";
+    argv[1] = "resources/maps/DOOM.WAD";
 
     // // WADData()->init(argv[1]);
     engine()->init(argc, argv, 320, 200);
@@ -91,13 +91,13 @@ int main(int argc, char *argv[])
     engine()->run();
     engine()->destroy(NULL);
 
-    //test
-    // t_map *map = new_map("mapa.txt");
-    // save(map, );
-    // t_map *map_load = load("mapa.txt");
-    // print_layout(map);
-    // set_layout(map, 'd');
-    // print_layout(map);
+    // test
+    //  t_map *map = new_map("mapa.txt");
+    //  save(map, );
+    //  t_map *map_load = load("mapa.txt");
+    //  print_layout(map);
+    //  set_layout(map, 'd');
+    //  print_layout(map);
 
     // map->save(map);
     // map->destroy(map);

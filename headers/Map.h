@@ -5,6 +5,7 @@
 #include <fcntl.h>
 
 #define MAP_PATH "resources/maps/"
+#define SUBSECTORIDENTIFIER 0x8000
 
 typedef struct s_player t_player;
 
@@ -35,6 +36,7 @@ struct s_map
     void *linedefs;
     void *things;
     void *nodes;
+    void *subsectors;
     t_player player;
     int direction[9][2];
     bool (*save)(t_map *map);

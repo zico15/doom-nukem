@@ -45,6 +45,8 @@ typedef struct s_map t_map;
 typedef struct s_wadd_thing t_wadd_thing;
 typedef struct s_wad_directory t_wad_directory;
 typedef struct s_wad_node t_wad_node;
+typedef struct s_wad_subsector t_wad_subsector;
+typedef struct s_wad_seg t_wad_seg;
 
 typedef struct s_vertex
 {
@@ -103,7 +105,7 @@ struct s_wad_node
     int16_t x_partition;
     int16_t y_partition;
     int16_t change_x_partition;
-    int16_t Change_y_partition;
+    int16_t change_y_partition;
 
     int16_t right_box_top;
     int16_t right_box_bottom;
@@ -119,6 +121,22 @@ struct s_wad_node
     uint16_t left_child_id;
 };
 
+struct s_wad_subsector
+{
+    uint16_t seg_count;
+    uint16_t first_seg_id;
+};
+
+struct s_wad_seg
+{
+    uint16_t StartVertexID;
+    uint16_t EndVertexID;
+    uint16_t Angle;
+    uint16_t LinedefID;
+    uint16_t Direction; // 0 same as linedef, 1 opposite of linedef
+    uint16_t Offset;    // distance along linedef to start of seg
+};
+
 t_wadd_data init_wad_data(char *wad_path);
 uint8_t read_1_byte(const uint8_t *data, long offset);
 int16_t read_2_bytes(const uint8_t *data, long offset);
@@ -130,5 +148,6 @@ void read_header(const uint8_t *data, long offset, t_wad_header *header);
 void read_map_things(t_wadd_data *wad_data, t_map *map);
 void read_map_linedef(t_wadd_data *wad_data, t_map *map);
 void read_map_nodes(t_wadd_data *wad_data, t_map *map);
+void read_map_subsectors(t_wadd_data *wad_data, t_map *map);
 
 #endif

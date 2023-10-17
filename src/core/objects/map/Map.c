@@ -3,14 +3,13 @@
 void __render_map_wall(t_map *this, SDL_Renderer *renderer, int iXShift, int iYShift);
 void __render_map_wall_player(t_map *this, SDL_Renderer *renderer, int iXShift, int iYShift);
 void __render_auto_map_node(t_map *this, SDL_Renderer *renderer, int iXShift, int iYShift);
-void __renderBSPNodes(t_map *map);
+void __renderBSPNodes(t_map *map, SDL_Renderer *renderer);
 
 static void __render(t_map *this, SDL_Renderer *renderer)
 {
     __render_map_wall(this, renderer, -this->x_min, -this->y_min);
     __render_map_wall_player(this, renderer, -this->x_min, -this->y_min);
-    __render_auto_map_node(this, renderer, -this->x_min, -this->y_min);
-    __renderBSPNodes(this);
+    __renderBSPNodes(this, renderer);
 }
 
 t_map *new_map(t_wadd_data *wad, char *name)
@@ -26,6 +25,7 @@ t_map *new_map(t_wadd_data *wad, char *name)
     map->vertexes = new_array(OBJECT);
     map->things = new_array(OBJECT);
     map->nodes = new_array(OBJECT);
+    map->subsectors = new_array(OBJECT);
     map->name = name;
     map->x_min = INT_MAX;
     map->y_min = INT_MAX;
@@ -58,6 +58,7 @@ t_map *new_map(t_wadd_data *wad, char *name)
     read_map_linedef(wad, map);
     read_map_things(wad, map);
     read_map_nodes(wad, map);
-    //exit(0);
+    read_map_subsectors(wad, map);
+    exit(0);
     return (map);
 }
