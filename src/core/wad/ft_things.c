@@ -1,6 +1,6 @@
 #include "Engine.h"
 
-static t_wadd_thing *read_thing_data(const uint8_t *pWADData, int offset)
+static t_wadd_thing *read_thing_data(const uint8_t *pWADData, int offset, t_map *map)
 {
     t_wadd_thing *thing;
 
@@ -32,12 +32,12 @@ void read_map_things(t_wadd_data *wad_data, t_map *map)
     i = 0;
     while (i < count_things)
     {
-        thing = (t_wadd_thing *)array(map->things)->add(read_thing_data(wad_data->data, wad_data->directory[index].offset + i * sizeof(t_wadd_thing)))->value;
+        thing = (t_wadd_thing *)array(map->things)->add(read_thing_data(wad_data->data, wad_data->directory[index].offset + i * sizeof(t_wadd_thing), map))->value;
         i++;
         if (thing->type == 1)
         {
-            map->player.x_position = thing->x_position - map->min_x;
-            map->player.y_position = thing->y_position - map->min_y;
+            map->player.x_position = thing->x_position;
+            map->player.y_position = thing->y_position;
             map->player.angle = thing->angle;
             map->player.type = thing->type;
             map->player.flags = thing->flags;

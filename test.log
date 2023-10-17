@@ -2211,1011 +2211,609 @@ start_vertex: 384, end_vertex: 348, flags: 1, line_type: 0, sector_tag: 0, right
 read_map_things
 THINGS: THINGS
 x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
-x_position: 1008 y_position: -3600 angle: 90 type: 2 flags: 7
-x_position: 1104 y_position: -3600 angle: 90 type: 3 flags: 7
-x_position: 960 y_position: -3600 angle: 90 type: 4 flags: 7
-x_position: 288 y_position: -3104 angle: 90 type: 48 flags: 7
-x_position: 288 y_position: -3360 angle: 90 type: 48 flags: 7
-x_position: 528 y_position: -3312 angle: 90 type: 2028 flags: 7
-x_position: 528 y_position: -3152 angle: 90 type: 2028 flags: 7
-x_position: 3440 y_position: -3472 angle: 135 type: 3001 flags: 15
-x_position: 3360 y_position: -3504 angle: 135 type: 3001 flags: 12
-x_position: 2912 y_position: -2816 angle: 90 type: 3004 flags: 15
-x_position: 3056 y_position: -3584 angle: 90 type: 3004 flags: 14
-x_position: 3136 y_position: -3408 angle: 90 type: 3004 flags: 12
-x_position: 1824 y_position: -3280 angle: 180 type: 2019 flags: 7
-x_position: 2736 y_position: -4256 angle: 0 type: 3004 flags: 12
-x_position: 3280 y_position: -4256 angle: 180 type: 3004 flags: 12
-x_position: 3008 y_position: -4416 angle: 90 type: 3001 flags: 15
-x_position: 3280 y_position: -4304 angle: 180 type: 3004 flags: 12
-x_position: 2736 y_position: -4304 angle: 0 type: 3004 flags: 12
-x_position: 2880 y_position: -4416 angle: 0 type: 2012 flags: 15
-x_position: 2736 y_position: -4160 angle: 0 type: 2007 flags: 15
-x_position: 3280 y_position: -4160 angle: 0 type: 2007 flags: 15
-x_position: 2784 y_position: -2944 angle: 90 type: 2008 flags: 23
-x_position: 144 y_position: -3136 angle: 90 type: 2014 flags: 7
-x_position: 144 y_position: -3328 angle: 90 type: 2014 flags: 7
-x_position: 96 y_position: -3392 angle: 90 type: 2014 flags: 7
-x_position: 96 y_position: -3072 angle: 90 type: 2014 flags: 7
-x_position: 432 y_position: -3040 angle: 90 type: 2015 flags: 7
-x_position: 432 y_position: -3424 angle: 90 type: 2015 flags: 7
-x_position: 32 y_position: -3232 angle: 90 type: 2015 flags: 7
-x_position: -32 y_position: -3232 angle: 90 type: 2015 flags: 7
-x_position: 1312 y_position: -3520 angle: 90 type: 2014 flags: 7
-x_position: 736 y_position: -3520 angle: 90 type: 2014 flags: 7
-x_position: 736 y_position: -2976 angle: 90 type: 2015 flags: 7
-x_position: 976 y_position: -2912 angle: 90 type: 2015 flags: 7
-x_position: 1312 y_position: -3264 angle: 90 type: 2035 flags: 7
-x_position: 1152 y_position: -2912 angle: 90 type: 2035 flags: 7
-x_position: 864 y_position: -3328 angle: 90 type: 2035 flags: 7
-x_position: 2672 y_position: -2752 angle: 90 type: 2014 flags: 7
-x_position: 2752 y_position: -2640 angle: 90 type: 2014 flags: 7
-x_position: 3232 y_position: -3040 angle: 90 type: 2028 flags: 7
-x_position: 2800 y_position: -3040 angle: 90 type: 2028 flags: 7
-x_position: 2848 y_position: -3584 angle: 90 type: 2008 flags: 7
-x_position: 3008 y_position: -3968 angle: 90 type: 2008 flags: 7
-x_position: 2912 y_position: -4176 angle: 180 type: 2028 flags: 15
-x_position: 3104 y_position: -4176 angle: 180 type: 2028 flags: 15
-x_position: 2720 y_position: -4352 angle: 180 type: 2028 flags: 15
-x_position: 3296 y_position: -4352 angle: 180 type: 2028 flags: 15
-x_position: 2944 y_position: -4320 angle: 180 type: 2035 flags: 15
-x_position: 3184 y_position: -4224 angle: 180 type: 2035 flags: 15
-x_position: 2832 y_position: -4240 angle: 180 type: 2035 flags: 15
-x_position: 3184 y_position: -4176 angle: 180 type: 2014 flags: 15
-x_position: 2832 y_position: -4176 angle: 180 type: 2014 flags: 15
-x_position: 2736 y_position: -4192 angle: 180 type: 2014 flags: 15
-x_position: 3280 y_position: -4192 angle: 180 type: 2014 flags: 12
-x_position: 3280 y_position: -4448 angle: 180 type: 2014 flags: 15
-x_position: 2736 y_position: -4448 angle: 180 type: 2015 flags: 15
-x_position: 3072 y_position: -4832 angle: 180 type: 2015 flags: 7
-x_position: 2944 y_position: -4832 angle: 180 type: 2015 flags: 7
-x_position: 3072 y_position: -4704 angle: 180 type: 2015 flags: 7
-x_position: 2944 y_position: -4704 angle: 180 type: 2015 flags: 7
-x_position: 3088 y_position: -4528 angle: 180 type: 35 flags: 7
-x_position: 2928 y_position: -4528 angle: 180 type: 35 flags: 7
-x_position: 3008 y_position: -4816 angle: 90 type: 3001 flags: 12
-x_position: 3072 y_position: -4768 angle: 90 type: 2011 flags: 15
-x_position: 2304 y_position: -4032 angle: 90 type: 2012 flags: 15
-x_position: 2176 y_position: -4000 angle: 90 type: 2049 flags: 15
-x_position: 2432 y_position: -4000 angle: 90 type: 2048 flags: 15
-x_position: -224 y_position: -3232 angle: 90 type: 2018 flags: 7
-x_position: -288 y_position: -3232 angle: 0 type: 11 flags: 7
-x_position: 1056 y_position: -3552 angle: 90 type: 11 flags: 7
-x_position: 1856 y_position: -2912 angle: 270 type: 11 flags: 7
-x_position: 3408 y_position: -3504 angle: 135 type: 11 flags: 7
-x_position: 2784 y_position: -4160 angle: 270 type: 11 flags: 7
-x_position: 1712 y_position: -3264 angle: 270 type: 2003 flags: 23
-x_position: 1936 y_position: -3264 angle: 270 type: 2046 flags: 23
-x_position: 1920 y_position: -3712 angle: 270 type: 2046 flags: 23
-x_position: 2304 y_position: -3712 angle: 270 type: 2046 flags: 23
-x_position: 3232 y_position: -4160 angle: 270 type: 2002 flags: 23
-x_position: 3232 y_position: -4192 angle: 270 type: 2048 flags: 23
-x_position: 2784 y_position: -4192 angle: 270 type: 2048 flags: 23
-x_position: 2560 y_position: -3904 angle: 270 type: 2048 flags: 23
-x_position: 3360 y_position: -3536 angle: 270 type: 2048 flags: 23
-x_position: 3008 y_position: -4768 angle: 270 type: 2048 flags: 23
-x_position: 1408 y_position: -3584 angle: 270 type: 2049 flags: 23
-x_position: 1408 y_position: -3456 angle: 270 type: 2049 flags: 23
-x_position: 1408 y_position: -3328 angle: 270 type: 2049 flags: 23
-x_position: 2272 y_position: -2432 angle: 180 type: 3004 flags: 15
-x_position: 2272 y_position: -2352 angle: 180 type: 3004 flags: 14
-x_position: 2272 y_position: -2512 angle: 180 type: 9 flags: 12
-x_position: 2464 y_position: -2432 angle: 180 type: 9 flags: 12
-x_position: 2224 y_position: -2320 angle: 180 type: 2015 flags: 7
-x_position: 2224 y_position: -2544 angle: 180 type: 2015 flags: 7
-x_position: 2288 y_position: -2544 angle: 180 type: 2015 flags: 7
-x_position: 2288 y_position: -2320 angle: 180 type: 2015 flags: 7
-x_position: 1712 y_position: -2144 angle: 180 type: 2015 flags: 7
-x_position: 2240 y_position: -2256 angle: 180 type: 2015 flags: 7
-x_position: 3264 y_position: -3856 angle: 270 type: 2049 flags: 7
-x_position: 3264 y_position: -3936 angle: 270 type: 2001 flags: 7
-x_position: 3232 y_position: -3808 angle: 270 type: 2012 flags: 7
-x_position: 3216 y_position: -3888 angle: 0 type: 9 flags: 12
-x_position: -160 y_position: -3232 angle: 0 type: 9 flags: 12
-x_position: 240 y_position: -3376 angle: 135 type: 9 flags: 12
-x_position: 240 y_position: -3088 angle: 225 type: 9 flags: 12
-x_position: 1696 y_position: -2688 angle: 90 type: 9 flags: 12
-x_position: 1920 y_position: -2176 angle: 270 type: 9 flags: 12
-x_position: 2976 y_position: -3264 angle: 90 type: 9 flags: 12
-x_position: 3008 y_position: -3520 angle: 90 type: 9 flags: 12
-x_position: 3008 y_position: -3072 angle: 90 type: 9 flags: 12
-x_position: 2816 y_position: -2688 angle: 0 type: 9 flags: 12
-x_position: 2496 y_position: -3968 angle: 0 type: 9 flags: 12
-x_position: 2256 y_position: -4064 angle: 0 type: 9 flags: 4
-x_position: 3072 y_position: -4256 angle: 90 type: 9 flags: 12
-x_position: -192 y_position: -3296 angle: 0 type: 9 flags: 12
-x_position: 1024 y_position: -3264 angle: 270 type: 10 flags: 7
-x_position: 1088 y_position: -2944 angle: 270 type: 15 flags: 7
-x_position: 448 y_position: -3328 angle: 270 type: 24 flags: 7
-x_position: -96 y_position: -3296 angle: 270 type: 10 flags: 7
-x_position: 1504 y_position: -2496 angle: 270 type: 15 flags: 7
-x_position: 2240 y_position: -2480 angle: 270 type: 15 flags: 7
-x_position: 2112 y_position: -2688 angle: 270 type: 24 flags: 7
-x_position: 1792 y_position: -2144 angle: 270 type: 24 flags: 7
-x_position: 2368 y_position: -2336 angle: 270 type: 24 flags: 7
-x_position: 2800 y_position: -2992 angle: 270 type: 15 flags: 7
-x_position: 3072 y_position: -3488 angle: 270 type: 12 flags: 7
-x_position: 2944 y_position: -4256 angle: 270 type: 12 flags: 7
-x_position: 2976 y_position: -3840 angle: 270 type: 24 flags: 7
-x_position: 3264 y_position: -4512 angle: 270 type: 24 flags: 7
-x_position: 2272 y_position: -4000 angle: 270 type: 24 flags: 7
-x_position: 3648 y_position: -3648 angle: 0 type: 2049 flags: 7
-x_position: 3616 y_position: -3392 angle: 0 type: 2015 flags: 7
-x_position: 3712 y_position: -3264 angle: 0 type: 2015 flags: 7
-x_position: 3472 y_position: -2960 angle: 0 type: 2015 flags: 7
-x_position: 3376 y_position: -3024 angle: 0 type: 2015 flags: 7
-x_position: 3568 y_position: -2992 angle: 0 type: 2015 flags: 7
-x_position: 3616 y_position: -3088 angle: 0 type: 2015 flags: 7
-x_position: 3664 y_position: -3168 angle: 0 type: 2015 flags: 7
-x_position: 3648 y_position: -3840 angle: 0 type: 2015 flags: 7
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
-__render_map_wall_player:70 / 140
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+x_position: 1056 y_position: -3616 angle: 90 type: 1 flags: 7
+read_map_node
+NODES: NODES
+XPartition: 1552, YPartition: -2432, ChangeXPartition: 112, ChangeYPartition: 0, RightBoxTop: -2432, RightBoxBottom: -2560, RightBoxLeft: 1552, RightBoxRight: 1664, LeftBoxTop: -2048, LeftBoxBottom: -2368, LeftBoxLeft: 1600, LeftBoxRight: 1664, RightChildID: 32768, LeftChildID: 32769
+XPartition: 1472, YPartition: -2432, ChangeXPartition: 0, ChangeYPartition: -128, RightBoxTop: -2432, RightBoxBottom: -2560, RightBoxLeft: 1344, RightBoxRight: 1472, LeftBoxTop: -2432, LeftBoxBottom: -2560, LeftBoxLeft: 1472, LeftBoxRight: 1536, RightChildID: 32770, LeftChildID: 32771
+XPartition: 1536, YPartition: -2432, ChangeXPartition: 0, ChangeYPartition: -128, RightBoxTop: -2432, RightBoxBottom: -2560, RightBoxLeft: 1344, RightBoxRight: 1536, LeftBoxTop: -2432, LeftBoxBottom: -2560, LeftBoxLeft: 1536, LeftBoxRight: 1552, RightChildID: 1, LeftChildID: 32772
+XPartition: 1552, YPartition: -2560, ChangeXPartition: 0, ChangeYPartition: 128, RightBoxTop: -2048, RightBoxBottom: -2560, RightBoxLeft: 1552, RightBoxRight: 1664, LeftBoxTop: -2432, LeftBoxBottom: -2560, LeftBoxLeft: 1344, LeftBoxRight: 1552, RightChildID: 0, LeftChildID: 2
+XPartition: 1384, YPartition: -2592, ChangeXPartition: -40, ChangeYPartition: -288, RightBoxTop: -2592, RightBoxBottom: -2880, RightBoxLeft: 1344, RightBoxRight: 1384, LeftBoxTop: -2560, LeftBoxBottom: -2592, LeftBoxLeft: 1384, LeftBoxRight: 1472, RightChildID: 32775, LeftChildID: 32776
+XPartition: 1600, YPartition: -2816, ChangeXPartition: 0, ChangeYPartition: 64, RightBoxTop: -2624, RightBoxBottom: -2816, RightBoxLeft: 1600, RightBoxRight: 1664, LeftBoxTop: -2560, LeftBoxBottom: -2880, LeftBoxLeft: 1344, LeftBoxRight: 1472, RightChildID: 32774, LeftChildID: 4
+XPartition: 1472, YPartition: -2880, ChangeXPartition: 192, ChangeYPartition: 0, RightBoxTop: -2880, RightBoxBottom: -2959, RightBoxLeft: 1376, RightBoxRight: 1664, LeftBoxTop: -2560, LeftBoxBottom: -2880, LeftBoxLeft: 1344, LeftBoxRight: 1664, RightChildID: 32773, LeftChildID: 5
+XPartition: 1536, YPartition: -2560, ChangeXPartition: -64, ChangeYPartition: 0, RightBoxTop: -2048, RightBoxBottom: -2560, RightBoxLeft: 1344, RightBoxRight: 1664, LeftBoxTop: -2560, LeftBoxBottom: -2959, LeftBoxLeft: 1344, LeftBoxRight: 1664, RightChildID: 3, LeftChildID: 6
+XPartition: 2144, YPartition: -2304, ChangeXPartition: 0, ChangeYPartition: -256, RightBoxTop: -2304, RightBoxBottom: -2560, RightBoxLeft: 1992, RightBoxRight: 2144, LeftBoxTop: -2304, LeftBoxBottom: -2560, LeftBoxLeft: 2144, LeftBoxRight: 2176, RightChildID: 32777, LeftChildID: 32778
+XPartition: 2112, YPartition: -2592, ChangeXPartition: 64, ChangeYPartition: 0, RightBoxTop: -2592, RightBoxBottom: -2752, RightBoxLeft: 1992, RightBoxRight: 2176, LeftBoxTop: -2560, LeftBoxBottom: -2592, LeftBoxLeft: 1992, LeftBoxRight: 2112, RightChildID: 32779, LeftChildID: 32780
+XPartition: 2176, YPartition: -2560, ChangeXPartition: -32, ChangeYPartition: 0, RightBoxTop: -2304, RightBoxBottom: -2560, RightBoxLeft: 1992, RightBoxRight: 2176, LeftBoxTop: -2560, LeftBoxBottom: -2752, LeftBoxLeft: 1992, LeftBoxRight: 2176, RightChildID: 8, LeftChildID: 9
+XPartition: 2176, YPartition: -2272, ChangeXPartition: -64, ChangeYPartition: 0, RightBoxTop: -2112, RightBoxBottom: -2272, RightBoxLeft: 1992, RightBoxRight: 2176, LeftBoxTop: -2272, LeftBoxBottom: -2304, LeftBoxLeft: 1992, LeftBoxRight: 2112, RightChildID: 32781, LeftChildID: 32782
+XPartition: 2112, YPartition: -2304, ChangeXPartition: 32, ChangeYPartition: 0, RightBoxTop: -2304, RightBoxBottom: -2752, RightBoxLeft: 1992, RightBoxRight: 2176, LeftBoxTop: -2112, LeftBoxBottom: -2304, LeftBoxLeft: 1992, LeftBoxRight: 2176, RightChildID: 10, LeftChildID: 11
+XPartition: 1792, YPartition: -2304, ChangeXPartition: 192, ChangeYPartition: 0, RightBoxTop: -2304, RightBoxBottom: -2312, RightBoxLeft: 1792, RightBoxRight: 1984, LeftBoxTop: -2240, LeftBoxBottom: -2304, LeftBoxLeft: 1792, LeftBoxRight: 1984, RightChildID: 32789, LeftChildID: 32790
+XPartition: 1792, YPartition: -2240, ChangeXPartition: 0, ChangeYPartition: -64, RightBoxTop: -2240, RightBoxBottom: -2312, RightBoxLeft: 1784, RightBoxRight: 1792, LeftBoxTop: -2240, LeftBoxBottom: -2312, LeftBoxLeft: 1792, LeftBoxRight: 1984, RightChildID: 32788, LeftChildID: 13
+XPartition: 1984, YPartition: -2240, ChangeXPartition: -192, ChangeYPartition: 0, RightBoxTop: -2232, RightBoxBottom: -2240, RightBoxLeft: 1784, RightBoxRight: 1984, LeftBoxTop: -2240, LeftBoxBottom: -2312, LeftBoxLeft: 1784, LeftBoxRight: 1984, RightChildID: 32787, LeftChildID: 14
+XPartition: 1984, YPartition: -2304, ChangeXPartition: 0, ChangeYPartition: 64, RightBoxTop: -2232, RightBoxBottom: -2312, RightBoxLeft: 1984, RightBoxRight: 1992, LeftBoxTop: -2232, LeftBoxBottom: -2312, LeftBoxLeft: 1784, LeftBoxRight: 1984, RightChildID: 32786, LeftChildID: 15
+XPartition: 1784, YPartition: -2232, ChangeXPartition: 0, ChangeYPartition: -80, RightBoxTop: -2232, RightBoxBottom: -2312, RightBoxLeft: 1664, RightBoxRight: 1784, LeftBoxTop: -2232, LeftBoxBottom: -2312, LeftBoxLeft: 1784, LeftBoxRight: 1992, RightChildID: 32785, LeftChildID: 16
+XPartition: 1992, YPartition: -2232, ChangeXPartition: -208, ChangeYPartition: 0, RightBoxTop: -2112, RightBoxBottom: -2232, RightBoxLeft: 1664, RightBoxRight: 1992, LeftBoxTop: -2232, LeftBoxBottom: -2312, LeftBoxLeft: 1664, LeftBoxRight: 1992, RightChildID: 32784, LeftChildID: 17
+XPartition: 1784, YPartition: -2312, ChangeXPartition: 208, ChangeYPartition: 0, RightBoxTop: -2312, RightBoxBottom: -2552, RightBoxLeft: 1664, RightBoxRight: 1992, LeftBoxTop: -2112, LeftBoxBottom: -2312, LeftBoxLeft: 1664, LeftBoxRight: 1992, RightChildID: 32783, LeftChildID: 18
+XPartition: 1792, YPartition: -2624, ChangeXPartition: 192, ChangeYPartition: 0, RightBoxTop: -2624, RightBoxBottom: -2632, RightBoxLeft: 1792, RightBoxRight: 1984, LeftBoxTop: -2560, LeftBoxBottom: -2624, LeftBoxLeft: 1792, LeftBoxRight: 1984, RightChildID: 32796, LeftChildID: 32797
+XPartition: 1792, YPartition: -2560, ChangeXPartition: 0, ChangeYPartition: -64, RightBoxTop: -2560, RightBoxBottom: -2632, RightBoxLeft: 1784, RightBoxRight: 1792, LeftBoxTop: -2560, LeftBoxBottom: -2632, LeftBoxLeft: 1792, LeftBoxRight: 1984, RightChildID: 32795, LeftChildID: 20
+XPartition: 1984, YPartition: -2560, ChangeXPartition: -192, ChangeYPartition: 0, RightBoxTop: -2552, RightBoxBottom: -2560, RightBoxLeft: 1784, RightBoxRight: 1984, LeftBoxTop: -2560, LeftBoxBottom: -2632, LeftBoxLeft: 1784, LeftBoxRight: 1984, RightChildID: 32794, LeftChildID: 21
+XPartition: 1984, YPartition: -2624, ChangeXPartition: 0, ChangeYPartition: 64, RightBoxTop: -2552, RightBoxBottom: -2632, RightBoxLeft: 1984, RightBoxRight: 1992, LeftBoxTop: -2552, LeftBoxBottom: -2632, LeftBoxLeft: 1784, LeftBoxRight: 1984, RightChildID: 32793, LeftChildID: 22
+XPartition: 1784, YPartition: -2632, ChangeXPartition: 208, ChangeYPartition: 0, RightBoxTop: -2632, RightBoxBottom: -2752, RightBoxLeft: 1784, RightBoxRight: 1992, LeftBoxTop: -2552, LeftBoxBottom: -2632, LeftBoxLeft: 1784, LeftBoxRight: 1992, RightChildID: 32792, LeftChildID: 23
+XPartition: 1784, YPartition: -2552, ChangeXPartition: 0, ChangeYPartition: -80, RightBoxTop: -2552, RightBoxBottom: -2752, RightBoxLeft: 1664, RightBoxRight: 1784, LeftBoxTop: -2552, LeftBoxBottom: -2752, LeftBoxLeft: 1784, LeftBoxRight: 1992, RightChildID: 32791, LeftChildID: 24
+XPartition: 1992, YPartition: -2552, ChangeXPartition: -208, ChangeYPartition: 0, RightBoxTop: -2112, RightBoxBottom: -2552, RightBoxLeft: 1664, RightBoxRight: 1992, LeftBoxTop: -2552, LeftBoxBottom: -2752, LeftBoxLeft: 1664, LeftBoxRight: 1992, RightChildID: 19, LeftChildID: 25
+XPartition: 1992, YPartition: -2632, ChangeXPartition: 0, ChangeYPartition: 80, RightBoxTop: -2112, RightBoxBottom: -2752, RightBoxLeft: 1992, RightBoxRight: 2176, LeftBoxTop: -2112, LeftBoxBottom: -2752, LeftBoxLeft: 1664, LeftBoxRight: 1992, RightChildID: 12, LeftChildID: 26
+XPartition: 1664, YPartition: -2112, ChangeXPartition: 512, ChangeYPartition: 0, RightBoxTop: -2112, RightBoxBottom: -2752, RightBoxLeft: 1664, RightBoxRight: 2176, LeftBoxTop: -2048, LeftBoxBottom: -2112, LeftBoxLeft: 1664, LeftBoxRight: 2176, RightChildID: 27, LeftChildID: 32798
+XPartition: 1920, YPartition: -2920, ChangeXPartition: 256, ChangeYPartition: 0, RightBoxTop: -2920, RightBoxBottom: -3144, RightBoxLeft: 1896, RightBoxRight: 2176, LeftBoxTop: -2880, LeftBoxBottom: -2920, LeftBoxLeft: 1664, LeftBoxRight: 1920, RightChildID: 32799, LeftChildID: 32800
+XPartition: 1664, YPartition: -2880, ChangeXPartition: 192, ChangeYPartition: 0, RightBoxTop: -2880, RightBoxBottom: -3144, RightBoxLeft: 1664, RightBoxRight: 2176, LeftBoxTop: -2752, LeftBoxBottom: -2816, LeftBoxLeft: 1664, LeftBoxRight: 2176, RightChildID: 29, LeftChildID: 32801
+XPartition: 2176, YPartition: -2752, ChangeXPartition: -512, ChangeYPartition: 0, RightBoxTop: -2048, RightBoxBottom: -2752, RightBoxLeft: 1664, RightBoxRight: 2176, LeftBoxTop: -2752, LeftBoxBottom: -3144, LeftBoxLeft: 1664, LeftBoxRight: 2176, RightChildID: 28, LeftChildID: 30
+XPartition: 1664, YPartition: -2624, ChangeXPartition: 0, ChangeYPartition: -128, RightBoxTop: -2048, RightBoxBottom: -2959, RightBoxLeft: 1344, RightBoxRight: 1664, LeftBoxTop: -2048, LeftBoxBottom: -3144, LeftBoxLeft: 1664, LeftBoxRight: 2176, RightChildID: 7, LeftChildID: 31
+XPartition: 1784, YPartition: -3448, ChangeXPartition: -240, ChangeYPartition: 64, RightBoxTop: -3104, RightBoxBottom: -3448, RightBoxLeft: 1520, RightBoxRight: 2128, LeftBoxTop: -3384, LeftBoxBottom: -3448, LeftBoxLeft: 1544, LeftBoxRight: 1784, RightChildID: 32802, LeftChildID: 32803
+XPartition: 2128, YPartition: -3272, ChangeXPartition: -64, ChangeYPartition: -136, RightBoxTop: -3104, RightBoxBottom: -3448, RightBoxLeft: 1520, RightBoxRight: 2128, LeftBoxTop: -3272, LeftBoxBottom: -3408, LeftBoxLeft: 2064, LeftBoxRight: 2128, RightChildID: 33, LeftChildID: 32804
+XPartition: 1520, YPartition: -3168, ChangeXPartition: 152, ChangeYPartition: 64, RightBoxTop: -3104, RightBoxBottom: -3448, RightBoxLeft: 1520, RightBoxRight: 2128, LeftBoxTop: -3104, LeftBoxBottom: -3168, LeftBoxLeft: 1520, LeftBoxRight: 1672, RightChildID: 34, LeftChildID: 32805
+XPartition: 2064, YPartition: -3408, ChangeXPartition: -280, ChangeYPartition: -40, RightBoxTop: -3104, RightBoxBottom: -3448, RightBoxLeft: 1520, RightBoxRight: 2128, LeftBoxTop: -3408, LeftBoxBottom: -3648, LeftBoxLeft: 1573, LeftBoxRight: 2176, RightChildID: 35, LeftChildID: 32806
+XPartition: 1544, YPartition: -3384, ChangeXPartition: -24, ChangeYPartition: 216, RightBoxTop: -3104, RightBoxBottom: -3648, RightBoxLeft: 1520, RightBoxRight: 2176, LeftBoxTop: -3104, LeftBoxBottom: -3648, LeftBoxLeft: 1376, LeftBoxRight: 1573, RightChildID: 36, LeftChildID: 32807
+XPartition: 2040, YPartition: -3144, ChangeXPartition: 88, ChangeYPartition: -128, RightBoxTop: -3104, RightBoxBottom: -3648, RightBoxLeft: 1376, RightBoxRight: 2176, LeftBoxTop: -3144, LeftBoxBottom: -3272, LeftBoxLeft: 2040, LeftBoxRight: 2128, RightChildID: 37, LeftChildID: 32808
+XPartition: 1672, YPartition: -3104, ChangeXPartition: 224, ChangeYPartition: 0, RightBoxTop: -3104, RightBoxBottom: -3648, RightBoxLeft: 1376, RightBoxRight: 2176, LeftBoxTop: -2959, LeftBoxBottom: -3104, LeftBoxLeft: 1376, LeftBoxRight: 1896, RightChildID: 38, LeftChildID: 32809
+XPartition: 1344, YPartition: -3264, ChangeXPartition: 32, ChangeYPartition: 0, RightBoxTop: -3264, RightBoxBottom: -3360, RightBoxLeft: 1344, RightBoxRight: 1376, LeftBoxTop: -3104, LeftBoxBottom: -3200, LeftBoxLeft: 1344, LeftBoxRight: 1376, RightChildID: 32810, LeftChildID: 32811
+XPartition: 1376, YPartition: -3200, ChangeXPartition: 0, ChangeYPartition: 96, RightBoxTop: -2959, RightBoxBottom: -3648, RightBoxLeft: 1376, RightBoxRight: 2176, LeftBoxTop: -3104, LeftBoxBottom: -3360, LeftBoxLeft: 1344, LeftBoxRight: 1376, RightChildID: 39, LeftChildID: 40
+XPartition: 2048, YPartition: -3904, ChangeXPartition: 128, ChangeYPartition: 0, RightBoxTop: -3904, RightBoxBottom: -4064, RightBoxLeft: 2048, RightBoxRight: 2176, LeftBoxTop: -3872, LeftBoxBottom: -3904, LeftBoxLeft: 2048, LeftBoxRight: 2176, RightChildID: 32812, LeftChildID: 32813
+XPartition: 2048, YPartition: -3840, ChangeXPartition: 128, ChangeYPartition: 0, RightBoxTop: -3840, RightBoxBottom: -3872, RightBoxLeft: 2048, RightBoxRight: 2176, LeftBoxTop: -3808, LeftBoxBottom: -3840, LeftBoxLeft: 2048, LeftBoxRight: 2176, RightChildID: 32814, LeftChildID: 32815
+XPartition: 2048, YPartition: -3872, ChangeXPartition: 128, ChangeYPartition: 0, RightBoxTop: -3872, RightBoxBottom: -4064, RightBoxLeft: 2048, RightBoxRight: 2176, LeftBoxTop: -3808, LeftBoxBottom: -3872, LeftBoxLeft: 2048, LeftBoxRight: 2176, RightChildID: 42, LeftChildID: 43
+XPartition: 1528, YPartition: -3680, ChangeXPartition: -152, ChangeYPartition: 32, RightBoxTop: -3648, RightBoxBottom: -3776, RightBoxLeft: 1376, RightBoxRight: 1984, LeftBoxTop: -3680, LeftBoxBottom: -3776, LeftBoxLeft: 1528, LeftBoxRight: 1984, RightChildID: 32816, LeftChildID: 32817
+XPartition: 2016, YPartition: -3680, ChangeXPartition: -32, ChangeYPartition: -96, RightBoxTop: -3680, RightBoxBottom: -3776, RightBoxLeft: 1984, RightBoxRight: 2016, LeftBoxTop: -3680, LeftBoxBottom: -3776, LeftBoxLeft: 2048, LeftBoxRight: 2176, RightChildID: 32820, LeftChildID: 32821
+XPartition: 2048, YPartition: -3680, ChangeXPartition: -32, ChangeYPartition: 0, RightBoxTop: -3648, RightBoxBottom: -3680, RightBoxLeft: 1984, RightBoxRight: 2176, LeftBoxTop: -3680, LeftBoxBottom: -3776, LeftBoxLeft: 1984, LeftBoxRight: 2176, RightChildID: 32819, LeftChildID: 46
+XPartition: 2048, YPartition: -3776, ChangeXPartition: 128, ChangeYPartition: 0, RightBoxTop: -3776, RightBoxBottom: -3808, RightBoxLeft: 2048, RightBoxRight: 2176, LeftBoxTop: -3648, LeftBoxBottom: -3776, LeftBoxLeft: 1984, LeftBoxRight: 2176, RightChildID: 32818, LeftChildID: 47
+XPartition: 1984, YPartition: -3648, ChangeXPartition: 0, ChangeYPartition: -128, RightBoxTop: -3648, RightBoxBottom: -3776, RightBoxLeft: 1376, RightBoxRight: 1984, LeftBoxTop: -3648, LeftBoxBottom: -3808, LeftBoxLeft: 1984, LeftBoxRight: 2176, RightChildID: 45, LeftChildID: 48
+XPartition: 2048, YPartition: -3808, ChangeXPartition: 128, ChangeYPartition: 0, RightBoxTop: -3808, RightBoxBottom: -4064, RightBoxLeft: 2048, RightBoxRight: 2176, LeftBoxTop: -3648, LeftBoxBottom: -3808, LeftBoxLeft: 1376, LeftBoxRight: 2176, RightChildID: 44, LeftChildID: 49
+XPartition: 2176, YPartition: -3648, ChangeXPartition: -192, ChangeYPartition: 0, RightBoxTop: -2959, RightBoxBottom: -3648, RightBoxLeft: 1344, RightBoxRight: 2176, LeftBoxTop: -3648, LeftBoxBottom: -4064, LeftBoxLeft: 1376, LeftBoxRight: 2176, RightChildID: 41, LeftChildID: 50
+XPartition: 2040, YPartition: -3144, ChangeXPartition: -144, ChangeYPartition: 40, RightBoxTop: -2048, RightBoxBottom: -3144, RightBoxLeft: 1344, RightBoxRight: 2176, LeftBoxTop: -2959, LeftBoxBottom: -4064, LeftBoxLeft: 1344, LeftBoxRight: 2176, RightChildID: 32, LeftChildID: 51
+XPartition: 224, YPartition: -3264, ChangeXPartition: 0, ChangeYPartition: 64, RightBoxTop: -3200, RightBoxBottom: -3264, RightBoxLeft: 224, RightBoxRight: 256, LeftBoxTop: -3200, LeftBoxBottom: -3264, LeftBoxLeft: 192, LeftBoxRight: 224, RightChildID: 32824, LeftChildID: 32825
+XPartition: 192, YPartition: -3264, ChangeXPartition: 0, ChangeYPartition: 64, RightBoxTop: -3200, RightBoxBottom: -3264, RightBoxLeft: 192, RightBoxRight: 256, LeftBoxTop: -3200, LeftBoxBottom: -3264, LeftBoxLeft: 160, LeftBoxRight: 192, RightChildID: 53, LeftChildID: 32826
+XPartition: 256, YPartition: -3200, ChangeXPartition: -32, ChangeYPartition: 0, RightBoxTop: -3008, RightBoxBottom: -3200, RightBoxLeft: 160, RightBoxRight: 256, LeftBoxTop: -3200, LeftBoxBottom: -3264, LeftBoxLeft: 160, LeftBoxRight: 256, RightChildID: 32823, LeftChildID: 54
+XPartition: 160, YPartition: -3264, ChangeXPartition: 32, ChangeYPartition: 0, RightBoxTop: -3264, RightBoxBottom: -3456, RightBoxLeft: 160, RightBoxRight: 256, LeftBoxTop: -3008, LeftBoxBottom: -3264, LeftBoxLeft: 160, LeftBoxRight: 256, RightChildID: 32822, LeftChildID: 55
+XPartition: -128, YPartition: -3120, ChangeXPartition: -128, ChangeYPartition: 0, RightBoxTop: -2851, RightBoxBottom: -3120, RightBoxLeft: -256, RightBoxRight: -128, LeftBoxTop: -3120, LeftBoxBottom: -3136, LeftBoxLeft: -256, LeftBoxRight: -128, RightChildID: 32830, LeftChildID: 32831
+XPartition: -256, YPartition: -3136, ChangeXPartition: 128, ChangeYPartition: 0, RightBoxTop: -3136, RightBoxBottom: -3216, RightBoxLeft: -256, RightBoxRight: -128, LeftBoxTop: -2851, LeftBoxBottom: -3136, LeftBoxLeft: -256, LeftBoxRight: -128, RightChildID: 32829, LeftChildID: 57
+XPartition: -256, YPartition: -3248, ChangeXPartition: 16, ChangeYPartition: -16, RightBoxTop: -3248, RightBoxBottom: -3264, RightBoxLeft: -256, RightBoxRight: -240, LeftBoxTop: -3200, LeftBoxBottom: -3264, LeftBoxLeft: -256, LeftBoxRight: -192, RightChildID: 32837, LeftChildID: 32838
+XPartition: -240, YPartition: -3200, ChangeXPartition: -16, ChangeYPartition: -16, RightBoxTop: -3200, RightBoxBottom: -3216, RightBoxLeft: -256, RightBoxRight: -240, LeftBoxTop: -3200, LeftBoxBottom: -3264, LeftBoxLeft: -256, LeftBoxRight: -192, RightChildID: 32836, LeftChildID: 59
+XPartition: -208, YPartition: -3200, ChangeXPartition: -32, ChangeYPartition: 0, RightBoxTop: -3200, RightBoxBottom: -3200, RightBoxLeft: -240, RightBoxRight: -208, LeftBoxTop: -3200, LeftBoxBottom: -3264, LeftBoxLeft: -256, LeftBoxRight: -192, RightChildID: 32835, LeftChildID: 60
+XPartition: -192, YPartition: -3248, ChangeXPartition: 0, ChangeYPartition: 32, RightBoxTop: -3216, RightBoxBottom: -3248, RightBoxLeft: -192, RightBoxRight: -192, LeftBoxTop: -3200, LeftBoxBottom: -3264, LeftBoxLeft: -256, LeftBoxRight: -192, RightChildID: 32834, LeftChildID: 61
+XPartition: -208, YPartition: -3264, ChangeXPartition: 16, ChangeYPartition: 16, RightBoxTop: -3248, RightBoxBottom: -3264, RightBoxLeft: -208, RightBoxRight: -192, LeftBoxTop: -3200, LeftBoxBottom: -3264, LeftBoxLeft: -256, LeftBoxRight: -192, RightChildID: 32833, LeftChildID: 62
+XPartition: -240, YPartition: -3264, ChangeXPartition: 32, ChangeYPartition: 0, RightBoxTop: -3264, RightBoxBottom: -3264, RightBoxLeft: -240, RightBoxRight: -208, LeftBoxTop: -3200, LeftBoxBottom: -3264, LeftBoxLeft: -256, LeftBoxRight: -192, RightChildID: 32832, LeftChildID: 63
+XPartition: -192, YPartition: -3216, ChangeXPartition: -16, ChangeYPartition: 16, RightBoxTop: -2851, RightBoxBottom: -3216, RightBoxLeft: -256, RightBoxRight: -128, LeftBoxTop: -3200, LeftBoxBottom: -3264, LeftBoxLeft: -256, LeftBoxRight: -192, RightChildID: 58, LeftChildID: 64
+XPartition: -336, YPartition: -3168, ChangeXPartition: 0, ChangeYPartition: -128, RightBoxTop: -3168, RightBoxBottom: -3296, RightBoxLeft: -640, RightBoxRight: -336, LeftBoxTop: -3168, LeftBoxBottom: -3296, LeftBoxLeft: -336, LeftBoxRight: -320, RightChildID: 32840, LeftChildID: 32841
+XPartition: -320, YPartition: -3296, ChangeXPartition: 0, ChangeYPartition: 128, RightBoxTop: -3168, RightBoxBottom: -3296, RightBoxLeft: -320, RightBoxRight: -256, LeftBoxTop: -3168, LeftBoxBottom: -3296, LeftBoxLeft: -640, LeftBoxRight: -320, RightChildID: 32839, LeftChildID: 66
+XPartition: -256, YPartition: -3120, ChangeXPartition: -80, ChangeYPartition: 0, RightBoxTop: -2874, RightBoxBottom: -3120, RightBoxLeft: -640, RightBoxRight: -256, LeftBoxTop: -3120, LeftBoxBottom: -3168, LeftBoxLeft: -640, LeftBoxRight: -336, RightChildID: 32843, LeftChildID: 32844
+XPartition: -320, YPartition: -3168, ChangeXPartition: 64, ChangeYPartition: 32, RightBoxTop: -3136, RightBoxBottom: -3168, RightBoxLeft: -320, RightBoxRight: -256, LeftBoxTop: -2874, LeftBoxBottom: -3168, LeftBoxLeft: -640, LeftBoxRight: -256, RightChildID: 32842, LeftChildID: 68
+XPartition: -336, YPartition: -3168, ChangeXPartition: 16, ChangeYPartition: 0, RightBoxTop: -3168, RightBoxBottom: -3296, RightBoxLeft: -640, RightBoxRight: -256, LeftBoxTop: -2874, LeftBoxBottom: -3168, LeftBoxLeft: -640, LeftBoxRight: -256, RightChildID: 67, LeftChildID: 69
+XPartition: -256, YPartition: -3136, ChangeXPartition: 0, ChangeYPartition: 16, RightBoxTop: -2851, RightBoxBottom: -3264, RightBoxLeft: -256, RightBoxRight: -128, LeftBoxTop: -2874, LeftBoxBottom: -3296, LeftBoxLeft: -640, LeftBoxRight: -256, RightChildID: 65, LeftChildID: 70
+XPartition: -128, YPartition: -3328, ChangeXPartition: -128, ChangeYPartition: 0, RightBoxTop: -3328, RightBoxBottom: -3328, RightBoxLeft: -256, RightBoxRight: -128, LeftBoxTop: -3328, LeftBoxBottom: -3344, LeftBoxLeft: -256, LeftBoxRight: -128, RightChildID: 32846, LeftChildID: 32847
+XPartition: -256, YPartition: -3344, ChangeXPartition: 128, ChangeYPartition: 0, RightBoxTop: -3344, RightBoxBottom: -3613, RightBoxLeft: -256, RightBoxRight: -128, LeftBoxTop: -3328, LeftBoxBottom: -3344, LeftBoxLeft: -256, LeftBoxRight: -128, RightChildID: 32845, LeftChildID: 72
+XPartition: -336, YPartition: -3296, ChangeXPartition: 0, ChangeYPartition: -48, RightBoxTop: -3296, RightBoxBottom: -3575, RightBoxLeft: -640, RightBoxRight: -336, LeftBoxTop: -3344, LeftBoxBottom: -3589, LeftBoxLeft: -336, LeftBoxRight: -256, RightChildID: 32849, LeftChildID: 32850
+XPartition: -256, YPartition: -3328, ChangeXPartition: -64, ChangeYPartition: 32, RightBoxTop: -3296, RightBoxBottom: -3328, RightBoxLeft: -320, RightBoxRight: -256, LeftBoxTop: -3296, LeftBoxBottom: -3589, LeftBoxLeft: -640, LeftBoxRight: -256, RightChildID: 32848, LeftChildID: 74
+XPartition: -256, YPartition: -3344, ChangeXPartition: 0, ChangeYPartition: 16, RightBoxTop: -3328, RightBoxBottom: -3613, RightBoxLeft: -256, RightBoxRight: -128, LeftBoxTop: -3296, LeftBoxBottom: -3589, LeftBoxLeft: -640, LeftBoxRight: -256, RightChildID: 73, LeftChildID: 75
+XPartition: -320, YPartition: -3296, ChangeXPartition: -16, ChangeYPartition: 0, RightBoxTop: -2851, RightBoxBottom: -3296, RightBoxLeft: -640, RightBoxRight: -128, LeftBoxTop: -3296, LeftBoxBottom: -3613, LeftBoxLeft: -640, LeftBoxRight: -128, RightChildID: 71, LeftChildID: 76
+XPartition: -64, YPartition: -3136, ChangeXPartition: 0, ChangeYPartition: -192, RightBoxTop: -3136, RightBoxBottom: -3328, RightBoxLeft: -64, RightBoxRight: -64, LeftBoxTop: -3072, LeftBoxBottom: -3392, LeftBoxLeft: -64, LeftBoxRight: 64, RightChildID: 32851, LeftChildID: 32852
+XPartition: -96, YPartition: -3120, ChangeXPartition: -32, ChangeYPartition: 0, RightBoxTop: -2816, RightBoxBottom: -3120, RightBoxLeft: -128, RightBoxRight: 64, LeftBoxTop: -3136, LeftBoxBottom: -3136, LeftBoxLeft: -128, LeftBoxRight: -64, RightChildID: 32853, LeftChildID: 32854
+XPartition: -64, YPartition: -3136, ChangeXPartition: 112, ChangeYPartition: 64, RightBoxTop: -3072, RightBoxBottom: -3392, RightBoxLeft: -64, RightBoxRight: 64, LeftBoxTop: -2816, LeftBoxBottom: -3136, LeftBoxLeft: -128, LeftBoxRight: 64, RightChildID: 78, LeftChildID: 79
+XPartition: -128, YPartition: -3344, ChangeXPartition: 32, ChangeYPartition: 0, RightBoxTop: -3344, RightBoxBottom: -3648, RightBoxLeft: -128, RightBoxRight: 64, LeftBoxTop: -3328, LeftBoxBottom: -3328, LeftBoxLeft: -128, LeftBoxRight: -64, RightChildID: 32855, LeftChildID: 32856
+XPartition: 48, YPartition: -3392, ChangeXPartition: -112, ChangeYPartition: 64, RightBoxTop: -2816, RightBoxBottom: -3392, RightBoxLeft: -128, RightBoxRight: 64, LeftBoxTop: -3328, LeftBoxBottom: -3648, LeftBoxLeft: -128, LeftBoxRight: 64, RightChildID: 80, LeftChildID: 81
+XPartition: -128, YPartition: -3120, ChangeXPartition: 0, ChangeYPartition: -16, RightBoxTop: -2851, RightBoxBottom: -3613, RightBoxLeft: -640, RightBoxRight: -128, LeftBoxTop: -2816, LeftBoxBottom: -3648, LeftBoxLeft: -128, LeftBoxRight: 64, RightChildID: 77, LeftChildID: 82
+XPartition: 64, YPartition: -2816, ChangeXPartition: -704, ChangeYPartition: -128, RightBoxTop: -2816, RightBoxBottom: -2944, RightBoxLeft: -640, RightBoxRight: 64, LeftBoxTop: -2816, LeftBoxBottom: -3648, LeftBoxLeft: -640, LeftBoxRight: 64, RightChildID: 32828, LeftChildID: 83
+XPartition: -640, YPartition: -3520, ChangeXPartition: 0, ChangeYPartition: 576, RightBoxTop: -2816, RightBoxBottom: -3648, RightBoxLeft: -640, RightBoxRight: 64, LeftBoxTop: -2816, LeftBoxBottom: -3520, LeftBoxLeft: -768, LeftBoxRight: -640, RightChildID: 84, LeftChildID: 32857
+XPartition: 160, YPartition: -3200, ChangeXPartition: -32, ChangeYPartition: 0, RightBoxTop: -3008, RightBoxBottom: -3200, RightBoxLeft: 128, RightBoxRight: 160, LeftBoxTop: -3200, LeftBoxBottom: -3264, LeftBoxLeft: 128, LeftBoxRight: 160, RightChildID: 32859, LeftChildID: 32860
+XPartition: 128, YPartition: -3264, ChangeXPartition: 32, ChangeYPartition: 0, RightBoxTop: -3264, RightBoxBottom: -3456, RightBoxLeft: 128, RightBoxRight: 160, LeftBoxTop: -3008, LeftBoxBottom: -3264, LeftBoxLeft: 128, LeftBoxRight: 160, RightChildID: 32858, LeftChildID: 86
+XPartition: 64, YPartition: -3392, ChangeXPartition: 64, ChangeYPartition: 128, RightBoxTop: -3264, RightBoxBottom: -3456, RightBoxLeft: 64, RightBoxRight: 128, LeftBoxTop: -3072, LeftBoxBottom: -3392, LeftBoxLeft: 64, LeftBoxRight: 128, RightChildID: 32862, LeftChildID: 32863
+XPartition: 128, YPartition: -3200, ChangeXPartition: -64, ChangeYPartition: 128, RightBoxTop: -3008, RightBoxBottom: -3200, RightBoxLeft: 64, RightBoxRight: 128, LeftBoxTop: -3072, LeftBoxBottom: -3456, LeftBoxLeft: 64, LeftBoxRight: 128, RightChildID: 32861, LeftChildID: 88
+XPartition: 128, YPartition: -3264, ChangeXPartition: 0, ChangeYPartition: 64, RightBoxTop: -3008, RightBoxBottom: -3456, RightBoxLeft: 128, RightBoxRight: 160, LeftBoxTop: -3008, LeftBoxBottom: -3456, LeftBoxLeft: 64, LeftBoxRight: 128, RightChildID: 87, LeftChildID: 89
+XPartition: 64, YPartition: -3520, ChangeXPartition: 0, ChangeYPartition: -128, RightBoxTop: -2816, RightBoxBottom: -3648, RightBoxLeft: -768, RightBoxRight: 64, LeftBoxTop: -3008, LeftBoxBottom: -3456, LeftBoxLeft: 64, LeftBoxRight: 160, RightChildID: 85, LeftChildID: 90
+XPartition: -640, YPartition: -3520, ChangeXPartition: 704, ChangeYPartition: -128, RightBoxTop: -3496, RightBoxBottom: -3648, RightBoxLeft: -768, RightBoxRight: 64, LeftBoxTop: -2816, LeftBoxBottom: -3648, LeftBoxLeft: -768, LeftBoxRight: 160, RightChildID: 32827, LeftChildID: 91
+XPartition: 160, YPartition: -3264, ChangeXPartition: 0, ChangeYPartition: 64, RightBoxTop: -3008, RightBoxBottom: -3456, RightBoxLeft: 160, RightBoxRight: 256, LeftBoxTop: -2816, LeftBoxBottom: -3648, LeftBoxLeft: -768, LeftBoxRight: 160, RightChildID: 56, LeftChildID: 92
+XPartition: 1184, YPartition: -3392, ChangeXPartition: -256, ChangeYPartition: 0, RightBoxTop: -3360, RightBoxBottom: -3392, RightBoxLeft: 928, RightBoxRight: 1184, LeftBoxTop: -3392, LeftBoxBottom: -3392, LeftBoxLeft: 928, LeftBoxRight: 1184, RightChildID: 32864, LeftChildID: 32865
+XPartition: 896, YPartition: -3360, ChangeXPartition: 0, ChangeYPartition: -32, RightBoxTop: -3360, RightBoxBottom: -3552, RightBoxLeft: 704, RightBoxRight: 896, LeftBoxTop: -3392, LeftBoxBottom: -3392, LeftBoxLeft: 896, LeftBoxRight: 928, RightChildID: 32866, LeftChildID: 32867
+XPartition: 928, YPartition: -3392, ChangeXPartition: 0, ChangeYPartition: 32, RightBoxTop: -3360, RightBoxBottom: -3392, RightBoxLeft: 928, RightBoxRight: 1184, LeftBoxTop: -3360, LeftBoxBottom: -3552, LeftBoxLeft: 704, LeftBoxRight: 928, RightChildID: 94, LeftChildID: 95
+XPartition: 1184, YPartition: -3392, ChangeXPartition: 32, ChangeYPartition: 0, RightBoxTop: -3392, RightBoxBottom: -3392, RightBoxLeft: 1184, RightBoxRight: 1216, LeftBoxTop: -3360, LeftBoxBottom: -3392, LeftBoxLeft: 1216, LeftBoxRight: 1344, RightChildID: 32868, LeftChildID: 32869
+XPartition: 1344, YPartition: -3360, ChangeXPartition: -128, ChangeYPartition: -32, RightBoxTop: -3360, RightBoxBottom: -3392, RightBoxLeft: 1184, RightBoxRight: 1344, LeftBoxTop: -3360, LeftBoxBottom: -3552, LeftBoxLeft: 1216, LeftBoxRight: 1344, RightChildID: 97, LeftChildID: 32870
+XPartition: 1184, YPartition: -3360, ChangeXPartition: 0, ChangeYPartition: -32, RightBoxTop: -3360, RightBoxBottom: -3552, RightBoxLeft: 704, RightBoxRight: 1184, LeftBoxTop: -3360, LeftBoxBottom: -3552, LeftBoxLeft: 1184, LeftBoxRight: 1344, RightChildID: 96, LeftChildID: 98
+XPartition: 1152, YPartition: -3648, ChangeXPartition: -64, ChangeYPartition: 0, RightBoxTop: -3552, RightBoxBottom: -3648, RightBoxLeft: 832, RightBoxRight: 1280, LeftBoxTop: -3648, LeftBoxBottom: -3680, LeftBoxLeft: 1024, LeftBoxRight: 1088, RightChildID: 32871, LeftChildID: 32872
+XPartition: 1344, YPartition: -3552, ChangeXPartition: -64, ChangeYPartition: 0, RightBoxTop: -3360, RightBoxBottom: -3552, RightBoxLeft: 704, RightBoxRight: 1344, LeftBoxTop: -3552, LeftBoxBottom: -3680, LeftBoxLeft: 832, LeftBoxRight: 1280, RightChildID: 99, LeftChildID: 100
+XPartition: 896, YPartition: -3360, ChangeXPartition: 0, ChangeYPartition: 256, RightBoxTop: -3104, RightBoxBottom: -3360, RightBoxLeft: 896, RightBoxRight: 928, LeftBoxTop: -3104, LeftBoxBottom: -3360, LeftBoxLeft: 704, LeftBoxRight: 896, RightChildID: 32874, LeftChildID: 32875
+XPartition: 928, YPartition: -3360, ChangeXPartition: 0, ChangeYPartition: 256, RightBoxTop: -3104, RightBoxBottom: -3360, RightBoxLeft: 928, RightBoxRight: 1344, LeftBoxTop: -3104, LeftBoxBottom: -3360, LeftBoxLeft: 704, LeftBoxRight: 928, RightChildID: 32873, LeftChildID: 102
+XPartition: 928, YPartition: -3072, ChangeXPartition: 256, ChangeYPartition: 0, RightBoxTop: -3072, RightBoxBottom: -3104, RightBoxLeft: 928, RightBoxRight: 1184, LeftBoxTop: -3072, LeftBoxBottom: -3072, LeftBoxLeft: 928, LeftBoxRight: 1184, RightChildID: 32876, LeftChildID: 32877
+XPartition: 1216, YPartition: -3072, ChangeXPartition: -32, ChangeYPartition: 0, RightBoxTop: -3072, RightBoxBottom: -3072, RightBoxLeft: 1184, RightBoxRight: 1216, LeftBoxTop: -3072, LeftBoxBottom: -3104, LeftBoxLeft: 1216, LeftBoxRight: 1344, RightChildID: 32878, LeftChildID: 32879
+XPartition: 1184, YPartition: -3072, ChangeXPartition: 0, ChangeYPartition: -32, RightBoxTop: -3072, RightBoxBottom: -3104, RightBoxLeft: 928, RightBoxRight: 1184, LeftBoxTop: -3072, LeftBoxBottom: -3104, LeftBoxLeft: 1184, LeftBoxRight: 1344, RightChildID: 104, LeftChildID: 105
+XPartition: 896, YPartition: -3072, ChangeXPartition: 0, ChangeYPartition: -32, RightBoxTop: -2944, RightBoxBottom: -3104, RightBoxLeft: 704, RightBoxRight: 896, LeftBoxTop: -3072, LeftBoxBottom: -3072, LeftBoxLeft: 896, LeftBoxRight: 928, RightChildID: 32880, LeftChildID: 32881
+XPartition: 928, YPartition: -3104, ChangeXPartition: 0, ChangeYPartition: 32, RightBoxTop: -3072, RightBoxBottom: -3104, RightBoxLeft: 928, RightBoxRight: 1344, LeftBoxTop: -2944, LeftBoxBottom: -3104, LeftBoxLeft: 704, LeftBoxRight: 928, RightChildID: 106, LeftChildID: 107
+XPartition: 832, YPartition: -2944, ChangeXPartition: 136, ChangeYPartition: 64, RightBoxTop: -2880, RightBoxBottom: -3104, RightBoxLeft: 832, RightBoxRight: 1344, LeftBoxTop: -2944, LeftBoxBottom: -2944, LeftBoxLeft: 704, LeftBoxRight: 832, RightChildID: 32882, LeftChildID: 32883
+XPartition: 968, YPartition: -2880, ChangeXPartition: 248, ChangeYPartition: 0, RightBoxTop: -2880, RightBoxBottom: -3104, RightBoxLeft: 704, RightBoxRight: 1344, LeftBoxTop: -2486, LeftBoxBottom: -2880, LeftBoxLeft: 1216, LeftBoxRight: 1344, RightChildID: 109, LeftChildID: 32884
+XPartition: 1216, YPartition: -3072, ChangeXPartition: 128, ChangeYPartition: -32, RightBoxTop: -2944, RightBoxBottom: -3104, RightBoxLeft: 704, RightBoxRight: 1344, LeftBoxTop: -2486, LeftBoxBottom: -3104, LeftBoxLeft: 704, LeftBoxRight: 1344, RightChildID: 108, LeftChildID: 110
+XPartition: 896, YPartition: -3104, ChangeXPartition: 32, ChangeYPartition: 0, RightBoxTop: -3104, RightBoxBottom: -3360, RightBoxLeft: 704, RightBoxRight: 1344, LeftBoxTop: -2486, LeftBoxBottom: -3104, LeftBoxLeft: 704, LeftBoxRight: 1344, RightChildID: 103, LeftChildID: 111
+XPartition: 928, YPartition: -3360, ChangeXPartition: 256, ChangeYPartition: 0, RightBoxTop: -3360, RightBoxBottom: -3680, RightBoxLeft: 704, RightBoxRight: 1344, LeftBoxTop: -2486, LeftBoxBottom: -3360, LeftBoxLeft: 704, LeftBoxRight: 1344, RightChildID: 101, LeftChildID: 112
+XPartition: 512, YPartition: -3328, ChangeXPartition: 0, ChangeYPartition: 24, RightBoxTop: -3104, RightBoxBottom: -3360, RightBoxLeft: 512, RightBoxRight: 704, LeftBoxTop: -3160, LeftBoxBottom: -3304, LeftBoxLeft: 496, LeftBoxRight: 512, RightChildID: 32885, LeftChildID: 32886
+XPartition: 288, YPartition: -3264, ChangeXPartition: 0, ChangeYPartition: 64, RightBoxTop: -3200, RightBoxBottom: -3264, RightBoxLeft: 288, RightBoxRight: 320, LeftBoxTop: -3200, LeftBoxBottom: -3264, LeftBoxLeft: 256, LeftBoxRight: 288, RightChildID: 32890, LeftChildID: 32891
+XPartition: 320, YPartition: -3200, ChangeXPartition: -32, ChangeYPartition: 0, RightBoxTop: -3136, RightBoxBottom: -3200, RightBoxLeft: 256, RightBoxRight: 320, LeftBoxTop: -3200, LeftBoxBottom: -3264, LeftBoxLeft: 256, LeftBoxRight: 320, RightChildID: 32889, LeftChildID: 115
+XPartition: 256, YPartition: -3264, ChangeXPartition: 32, ChangeYPartition: 0, RightBoxTop: -3264, RightBoxBottom: -3328, RightBoxLeft: 256, RightBoxRight: 320, LeftBoxTop: -3136, LeftBoxBottom: -3264, LeftBoxLeft: 256, LeftBoxRight: 320, RightChildID: 32888, LeftChildID: 116
+XPartition: 320, YPartition: -3264, ChangeXPartition: 0, ChangeYPartition: 64, RightBoxTop: -3136, RightBoxBottom: -3328, RightBoxLeft: 320, RightBoxRight: 496, LeftBoxTop: -3136, LeftBoxBottom: -3328, LeftBoxLeft: 256, LeftBoxRight: 320, RightChildID: 32887, LeftChildID: 117
+XPartition: 320, YPartition: -3392, ChangeXPartition: 0, ChangeYPartition: 64, RightBoxTop: -3328, RightBoxBottom: -3392, RightBoxLeft: 320, RightBoxRight: 496, LeftBoxTop: -3328, LeftBoxBottom: -3392, LeftBoxLeft: 256, LeftBoxRight: 320, RightChildID: 32893, LeftChildID: 32894
+XPartition: 256, YPartition: -3392, ChangeXPartition: 64, ChangeYPartition: 0, RightBoxTop: -3392, RightBoxBottom: -3456, RightBoxLeft: 256, RightBoxRight: 472, LeftBoxTop: -3328, LeftBoxBottom: -3392, LeftBoxLeft: 256, LeftBoxRight: 496, RightChildID: 32892, LeftChildID: 119
+XPartition: 320, YPartition: -3328, ChangeXPartition: -64, ChangeYPartition: 0, RightBoxTop: -3136, RightBoxBottom: -3328, RightBoxLeft: 256, RightBoxRight: 496, LeftBoxTop: -3328, LeftBoxBottom: -3456, LeftBoxLeft: 256, LeftBoxRight: 496, RightChildID: 118, LeftChildID: 120
+XPartition: 320, YPartition: -3072, ChangeXPartition: -64, ChangeYPartition: 0, RightBoxTop: -3008, RightBoxBottom: -3072, RightBoxLeft: 256, RightBoxRight: 320, LeftBoxTop: -3072, LeftBoxBottom: -3136, LeftBoxLeft: 256, LeftBoxRight: 320, RightChildID: 32896, LeftChildID: 32897
+XPartition: 320, YPartition: -3136, ChangeXPartition: 0, ChangeYPartition: 64, RightBoxTop: -3008, RightBoxBottom: -3136, RightBoxLeft: 320, RightBoxRight: 496, LeftBoxTop: -3008, LeftBoxBottom: -3136, LeftBoxLeft: 256, LeftBoxRight: 320, RightChildID: 32895, LeftChildID: 122
+XPartition: 256, YPartition: -3136, ChangeXPartition: 64, ChangeYPartition: 0, RightBoxTop: -3136, RightBoxBottom: -3456, RightBoxLeft: 256, RightBoxRight: 496, LeftBoxTop: -3008, LeftBoxBottom: -3136, LeftBoxLeft: 256, LeftBoxRight: 496, RightChildID: 121, LeftChildID: 123
+XPartition: 496, YPartition: -3304, ChangeXPartition: 0, ChangeYPartition: 144, RightBoxTop: -3104, RightBoxBottom: -3360, RightBoxLeft: 496, RightBoxRight: 704, LeftBoxTop: -3008, LeftBoxBottom: -3456, LeftBoxLeft: 256, LeftBoxRight: 496, RightChildID: 114, LeftChildID: 124
+XPartition: 704, YPartition: -3552, ChangeXPartition: 0, ChangeYPartition: 192, RightBoxTop: -2486, RightBoxBottom: -3680, RightBoxLeft: 704, RightBoxRight: 1344, LeftBoxTop: -3008, LeftBoxBottom: -3456, LeftBoxLeft: 256, LeftBoxRight: 704, RightChildID: 113, LeftChildID: 125
+XPartition: 256, YPartition: -3328, ChangeXPartition: 0, ChangeYPartition: -64, RightBoxTop: -2816, RightBoxBottom: -3648, RightBoxLeft: -768, RightBoxRight: 256, LeftBoxTop: -2486, LeftBoxBottom: -3680, LeftBoxLeft: 256, LeftBoxRight: 1344, RightChildID: 93, LeftChildID: 126
+XPartition: 1344, YPartition: -3360, ChangeXPartition: 0, ChangeYPartition: 96, RightBoxTop: -2048, RightBoxBottom: -4064, RightBoxLeft: 1344, RightBoxRight: 2176, LeftBoxTop: -2486, LeftBoxBottom: -3680, LeftBoxLeft: -768, LeftBoxRight: 1344, RightChildID: 52, LeftChildID: 127
+XPartition: 2432, YPartition: -3112, ChangeXPartition: 304, ChangeYPartition: 0, RightBoxTop: -3112, RightBoxBottom: -3360, RightBoxLeft: 2432, RightBoxRight: 2736, LeftBoxTop: -3008, LeftBoxBottom: -3112, LeftBoxLeft: 2272, LeftBoxRight: 2432, RightChildID: 32899, LeftChildID: 32900
+XPartition: 2240, YPartition: -2920, ChangeXPartition: 32, ChangeYPartition: -88, RightBoxTop: -2920, RightBoxBottom: -3008, RightBoxLeft: 2176, RightBoxRight: 2272, LeftBoxTop: -3008, LeftBoxBottom: -3360, LeftBoxLeft: 2272, LeftBoxRight: 2736, RightChildID: 32898, LeftChildID: 129
+XPartition: 2736, YPartition: -3112, ChangeXPartition: 0, ChangeYPartition: -248, RightBoxTop: -2920, RightBoxBottom: -3360, RightBoxLeft: 2176, RightBoxRight: 2736, LeftBoxTop: -3112, LeftBoxBottom: -3360, LeftBoxLeft: 2736, LeftBoxRight: 2752, RightChildID: 130, LeftChildID: 32901
+XPartition: 2736, YPartition: -3648, ChangeXPartition: -496, ChangeYPartition: 0, RightBoxTop: -3360, RightBoxBottom: -3648, RightBoxLeft: 2240, RightBoxRight: 2736, LeftBoxTop: -3648, LeftBoxBottom: -3776, LeftBoxLeft: 2240, LeftBoxRight: 2736, RightChildID: 32902, LeftChildID: 32903
+XPartition: 2240, YPartition: -3776, ChangeXPartition: -32, ChangeYPartition: 96, RightBoxTop: -3648, RightBoxBottom: -3776, RightBoxLeft: 2197, RightBoxRight: 2240, LeftBoxTop: -3648, LeftBoxBottom: -3680, LeftBoxLeft: 2176, LeftBoxRight: 2208, RightChildID: 32905, LeftChildID: 32906
+XPartition: 2240, YPartition: -3648, ChangeXPartition: -64, ChangeYPartition: 0, RightBoxTop: -3648, RightBoxBottom: -3648, RightBoxLeft: 2176, RightBoxRight: 2240, LeftBoxTop: -3648, LeftBoxBottom: -3776, LeftBoxLeft: 2176, LeftBoxRight: 2240, RightChildID: 32904, LeftChildID: 133
+XPartition: 2240, YPartition: -3776, ChangeXPartition: 0, ChangeYPartition: 128, RightBoxTop: -3360, RightBoxBottom: -3776, RightBoxLeft: 2240, RightBoxRight: 2736, LeftBoxTop: -3648, LeftBoxBottom: -3776, LeftBoxLeft: 2176, LeftBoxRight: 2240, RightChildID: 132, LeftChildID: 134
+XPartition: 2752, YPartition: -3360, ChangeXPartition: -16, ChangeYPartition: 0, RightBoxTop: -2920, RightBoxBottom: -3360, RightBoxLeft: 2176, RightBoxRight: 2752, LeftBoxTop: -3360, LeftBoxBottom: -3776, LeftBoxLeft: 2176, LeftBoxRight: 2736, RightChildID: 131, LeftChildID: 135
+XPartition: 2688, YPartition: -3920, ChangeXPartition: -16, ChangeYPartition: 0, RightBoxTop: -3792, RightBoxBottom: -3920, RightBoxLeft: 2435, RightBoxRight: 2688, LeftBoxTop: -3920, LeftBoxBottom: -3968, LeftBoxLeft: 2368, LeftBoxRight: 2672, RightChildID: 32907, LeftChildID: 32908
+XPartition: 2368, YPartition: -3968, ChangeXPartition: 248, ChangeYPartition: 176, RightBoxTop: -3792, RightBoxBottom: -3968, RightBoxLeft: 2368, RightBoxRight: 2688, LeftBoxTop: -3920, LeftBoxBottom: -3968, LeftBoxLeft: 2176, LeftBoxRight: 2240, RightChildID: 137, LeftChildID: 32909
+XPartition: 2688, YPartition: -3776, ChangeXPartition: 32, ChangeYPartition: -128, RightBoxTop: -3776, RightBoxBottom: -3920, RightBoxLeft: 2632, RightBoxRight: 2720, LeftBoxTop: -3776, LeftBoxBottom: -3904, LeftBoxLeft: 2688, LeftBoxRight: 2752, RightChildID: 32910, LeftChildID: 32911
+XPartition: 2632, YPartition: -3792, ChangeXPartition: 56, ChangeYPartition: -128, RightBoxTop: -3792, RightBoxBottom: -3968, RightBoxLeft: 2176, RightBoxRight: 2688, LeftBoxTop: -3776, LeftBoxBottom: -3920, LeftBoxLeft: 2632, LeftBoxRight: 2752, RightChildID: 138, LeftChildID: 139
+XPartition: 2736, YPartition: -3648, ChangeXPartition: -248, ChangeYPartition: -96, RightBoxTop: -2920, RightBoxBottom: -3776, RightBoxLeft: 2176, RightBoxRight: 2752, LeftBoxTop: -3776, LeftBoxBottom: -3968, LeftBoxLeft: 2176, LeftBoxRight: 2752, RightChildID: 136, LeftChildID: 140
+XPartition: 2208, YPartition: -2304, ChangeXPartition: 0, ChangeYPartition: -256, RightBoxTop: -2304, RightBoxBottom: -2560, RightBoxLeft: 2176, RightBoxRight: 2208, LeftBoxTop: -2304, LeftBoxBottom: -2560, LeftBoxLeft: 2208, LeftBoxRight: 2304, RightChildID: 32914, LeftChildID: 32915
+XPartition: 2336, YPartition: -2272, ChangeXPartition: -160, ChangeYPartition: 0, RightBoxTop: -2112, RightBoxBottom: -2272, RightBoxLeft: 2176, RightBoxRight: 2336, LeftBoxTop: -2304, LeftBoxBottom: -2560, LeftBoxLeft: 2176, LeftBoxRight: 2304, RightChildID: 32913, LeftChildID: 142
+XPartition: 2336, YPartition: -2560, ChangeXPartition: 0, ChangeYPartition: 288, RightBoxTop: -2112, RightBoxBottom: -2560, RightBoxLeft: 2336, RightBoxRight: 2496, LeftBoxTop: -2112, LeftBoxBottom: -2560, LeftBoxLeft: 2176, LeftBoxRight: 2336, RightChildID: 32912, LeftChildID: 143
+XPartition: 2336, YPartition: -2592, ChangeXPartition: 0, ChangeYPartition: 32, RightBoxTop: -2560, RightBoxBottom: -2752, RightBoxLeft: 2336, RightBoxRight: 2496, LeftBoxTop: -2592, LeftBoxBottom: -2752, LeftBoxLeft: 2176, LeftBoxRight: 2336, RightChildID: 32916, LeftChildID: 32917
+XPartition: 2304, YPartition: -2560, ChangeXPartition: -96, ChangeYPartition: 0, RightBoxTop: -2112, RightBoxBottom: -2560, RightBoxLeft: 2176, RightBoxRight: 2496, LeftBoxTop: -2560, LeftBoxBottom: -2752, LeftBoxLeft: 2176, LeftBoxRight: 2496, RightChildID: 144, LeftChildID: 145
+XPartition: 2176, YPartition: -2112, ChangeXPartition: 320, ChangeYPartition: 0, RightBoxTop: -2112, RightBoxBottom: -2752, RightBoxLeft: 2176, RightBoxRight: 2496, LeftBoxTop: -2048, LeftBoxBottom: -2112, LeftBoxLeft: 2176, LeftBoxRight: 2496, RightChildID: 146, LeftChildID: 32918
+XPartition: 2624, YPartition: -2784, ChangeXPartition: -104, ChangeYPartition: 96, RightBoxTop: -2560, RightBoxBottom: -2784, RightBoxLeft: 2496, RightBoxRight: 2752, LeftBoxTop: -2665, LeftBoxBottom: -2688, LeftBoxLeft: 2496, LeftBoxRight: 2520, RightChildID: 32920, LeftChildID: 32921
+XPartition: 2624, YPartition: -2784, ChangeXPartition: 128, ChangeYPartition: 224, RightBoxTop: -2560, RightBoxBottom: -2784, RightBoxLeft: 2624, RightBoxRight: 2752, LeftBoxTop: -2560, LeftBoxBottom: -2784, LeftBoxLeft: 2496, LeftBoxRight: 2752, RightChildID: 32919, LeftChildID: 148
+XPartition: 2520, YPartition: -2560, ChangeXPartition: 232, ChangeYPartition: 0, RightBoxTop: -2560, RightBoxBottom: -2784, RightBoxLeft: 2496, RightBoxRight: 2752, LeftBoxTop: -2048, LeftBoxBottom: -2496, LeftBoxLeft: 2496, LeftBoxRight: 2560, RightChildID: 149, LeftChildID: 32922
+XPartition: 2496, YPartition: -2112, ChangeXPartition: 0, ChangeYPartition: -384, RightBoxTop: -2048, RightBoxBottom: -2752, RightBoxLeft: 2176, RightBoxRight: 2496, LeftBoxTop: -2048, LeftBoxBottom: -2784, LeftBoxLeft: 2496, LeftBoxRight: 2752, RightChildID: 147, LeftChildID: 150
+XPartition: 2176, YPartition: -2920, ChangeXPartition: 64, ChangeYPartition: 0, RightBoxTop: -2920, RightBoxBottom: -3968, RightBoxLeft: 2176, RightBoxRight: 2752, LeftBoxTop: -2048, LeftBoxBottom: -2784, LeftBoxLeft: 2176, LeftBoxRight: 2752, RightChildID: 141, LeftChildID: 151
+XPartition: 2944, YPartition: -3648, ChangeXPartition: -192, ChangeYPartition: 64, RightBoxTop: -3536, RightBoxBottom: -3648, RightBoxLeft: 2752, RightBoxRight: 2944, LeftBoxTop: -3648, LeftBoxBottom: -3669, LeftBoxLeft: 2944, LeftBoxRight: 2944, RightChildID: 32924, LeftChildID: 32925
+XPartition: 2944, YPartition: -3536, ChangeXPartition: -192, ChangeYPartition: -48, RightBoxTop: -3360, RightBoxBottom: -3584, RightBoxLeft: 2752, RightBoxRight: 2944, LeftBoxTop: -3536, LeftBoxBottom: -3669, LeftBoxLeft: 2752, LeftBoxRight: 2944, RightChildID: 32923, LeftChildID: 153
+XPartition: 3352, YPartition: -3592, ChangeXPartition: 0, ChangeYPartition: 24, RightBoxTop: -3568, RightBoxBottom: -3592, RightBoxLeft: 3352, RightBoxRight: 3352, LeftBoxTop: -3592, LeftBoxBottom: -3601, LeftBoxLeft: 3352, LeftBoxRight: 3353, RightChildID: 32928, LeftChildID: 32929
+XPartition: 3352, YPartition: -3568, ChangeXPartition: -88, ChangeYPartition: -48, RightBoxTop: -3370, RightBoxBottom: -3616, RightBoxLeft: 3104, RightBoxRight: 3352, LeftBoxTop: -3568, LeftBoxBottom: -3601, LeftBoxLeft: 3352, LeftBoxRight: 3353, RightChildID: 32927, LeftChildID: 155
+XPartition: 3448, YPartition: -3520, ChangeXPartition: -96, ChangeYPartition: -48, RightBoxTop: -3432, RightBoxBottom: -3568, RightBoxLeft: 3312, RightBoxRight: 3454, LeftBoxTop: -3520, LeftBoxBottom: -3568, LeftBoxLeft: 3352, LeftBoxRight: 3448, RightChildID: 32931, LeftChildID: 32932
+XPartition: 3408, YPartition: -3432, ChangeXPartition: -96, ChangeYPartition: -64, RightBoxTop: -3320, RightBoxBottom: -3496, RightBoxLeft: 3242, RightBoxRight: 3408, LeftBoxTop: -3432, LeftBoxBottom: -3568, LeftBoxLeft: 3312, LeftBoxRight: 3454, RightChildID: 32930, LeftChildID: 157
+XPartition: 3312, YPartition: -3496, ChangeXPartition: 40, ChangeYPartition: -72, RightBoxTop: -3370, RightBoxBottom: -3616, RightBoxLeft: 3104, RightBoxRight: 3353, LeftBoxTop: -3320, LeftBoxBottom: -3568, LeftBoxLeft: 3242, LeftBoxRight: 3454, RightChildID: 156, LeftChildID: 158
+XPartition: 3454, YPartition: -3496, ChangeXPartition: -6, ChangeYPartition: -23, RightBoxTop: -3320, RightBoxBottom: -3616, RightBoxLeft: 3104, RightBoxRight: 3454, LeftBoxTop: -3520, LeftBoxBottom: -3574, LeftBoxLeft: 3448, LeftBoxRight: 3512, RightChildID: 159, LeftChildID: 32933
+XPartition: 3264, YPartition: -3616, ChangeXPartition: -160, ChangeYPartition: 64, RightBoxTop: -3320, RightBoxBottom: -3616, RightBoxLeft: 3104, RightBoxRight: 3512, LeftBoxTop: -3552, LeftBoxBottom: -3648, LeftBoxLeft: 3047, LeftBoxRight: 3264, RightChildID: 160, LeftChildID: 32934
+XPartition: 2752, YPartition: -3048, ChangeXPartition: 224, ChangeYPartition: -24, RightBoxTop: -3048, RightBoxBottom: -3296, RightBoxLeft: 2752, RightBoxRight: 2976, LeftBoxTop: -2902, LeftBoxBottom: -3072, LeftBoxLeft: 2752, LeftBoxRight: 3008, RightChildID: 32935, LeftChildID: 32936
+XPartition: 3112, YPartition: -3360, ChangeXPartition: -168, ChangeYPartition: -176, RightBoxTop: -3232, RightBoxBottom: -3536, RightBoxLeft: 2752, RightBoxRight: 3112, LeftBoxTop: -3360, LeftBoxBottom: -3626, LeftBoxLeft: 2944, LeftBoxRight: 3215, RightChildID: 32937, LeftChildID: 32938
+XPartition: 2984, YPartition: -3200, ChangeXPartition: 152, ChangeYPartition: 128, RightBoxTop: -3072, RightBoxBottom: -3320, RightBoxLeft: 2984, RightBoxRight: 3280, LeftBoxTop: -3072, LeftBoxBottom: -3200, LeftBoxLeft: 2887, LeftBoxRight: 3136, RightChildID: 32939, LeftChildID: 32940
+XPartition: 3280, YPartition: -3320, ChangeXPartition: -296, ChangeYPartition: 120, RightBoxTop: -3072, RightBoxBottom: -3320, RightBoxLeft: 2887, RightBoxRight: 3280, LeftBoxTop: -3160, LeftBoxBottom: -3404, LeftBoxLeft: 2816, LeftBoxRight: 3280, RightChildID: 164, LeftChildID: 32941
+XPartition: 2816, YPartition: -3232, ChangeXPartition: 296, ChangeYPartition: -128, RightBoxTop: -3232, RightBoxBottom: -3626, RightBoxLeft: 2752, RightBoxRight: 3215, LeftBoxTop: -3072, LeftBoxBottom: -3404, LeftBoxLeft: 2816, LeftBoxRight: 3280, RightChildID: 163, LeftChildID: 165
+XPartition: 2976, YPartition: -3072, ChangeXPartition: -160, ChangeYPartition: -160, RightBoxTop: -2902, RightBoxBottom: -3296, RightBoxLeft: 2752, RightBoxRight: 3008, LeftBoxTop: -3072, LeftBoxBottom: -3626, LeftBoxLeft: 2752, LeftBoxRight: 3280, RightChildID: 162, LeftChildID: 166
+XPartition: 3104, YPartition: -3552, ChangeXPartition: 176, ChangeYPartition: 232, RightBoxTop: -3320, RightBoxBottom: -3648, RightBoxLeft: 3047, RightBoxRight: 3512, LeftBoxTop: -2902, LeftBoxBottom: -3626, LeftBoxLeft: 2752, LeftBoxRight: 3280, RightChildID: 161, LeftChildID: 167
+XPartition: 3304, YPartition: -3040, ChangeXPartition: 96, ChangeYPartition: -112, RightBoxTop: -3040, RightBoxBottom: -3432, RightBoxLeft: 3136, RightBoxRight: 3472, LeftBoxTop: -3040, LeftBoxBottom: -3152, LeftBoxLeft: 3304, LeftBoxRight: 3400, RightChildID: 32942, LeftChildID: 32943
+XPartition: 3472, YPartition: -3432, ChangeXPartition: -64, ChangeYPartition: 0, RightBoxTop: -3040, RightBoxBottom: -3432, RightBoxLeft: 3136, RightBoxRight: 3472, LeftBoxTop: -3432, LeftBoxBottom: -3496, LeftBoxLeft: 3408, LeftBoxRight: 3472, RightChildID: 169, LeftChildID: 32944
+XPartition: 3136, YPartition: -3072, ChangeXPartition: 168, ChangeYPartition: 32, RightBoxTop: -3040, RightBoxBottom: -3496, RightBoxLeft: 3136, RightBoxRight: 3472, LeftBoxTop: -2944, LeftBoxBottom: -3072, LeftBoxLeft: 3048, LeftBoxRight: 3304, RightChildID: 170, LeftChildID: 32945
+XPartition: 3304, YPartition: -3040, ChangeXPartition: 16, ChangeYPartition: 0, RightBoxTop: -3040, RightBoxBottom: -3040, RightBoxLeft: 3304, RightBoxRight: 3320, LeftBoxTop: -2939, LeftBoxBottom: -3040, LeftBoxLeft: 3320, LeftBoxRight: 3345, RightChildID: 32947, LeftChildID: 32948
+XPartition: 3048, YPartition: -2880, ChangeXPartition: 0, ChangeYPartition: -64, RightBoxTop: -2880, RightBoxBottom: -2944, RightBoxLeft: 3008, RightBoxRight: 3048, LeftBoxTop: -2939, LeftBoxBottom: -3040, LeftBoxLeft: 3304, LeftBoxRight: 3345, RightChildID: 32946, LeftChildID: 172
+XPartition: 3048, YPartition: -2944, ChangeXPartition: 256, ChangeYPartition: -96, RightBoxTop: -2944, RightBoxBottom: -3496, RightBoxLeft: 3048, RightBoxRight: 3472, LeftBoxTop: -2880, LeftBoxBottom: -3040, LeftBoxLeft: 3008, LeftBoxRight: 3345, RightChildID: 171, LeftChildID: 173
+XPartition: 3680, YPartition: -3392, ChangeXPartition: 0, ChangeYPartition: -154, RightBoxTop: -3264, RightBoxBottom: -3567, RightBoxLeft: 3552, RightBoxRight: 3680, LeftBoxTop: -3144, LeftBoxBottom: -3392, LeftBoxLeft: 3680, LeftBoxRight: 3808, RightChildID: 32949, LeftChildID: 32950
+XPartition: 3648, YPartition: -3264, ChangeXPartition: -152, ChangeYPartition: 232, RightBoxTop: -3032, RightBoxBottom: -3264, RightBoxLeft: 3496, RightBoxRight: 3738, LeftBoxTop: -3032, LeftBoxBottom: -3152, LeftBoxLeft: 3400, LeftBoxRight: 3456, RightChildID: 32952, LeftChildID: 32953
+XPartition: 3496, YPartition: -3032, ChangeXPartition: -40, ChangeYPartition: 0, RightBoxTop: -2880, RightBoxBottom: -3032, RightBoxLeft: 3345, RightBoxRight: 3672, LeftBoxTop: -3032, LeftBoxBottom: -3264, LeftBoxLeft: 3400, LeftBoxRight: 3738, RightChildID: 32951, LeftChildID: 176
+XPartition: 3552, YPartition: -3392, ChangeXPartition: 96, ChangeYPartition: 128, RightBoxTop: -3144, RightBoxBottom: -3567, RightBoxLeft: 3552, RightBoxRight: 3808, LeftBoxTop: -2880, LeftBoxBottom: -3264, LeftBoxLeft: 3345, LeftBoxRight: 3738, RightChildID: 175, LeftChildID: 177
+XPartition: 3400, YPartition: -3152, ChangeXPartition: 72, ChangeYPartition: -280, RightBoxTop: -2880, RightBoxBottom: -3496, RightBoxLeft: 3008, RightBoxRight: 3472, LeftBoxTop: -2880, LeftBoxBottom: -3567, LeftBoxLeft: 3345, LeftBoxRight: 3808, RightChildID: 174, LeftChildID: 178
+XPartition: 3472, YPartition: -3520, ChangeXPartition: 40, ChangeYPartition: -54, RightBoxTop: -2902, RightBoxBottom: -3648, RightBoxLeft: 2752, RightBoxRight: 3512, LeftBoxTop: -2880, LeftBoxBottom: -3567, LeftBoxLeft: 3008, LeftBoxRight: 3808, RightChildID: 168, LeftChildID: 179
+XPartition: 2944, YPartition: -3536, ChangeXPartition: 128, ChangeYPartition: -112, RightBoxTop: -3536, RightBoxBottom: -3648, RightBoxLeft: 2944, RightBoxRight: 3072, LeftBoxTop: -2880, LeftBoxBottom: -3648, LeftBoxLeft: 2752, LeftBoxRight: 3808, RightChildID: 32926, LeftChildID: 180
+XPartition: 2752, YPartition: -3360, ChangeXPartition: 192, ChangeYPartition: -176, RightBoxTop: -3360, RightBoxBottom: -3669, RightBoxLeft: 2752, RightBoxRight: 2944, LeftBoxTop: -2880, LeftBoxBottom: -3648, LeftBoxLeft: 2752, LeftBoxRight: 3808, RightChildID: 154, LeftChildID: 181
+XPartition: 2784, YPartition: -3776, ChangeXPartition: 0, ChangeYPartition: -128, RightBoxTop: -3776, RightBoxBottom: -3904, RightBoxLeft: 2752, RightBoxRight: 2784, LeftBoxTop: -3776, LeftBoxBottom: -3904, LeftBoxLeft: 2784, LeftBoxRight: 2816, RightChildID: 32954, LeftChildID: 32955
+XPartition: 2848, YPartition: -3776, ChangeXPartition: 0, ChangeYPartition: -128, RightBoxTop: -3776, RightBoxBottom: -3904, RightBoxLeft: 2816, RightBoxRight: 2848, LeftBoxTop: -3776, LeftBoxBottom: -3904, LeftBoxLeft: 2848, LeftBoxRight: 2880, RightChildID: 32956, LeftChildID: 32957
+XPartition: 2816, YPartition: -3776, ChangeXPartition: 0, ChangeYPartition: -128, RightBoxTop: -3776, RightBoxBottom: -3904, RightBoxLeft: 2752, RightBoxRight: 2816, LeftBoxTop: -3776, LeftBoxBottom: -3904, LeftBoxLeft: 2816, LeftBoxRight: 2880, RightChildID: 183, LeftChildID: 184
+XPartition: 2912, YPartition: -3776, ChangeXPartition: 0, ChangeYPartition: -128, RightBoxTop: -3776, RightBoxBottom: -3904, RightBoxLeft: 2880, RightBoxRight: 2912, LeftBoxTop: -3776, LeftBoxBottom: -3904, LeftBoxLeft: 2912, LeftBoxRight: 2944, RightChildID: 32959, LeftChildID: 32960
+XPartition: 2944, YPartition: -3776, ChangeXPartition: 0, ChangeYPartition: 106, RightBoxTop: -3648, RightBoxBottom: -3968, RightBoxLeft: 2944, RightBoxRight: 3072, LeftBoxTop: -3776, LeftBoxBottom: -3904, LeftBoxLeft: 2880, LeftBoxRight: 2944, RightChildID: 32958, LeftChildID: 186
+XPartition: 2880, YPartition: -3776, ChangeXPartition: 0, ChangeYPartition: -128, RightBoxTop: -3776, RightBoxBottom: -3904, RightBoxLeft: 2752, RightBoxRight: 2880, LeftBoxTop: -3648, LeftBoxBottom: -3968, LeftBoxLeft: 2880, LeftBoxRight: 3072, RightChildID: 185, LeftChildID: 187
+XPartition: 3328, YPartition: -3744, ChangeXPartition: 32, ChangeYPartition: 96, RightBoxTop: -3574, RightBoxBottom: -3968, RightBoxLeft: 3328, RightBoxRight: 3520, LeftBoxTop: -3601, LeftBoxBottom: -3648, LeftBoxLeft: 3353, LeftBoxRight: 3360, RightChildID: 32961, LeftChildID: 32962
+XPartition: 3328, YPartition: -3968, ChangeXPartition: 0, ChangeYPartition: 224, RightBoxTop: -3574, RightBoxBottom: -3968, RightBoxLeft: 3328, RightBoxRight: 3520, LeftBoxTop: -3744, LeftBoxBottom: -3968, LeftBoxLeft: 3200, LeftBoxRight: 3328, RightChildID: 189, LeftChildID: 32963
+XPartition: 3584, YPartition: -3840, ChangeXPartition: 0, ChangeYPartition: -64, RightBoxTop: -3840, RightBoxBottom: -3904, RightBoxLeft: 3520, RightBoxRight: 3584, LeftBoxTop: -3840, LeftBoxBottom: -3904, LeftBoxLeft: 3584, LeftBoxRight: 3680, RightChildID: 32964, LeftChildID: 32965
+XPartition: 3584, YPartition: -3840, ChangeXPartition: 32, ChangeYPartition: 64, RightBoxTop: -3776, RightBoxBottom: -3840, RightBoxLeft: 3584, RightBoxRight: 3616, LeftBoxTop: -3546, LeftBoxBottom: -3776, LeftBoxLeft: 3556, LeftBoxRight: 3680, RightChildID: 32966, LeftChildID: 32967
+XPartition: 3520, YPartition: -3840, ChangeXPartition: 16, ChangeYPartition: 0, RightBoxTop: -3840, RightBoxBottom: -3904, RightBoxLeft: 3520, RightBoxRight: 3680, LeftBoxTop: -3546, LeftBoxBottom: -3840, LeftBoxLeft: 3556, LeftBoxRight: 3680, RightChildID: 191, LeftChildID: 192
+XPartition: 3680, YPartition: -3546, ChangeXPartition: 0, ChangeYPartition: -5, RightBoxTop: -3546, RightBoxBottom: -3904, RightBoxLeft: 3520, RightBoxRight: 3680, LeftBoxTop: -3552, LeftBoxBottom: -3904, LeftBoxLeft: 3680, LeftBoxRight: 3744, RightChildID: 193, LeftChildID: 32968
+XPartition: 3520, YPartition: -3584, ChangeXPartition: 0, ChangeYPartition: -256, RightBoxTop: -3574, RightBoxBottom: -3968, RightBoxLeft: 3200, RightBoxRight: 3520, LeftBoxTop: -3546, LeftBoxBottom: -3904, LeftBoxLeft: 3520, LeftBoxRight: 3744, RightChildID: 190, LeftChildID: 194
+XPartition: 3072, YPartition: -3648, ChangeXPartition: 0, ChangeYPartition: -320, RightBoxTop: -3648, RightBoxBottom: -3968, RightBoxLeft: 2752, RightBoxRight: 3072, LeftBoxTop: -3546, LeftBoxBottom: -3968, LeftBoxLeft: 3200, LeftBoxRight: 3744, RightChildID: 188, LeftChildID: 195
+XPartition: 3264, YPartition: -3616, ChangeXPartition: -192, ChangeYPartition: -32, RightBoxTop: -2880, RightBoxBottom: -3669, RightBoxLeft: 2752, RightBoxRight: 3808, LeftBoxTop: -3546, LeftBoxBottom: -3968, LeftBoxLeft: 2752, LeftBoxRight: 3744, RightChildID: 182, LeftChildID: 196
+XPartition: 2752, YPartition: -2912, ChangeXPartition: 128, ChangeYPartition: 0, RightBoxTop: -2912, RightBoxBottom: -3048, RightBoxLeft: 2752, RightBoxRight: 2960, LeftBoxTop: -2880, LeftBoxBottom: -2912, LeftBoxLeft: 2880, LeftBoxRight: 2880, RightChildID: 32970, LeftChildID: 32971
+XPartition: 2880, YPartition: -2880, ChangeXPartition: -128, ChangeYPartition: 80, RightBoxTop: -2656, RightBoxBottom: -2930, RightBoxLeft: 2752, RightBoxRight: 3048, LeftBoxTop: -2880, LeftBoxBottom: -3048, LeftBoxLeft: 2752, LeftBoxRight: 2960, RightChildID: 32969, LeftChildID: 198
+XPartition: 2752, YPartition: -2784, ChangeXPartition: 192, ChangeYPartition: 128, RightBoxTop: -2656, RightBoxBottom: -3048, RightBoxLeft: 2752, RightBoxRight: 3048, LeftBoxTop: -2560, LeftBoxBottom: -2784, LeftBoxLeft: 2752, LeftBoxRight: 2944, RightChildID: 199, LeftChildID: 32972
+XPartition: 2752, YPartition: -3048, ChangeXPartition: 296, ChangeYPartition: 168, RightBoxTop: -2880, RightBoxBottom: -3968, RightBoxLeft: 2752, RightBoxRight: 3808, LeftBoxTop: -2560, LeftBoxBottom: -3048, LeftBoxLeft: 2752, LeftBoxRight: 3048, RightChildID: 197, LeftChildID: 200
+XPartition: 2752, YPartition: -3776, ChangeXPartition: 0, ChangeYPartition: -128, RightBoxTop: -2048, RightBoxBottom: -3968, RightBoxLeft: 2176, RightBoxRight: 2752, LeftBoxTop: -2560, LeftBoxBottom: -3968, LeftBoxLeft: 2752, LeftBoxRight: 3808, RightChildID: 152, LeftChildID: 201
+XPartition: 2912, YPartition: -4160, ChangeXPartition: 192, ChangeYPartition: 0, RightBoxTop: -4160, RightBoxBottom: -4352, RightBoxLeft: 2912, RightBoxRight: 3104, LeftBoxTop: -4128, LeftBoxBottom: -4160, LeftBoxLeft: 2912, LeftBoxRight: 3104, RightChildID: 32973, LeftChildID: 32974
+XPartition: 3104, YPartition: -4352, ChangeXPartition: -192, ChangeYPartition: 0, RightBoxTop: -4128, RightBoxBottom: -4352, RightBoxLeft: 2912, RightBoxRight: 3104, LeftBoxTop: -4352, LeftBoxBottom: -4544, LeftBoxLeft: 2912, LeftBoxRight: 3104, RightChildID: 203, LeftChildID: 32975
+XPartition: 2888, YPartition: -4352, ChangeXPartition: 0, ChangeYPartition: 32, RightBoxTop: -4160, RightBoxBottom: -4352, RightBoxLeft: 2888, RightBoxRight: 2912, LeftBoxTop: -4160, LeftBoxBottom: -4352, LeftBoxLeft: 2856, LeftBoxRight: 2888, RightChildID: 32978, LeftChildID: 32979
+XPartition: 2856, YPartition: -4384, ChangeXPartition: 56, ChangeYPartition: 0, RightBoxTop: -4384, RightBoxBottom: -4544, RightBoxLeft: 2856, RightBoxRight: 2912, LeftBoxTop: -4160, LeftBoxBottom: -4352, LeftBoxLeft: 2856, LeftBoxRight: 2912, RightChildID: 32977, LeftChildID: 205
+XPartition: 2856, YPartition: -4352, ChangeXPartition: 0, ChangeYPartition: -32, RightBoxTop: -4128, RightBoxBottom: -4544, RightBoxLeft: 2688, RightBoxRight: 2856, LeftBoxTop: -4160, LeftBoxBottom: -4544, LeftBoxLeft: 2856, LeftBoxRight: 2912, RightChildID: 32976, LeftChildID: 206
+XPartition: 2912, YPartition: -4160, ChangeXPartition: 0, ChangeYPartition: 32, RightBoxTop: -4128, RightBoxBottom: -4544, RightBoxLeft: 2912, RightBoxRight: 3104, LeftBoxTop: -4128, LeftBoxBottom: -4544, LeftBoxLeft: 2688, LeftBoxRight: 2912, RightChildID: 204, LeftChildID: 207
+XPartition: 3128, YPartition: -4320, ChangeXPartition: 0, ChangeYPartition: -32, RightBoxTop: -4160, RightBoxBottom: -4352, RightBoxLeft: 3104, RightBoxRight: 3128, LeftBoxTop: -4160, LeftBoxBottom: -4352, LeftBoxLeft: 3128, LeftBoxRight: 3160, RightChildID: 32982, LeftChildID: 32983
+XPartition: 3104, YPartition: -4384, ChangeXPartition: 56, ChangeYPartition: 0, RightBoxTop: -4384, RightBoxBottom: -4544, RightBoxLeft: 3104, RightBoxRight: 3160, LeftBoxTop: -4160, LeftBoxBottom: -4352, LeftBoxLeft: 3104, LeftBoxRight: 3160, RightChildID: 32981, LeftChildID: 209
+XPartition: 3160, YPartition: -4384, ChangeXPartition: 0, ChangeYPartition: 32, RightBoxTop: -4128, RightBoxBottom: -4544, RightBoxLeft: 3160, RightBoxRight: 3328, LeftBoxTop: -4160, LeftBoxBottom: -4544, LeftBoxLeft: 3104, LeftBoxRight: 3160, RightChildID: 32980, LeftChildID: 210
+XPartition: 3104, YPartition: -4128, ChangeXPartition: 0, ChangeYPartition: -32, RightBoxTop: -4128, RightBoxBottom: -4544, RightBoxLeft: 2688, RightBoxRight: 3104, LeftBoxTop: -4128, LeftBoxBottom: -4544, LeftBoxLeft: 3104, LeftBoxRight: 3328, RightChildID: 208, LeftChildID: 211
+XPartition: 3072, YPartition: -4000, ChangeXPartition: -128, ChangeYPartition: 0, RightBoxTop: -3968, RightBoxBottom: -4000, RightBoxLeft: 2944, RightBoxRight: 3072, LeftBoxTop: -4000, LeftBoxBottom: -4016, LeftBoxLeft: 2944, LeftBoxRight: 3072, RightChildID: 32984, LeftChildID: 32985
+XPartition: 2944, YPartition: -4032, ChangeXPartition: 128, ChangeYPartition: 0, RightBoxTop: -4032, RightBoxBottom: -4128, RightBoxLeft: 2944, RightBoxRight: 3104, LeftBoxTop: -4016, LeftBoxBottom: -4032, LeftBoxLeft: 2944, LeftBoxRight: 3072, RightChildID: 32986, LeftChildID: 32987
+XPartition: 3072, YPartition: -4016, ChangeXPartition: -128, ChangeYPartition: 0, RightBoxTop: -3968, RightBoxBottom: -4016, RightBoxLeft: 2944, RightBoxRight: 3072, LeftBoxTop: -4016, LeftBoxBottom: -4128, LeftBoxLeft: 2944, LeftBoxRight: 3104, RightChildID: 213, LeftChildID: 214
+XPartition: 2240, YPartition: -4096, ChangeXPartition: 0, ChangeYPartition: 128, RightBoxTop: -3968, RightBoxBottom: -4096, RightBoxLeft: 2240, RightBoxRight: 2368, LeftBoxTop: -3968, LeftBoxBottom: -4096, LeftBoxLeft: 2176, LeftBoxRight: 2240, RightChildID: 32988, LeftChildID: 32989
+XPartition: 2589, YPartition: -3968, ChangeXPartition: -221, ChangeYPartition: -128, RightBoxTop: -3968, RightBoxBottom: -4096, RightBoxLeft: 2368, RightBoxRight: 2589, LeftBoxTop: -4032, LeftBoxBottom: -4128, LeftBoxLeft: 2912, LeftBoxRight: 2944, RightChildID: 32990, LeftChildID: 32991
+XPartition: 2368, YPartition: -3968, ChangeXPartition: 0, ChangeYPartition: -128, RightBoxTop: -3968, RightBoxBottom: -4096, RightBoxLeft: 2176, RightBoxRight: 2368, LeftBoxTop: -3968, LeftBoxBottom: -4128, LeftBoxLeft: 2368, LeftBoxRight: 2944, RightChildID: 216, LeftChildID: 217
+XPartition: 2944, YPartition: -4000, ChangeXPartition: 0, ChangeYPartition: 32, RightBoxTop: -3968, RightBoxBottom: -4128, RightBoxLeft: 2944, RightBoxRight: 3104, LeftBoxTop: -3968, LeftBoxBottom: -4128, LeftBoxLeft: 2176, LeftBoxRight: 2944, RightChildID: 215, LeftChildID: 218
+XPartition: 3200, YPartition: -4128, ChangeXPartition: 128, ChangeYPartition: 0, RightBoxTop: -4128, RightBoxBottom: -4544, RightBoxLeft: 2688, RightBoxRight: 3328, LeftBoxTop: -3968, LeftBoxBottom: -4128, LeftBoxLeft: 2176, LeftBoxRight: 3104, RightChildID: 212, LeftChildID: 219
+XPartition: 2992, YPartition: -4592, ChangeXPartition: 0, ChangeYPartition: -8, RightBoxTop: -4592, RightBoxBottom: -4600, RightBoxLeft: 2944, RightBoxRight: 2992, LeftBoxTop: -4592, LeftBoxBottom: -4600, LeftBoxLeft: 2992, LeftBoxRight: 3024, RightChildID: 32995, LeftChildID: 32996
+XPartition: 3024, YPartition: -4592, ChangeXPartition: -32, ChangeYPartition: 0, RightBoxTop: -4544, RightBoxBottom: -4592, RightBoxLeft: 2944, RightBoxRight: 3024, LeftBoxTop: -4592, LeftBoxBottom: -4600, LeftBoxLeft: 2944, LeftBoxRight: 3024, RightChildID: 32994, LeftChildID: 221
+XPartition: 3024, YPartition: -4600, ChangeXPartition: 0, ChangeYPartition: 8, RightBoxTop: -4544, RightBoxBottom: -4600, RightBoxLeft: 3024, RightBoxRight: 3072, LeftBoxTop: -4544, LeftBoxBottom: -4600, LeftBoxLeft: 2944, LeftBoxRight: 3024, RightChildID: 32993, LeftChildID: 222
+XPartition: 2992, YPartition: -4600, ChangeXPartition: 32, ChangeYPartition: 0, RightBoxTop: -4600, RightBoxBottom: -4608, RightBoxLeft: 2944, RightBoxRight: 3072, LeftBoxTop: -4544, LeftBoxBottom: -4600, LeftBoxLeft: 2944, LeftBoxRight: 3072, RightChildID: 32992, LeftChildID: 223
+XPartition: 3040, YPartition: -4632, ChangeXPartition: -64, ChangeYPartition: 0, RightBoxTop: -4608, RightBoxBottom: -4632, RightBoxLeft: 2976, RightBoxRight: 3040, LeftBoxTop: -4632, LeftBoxBottom: -4648, LeftBoxLeft: 2976, LeftBoxRight: 3040, RightChildID: 32997, LeftChildID: 32998
+XPartition: 3072, YPartition: -4608, ChangeXPartition: -32, ChangeYPartition: 0, RightBoxTop: -4544, RightBoxBottom: -4608, RightBoxLeft: 2944, RightBoxRight: 3072, LeftBoxTop: -4608, LeftBoxBottom: -4648, LeftBoxLeft: 2976, LeftBoxRight: 3040, RightChildID: 224, LeftChildID: 225
+XPartition: 2992, YPartition: -4840, ChangeXPartition: 0, ChangeYPartition: -8, RightBoxTop: -4840, RightBoxBottom: -4848, RightBoxLeft: 2912, RightBoxRight: 2992, LeftBoxTop: -4840, LeftBoxBottom: -4848, LeftBoxLeft: 2992, LeftBoxRight: 3024, RightChildID: 33002, LeftChildID: 33003
+XPartition: 2992, YPartition: -4848, ChangeXPartition: 32, ChangeYPartition: 0, RightBoxTop: -4848, RightBoxBottom: -4864, RightBoxLeft: 2912, RightBoxRight: 3024, LeftBoxTop: -4840, LeftBoxBottom: -4848, LeftBoxLeft: 2912, LeftBoxRight: 3024, RightChildID: 33001, LeftChildID: 227
+XPartition: 3024, YPartition: -4848, ChangeXPartition: 0, ChangeYPartition: 8, RightBoxTop: -4840, RightBoxBottom: -4864, RightBoxLeft: 3024, RightBoxRight: 3104, LeftBoxTop: -4840, LeftBoxBottom: -4864, LeftBoxLeft: 2912, LeftBoxRight: 3024, RightChildID: 33000, LeftChildID: 228
+XPartition: 3024, YPartition: -4840, ChangeXPartition: -32, ChangeYPartition: 0, RightBoxTop: -4672, RightBoxBottom: -4840, RightBoxLeft: 2912, RightBoxRight: 3104, LeftBoxTop: -4840, LeftBoxBottom: -4864, LeftBoxLeft: 2912, LeftBoxRight: 3104, RightChildID: 32999, LeftChildID: 229
+XPartition: 3040, YPartition: -4672, ChangeXPartition: 64, ChangeYPartition: 0, RightBoxTop: -4672, RightBoxBottom: -4864, RightBoxLeft: 2912, RightBoxRight: 3104, LeftBoxTop: -4648, LeftBoxBottom: -4672, LeftBoxLeft: 2976, LeftBoxRight: 3040, RightChildID: 230, LeftChildID: 33004
+XPartition: 3040, YPartition: -4648, ChangeXPartition: -64, ChangeYPartition: 0, RightBoxTop: -4544, RightBoxBottom: -4648, RightBoxLeft: 2944, RightBoxRight: 3072, LeftBoxTop: -4648, LeftBoxBottom: -4864, LeftBoxLeft: 2912, LeftBoxRight: 3104, RightChildID: 226, LeftChildID: 231
+XPartition: 3072, YPartition: -4544, ChangeXPartition: -128, ChangeYPartition: 0, RightBoxTop: -3968, RightBoxBottom: -4544, RightBoxLeft: 2176, RightBoxRight: 3328, LeftBoxTop: -4544, LeftBoxBottom: -4864, LeftBoxLeft: 2912, LeftBoxRight: 3104, RightChildID: 220, LeftChildID: 232
+XPartition: 3304, YPartition: -3968, ChangeXPartition: -104, ChangeYPartition: 0, RightBoxTop: -2048, RightBoxBottom: -3968, RightBoxLeft: 2176, RightBoxRight: 3808, LeftBoxTop: -3968, LeftBoxBottom: -4864, LeftBoxLeft: 2176, LeftBoxRight: 3328, RightChildID: 202, LeftChildID: 233
+XPartition: 2176, YPartition: -3776, ChangeXPartition: 0, ChangeYPartition: -32, RightBoxTop: -2048, RightBoxBottom: -4064, RightBoxLeft: -768, RightBoxRight: 2176, LeftBoxTop: -2048, LeftBoxBottom: -4864, LeftBoxLeft: 2176, LeftBoxRight: 3808, RightChildID: 128, LeftChildID: 234
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
+__render_map_wall_player:-143165506 / -143165136
+A posiçao do rectangulo: 12
 Destroy engine
 destroy scene
 Exiting...

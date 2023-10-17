@@ -2,11 +2,13 @@
 
 void __render_map_wall(t_map *this, SDL_Renderer *renderer, int iXShift, int iYShift);
 void __render_map_wall_player(t_map *this, SDL_Renderer *renderer, int iXShift, int iYShift);
+void __render_auto_map_node(t_map *this, SDL_Renderer *renderer, int iXShift, int iYShift);
 
 static void __render(t_map *this, SDL_Renderer *renderer)
 {
     __render_map_wall(this, renderer, -this->x_min, -this->y_min);
     __render_map_wall_player(this, renderer, -this->x_min, -this->y_min);
+    __render_auto_map_node(this, renderer, -this->x_min, -this->y_min);
 }
 
 t_map *new_map(t_wadd_data *wad, char *name)
@@ -21,6 +23,7 @@ t_map *new_map(t_wadd_data *wad, char *name)
     map->linedefs = new_array(OBJECT);
     map->vertexes = new_array(OBJECT);
     map->things = new_array(OBJECT);
+    map->nodes = new_array(OBJECT);
     map->name = name;
     map->x_min = INT_MAX;
     map->y_min = INT_MAX;
@@ -52,6 +55,7 @@ t_map *new_map(t_wadd_data *wad, char *name)
     normalize_vertex(map);
     read_map_linedef(wad, map);
     read_map_things(wad, map);
-    // exit(0);
+    read_map_nodes(wad, map);
+    //exit(0);
     return (map);
 }

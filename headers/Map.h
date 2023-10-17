@@ -34,6 +34,7 @@ struct s_map
     void *vertexes;
     void *linedefs;
     void *things;
+    void *nodes;
     t_player player;
     int direction[9][2];
     bool (*save)(t_map *map);
