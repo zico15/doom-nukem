@@ -1,4 +1,5 @@
 #include "Map.h"
+#define SUBSECTORIDENTIFIER 0x8000
 
 int RemapXToScreen(t_map *map, int XMapPosition)
 {
@@ -94,4 +95,45 @@ void __render_auto_map_node(t_map *this, SDL_Renderer *renderer, int iXShift, in
         RemapYToScreen(this, node->y_partition, renderer),
         RemapXToScreen(this, node->x_partition + node->change_x_partition),
         RemapYToScreen(this, node->y_partition + node->Change_y_partition, renderer));
+}
+
+bool IsPointOnLeftSide(t_map *map, int XPosition, int YPosition, int iNodeID)
+{
+    //int dx = XPosition - m_Nodes[iNodeID].XPartition; // Find X the point relative to the player 
+    int dx = XPosition - ((t_wad_node *)array(map->nodes)->get(iNodeID))->x_partition; // Find X the point relative to the player 
+    int dy = YPosition - ((t_wad_node *)array(map->nodes)->get(iNodeID))->y_partition; // Find y the point relative to the player 
+
+    return (((dx * ((t_wad_node *)array(map->nodes)->get(iNodeID))->Change_y_partition) - (dy * ((t_wad_node *)array(map->nodes)->get(iNodeID))->change_x_partition)) <= 0);
+}
+
+void RenderSubsector(int iSubsectorID)
+{
+    // for now, just let us keep this empty
+}
+
+void RenderBSPNodes(int iNodeID)
+{
+    // Masking all the bits except the last one
+    // to check if this is a subsector
+    // if (iNodeID & SUBSECTORIDENTIFIER)
+    // {
+    //     RenderSubsector(iNodeID & (~SUBSECTORIDENTIFIER));
+    //     return;
+    // }
+
+    // bool isOnLeft = IsPointOnLeftSide(m_pPlayer->GetXPosition(), m_pPlayer->GetYPosition(), iNodeID);
+
+    // if (isOnLeft)
+    // {
+    //     RenderBSPNodes(m_Nodes[iNodeID].LeftChildID);
+    // }
+    // else
+    // {
+    //     RenderBSPNodes(m_Nodes[iNodeID].RightChildID);
+    // }
+}
+
+void __renderBSPNodes(t_map *map)
+{
+    RenderBSPNodes(array(map->nodes)->size - 1);
 }
