@@ -50,6 +50,7 @@ t_bnode *new_bnode(long long id, void *value)
         return (NULL);
     node->id = id;
     node->value = value;
+    node->destroy = free;
     return (node);
 }
 
