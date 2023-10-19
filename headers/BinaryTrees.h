@@ -66,6 +66,7 @@ struct s_binary_tree_private
 	void (*test)();
 	int (*cmp)(void *a, void *b);
 	t_bnode *root;
+	t_bnode *ret;
 };
 
 void *new_binary_tree(t_type_node type);

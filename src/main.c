@@ -54,9 +54,9 @@ void test_binary_tree()
     void *a;
     a = new_binary_tree(STR);
 
-    binary(a)->insert(2, "Hello");
-    binary(a)->insert(1, "World");
-    binary(a)->insert(3, "Hello");
+    binary(a)->insert(2, strdup("Hello"));
+    binary(a)->insert(1, strdup("World"));
+    binary(a)->insert(3, strdup("Hello"));
     printf_tree(binary(a)->root, 0);
 
     t_bnode *node = binary(a)->search(3);
@@ -65,6 +65,7 @@ void test_binary_tree()
         printf("search: %llu\n", node->id);
     else
         printf("search: NULL\n");
+    binary(a)->destroy();
 
     // // array(a)->add(strdup("World"));
     // // array(a)->add(strdup("Hello"));

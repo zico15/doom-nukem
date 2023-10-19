@@ -1,21 +1,26 @@
 
 #include "BinaryTrees.h"
 
-static t_bnode *__search_node(t_bnode *node, int id)
+static void __search_node(struct s_binary_tree_private *b, t_bnode *node, int id)
 {
-    // Is this a valid node?
     if (!node)
-        return (NULL);
-
-    // Is this what I'm looking for?
-    if (node->id == id && printf("node: %p\n", node))
-        return (node);
-
-    // I didn't find what I'm looking for :(, where should I look?
+        return;
+    if (node->id == id)
+        b->ret = node;
+    if (!node->right && !node->left)
+    {
+        printf("node: %llu\n", node->id);
+    }
     if (node->id < id)
-        return (__search_node(node->right, id));
+    {
+        __search_node(b, node->right, id);
+        __search_node(b, node->left, id);
+    }
     else
-        return (__search_node(node->left, id));
+    {
+        __search_node(b, node->left, id);
+        __search_node(b, node->right, id);
+    }
 }
 
 t_bnode *__binary_tree_search(int id)
@@ -25,5 +30,7 @@ t_bnode *__binary_tree_search(int id)
     b = *this();
     if (!b)
         return (NULL);
-    return (__search_node(b->root, id));
+    b->ret = NULL;
+    __search_node(b, b->root, id);
+    return (b->ret);
 }

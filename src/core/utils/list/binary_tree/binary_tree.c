@@ -36,7 +36,7 @@ void *new_binary_tree(t_type_node type)
 {
     t_binary_tree *b;
 
-    b = extender_array(type, sizeof(struct s_binary_tree_private));
+    b = ft_calloc(sizeof(struct s_binary_tree_private));
     if (!b)
         return (NULL);
     b->insert = __binary_tree_insert;
@@ -48,7 +48,5 @@ void *new_binary_tree(t_type_node type)
     // a->cmp = get_cmp(type);
     // a->for_each = __for_each;
     // a->test = test;
-    // a->destroy = __destroy_array;
-    // array(a);
     return (b);
 }
