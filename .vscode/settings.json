@@ -38,6 +38,9 @@
     "fcntl.h": "c",
     "limits.h": "c",
     "tuple": "c",
-    "type_traits": "c"
+    "type_traits": "c",
+    "binarytrees.h": "c",
+    "arraylist.h": "c",
+    "ft_util.h": "c"
   }
 }

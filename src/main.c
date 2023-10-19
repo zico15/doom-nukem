@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdbool.h>
 #include <Engine.h>
+#include <BinaryTrees.h>
 
 t_scene *new_login();
 
@@ -53,18 +54,26 @@ void test_binary_tree()
     void *a;
     a = new_binary_tree(STR);
 
-    array(a)->add(_int_void_(5));
-    array(a)->add(_int_void_(3));
-    array(a)->add(_int_void_(7));
+    binary(a)->insert(2, "Hello");
+    binary(a)->insert(1, "World");
+    binary(a)->insert(3, "Hello");
+    printf_tree(binary(a)->root, 0);
 
-    // array(a)->add(strdup("World"));
-    // array(a)->add(strdup("Hello"));
-    // // array(a)->remove("World");
-    array(a)->for_each(print_node, "%i\n");
-    // printf("================================\n");
-    // // array(a)->set(0, " sdsd");
-    // array(a)->remove(" World", true);
-    // array(a)->for_each(print_node, NULL);
+    t_bnode *node = binary(a)->search(3);
+
+    if (node)
+        printf("search: %llu\n", node->id);
+    else
+        printf("search: NULL\n");
+
+    // // array(a)->add(strdup("World"));
+    // // array(a)->add(strdup("Hello"));
+    // // // array(a)->remove("World");
+    // array(a)->for_each(print_node, "%i\n");
+    // // printf("================================\n");
+    // // // array(a)->set(0, " sdsd");
+    // // array(a)->remove(" World", true);
+    // // array(a)->for_each(print_node, NULL);
 
     // array(a)->destroy();
 }
@@ -75,10 +84,11 @@ int main(int argc, char *argv[])
 
     // test_binary_tree();
 
-    // test_binary_tree();
-    argv[1] = "resources/maps/DOOM.WAD";
+    test_binary_tree();
+    exit(0);
+    // argv[1] = "resources/maps/DOOM.WAD";
 
-    // // WADData()->init(argv[1]);
+    // // // WADData()->init(argv[1]);
     engine()->init(argc, argv, 320, 200);
 
     t_scene *scene = new_scene(argv[1]);
@@ -91,15 +101,15 @@ int main(int argc, char *argv[])
     engine()->run();
     engine()->destroy(NULL);
 
-    // test
-    //  t_map *map = new_map("mapa.txt");
-    //  save(map, );
-    //  t_map *map_load = load("mapa.txt");
-    //  print_layout(map);
-    //  set_layout(map, 'd');
-    //  print_layout(map);
+    // // test
+    // //  t_map *map = new_map("mapa.txt");
+    // //  save(map, );
+    // //  t_map *map_load = load("mapa.txt");
+    // //  print_layout(map);
+    // //  set_layout(map, 'd');
+    // //  print_layout(map);
 
-    // map->save(map);
-    // map->destroy(map);
+    // // map->save(map);
+    // // map->destroy(map);
     return (0);
 }

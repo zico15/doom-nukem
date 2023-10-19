@@ -10,94 +10,66 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ARRAY_LIST_H
-#define ARRAY_LIST_H
+#ifndef BINARY_TREES_H
+#define BINARY_TREES_H
 
 #include "ft_util.h"
 #include <stdbool.h>
 
-typedef struct s_node t_node;
-typedef struct s_array t_array;
-typedef int (*t_cmp)(void *a, void *b);
+typedef struct s_bnode t_bnode;
+typedef struct s_binary_tree t_binary_tree;
 
-typedef enum e_type_node
+struct s_bnode
 {
-	OBJECT,
-	INT,
-	STR
-} t_type_node;
-
-struct s_node
-{
+	long long id;
 	void *value;
 	void (*destroy)(void *value);
+	t_bnode *left;
+	t_bnode *right;
 };
 
-struct s_array
+struct s_binary_tree
 {
 	size_t size;
 	int is_value_destroy;
-	t_node *(*add)(void *value);
+	t_bnode *(*insert)(int id, void *value);
 	void (*remove)(void *value, bool is_free_value);
-	void *(*get)(int index);
-	t_node *(*set)(int index, void *value);
+	t_bnode *(*search)(int id);
+	t_bnode *(*set)(int index, void *value);
 	void (*remove_index)(int index);
 	void (*destroy)();
-	void (*destroy_element)(t_node *e);
-	void (*for_each)(void (*fun)(t_node *e, void *v), void *o);
+	void (*destroy_element)(t_bnode *e);
+	void (*for_each)(void (*fun)(t_bnode *e, void *v), void *o);
 	void **(*to_array)(void);
 	void (*remove_value)(void *value);
 	void (*remove_all)(void);
 	void (*test)();
 	int (*cmp)(void *a, void *b);
-	t_node *array;
+	t_bnode *root;
 };
 
-struct s_array_private
+struct s_binary_tree_private
 {
 	size_t size;
 	int is_value_destroy;
-	t_node *(*add)(void *value);
+	t_bnode *(*insert)(int id, void *value);
 	void (*remove)(void *value, bool is_free_value);
-	void *(*get)(int index);
-	t_node *(*set)(int index, void *value);
+	void *(*search)(int id);
+	t_bnode *(*set)(int index, void *value);
 	void (*remove_index)(int index);
 	void (*destroy)();
-	void (*destroy_element)(t_node *e);
-	void (*for_each)(void (*fun)(t_node *e, void *v), void *o);
+	void (*destroy_element)(t_bnode *e);
+	void (*for_each)(void (*fun)(t_bnode *e, void *v), void *o);
 	void **(*to_array)(void);
 	void (*remove_value)(void *value);
 	void (*remove_all)(void);
 	void (*test)();
 	int (*cmp)(void *a, void *b);
-	t_node *array;
-	size_t vsize;
-	void **matrix;
-	bool is_update;
+	t_bnode *root;
 };
 
-typedef struct s_hashmap
-{
-	t_array *list;
-	int (*size)(void);
-	t_node *(*put)(char *key, void *value);
-	t_node *(*get_index)(int index);
-	t_node *(*get_key)(char *key);
-	void (*remove_index)(int index);
-	void (*remove_key)(char *key);
-	int (*destroy)();
-	void (*for_each)(void (*fun)(t_node *e, void *v), void *o);
-	void **(*to_str)(void);
-} t_hashmap;
-
-void *new_array(t_type_node type);
-t_cmp get_cmp(t_type_node type);
-
-t_array *array(t_array *this);
-void *_int_void_(int value);
-int _void_int_(void *value);
-void *extender_array(t_type_node type, size_t size);
-// void *new_hashmap(void);
-// t_hashmap *hashmap(t_hashmap *this);
+void *new_binary_tree(t_type_node type);
+void printf_tree(t_bnode *node, int level);
+t_binary_tree *binary(t_binary_tree *tree);
 
 #endif

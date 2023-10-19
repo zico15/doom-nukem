@@ -80,7 +80,6 @@ static t_node *__add(void *value)
 	a->size++;
 	a->array[index].value = value;
 	a->array[index].destroy = &free;
-	a->array[index].index = a->size;
 	a->is_update = false;
 	return (&a->array[index]);
 }
@@ -103,7 +102,6 @@ static void __remove(void *value, bool is_free)
 		if (is_realloc)
 		{
 			a->array[i - 1] = a->array[i];
-			a->array[i - 1].index = i - 1;
 			a->array[i].value = NULL;
 		}
 		else if (a->cmp(a->array[i].value, value) && ++is_realloc)
