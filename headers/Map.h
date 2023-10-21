@@ -6,6 +6,7 @@
 
 #define MAP_PATH "resources/maps/"
 #define SUBSECTORIDENTIFIER 0x8000
+#define FOV 90
 
 typedef struct s_player t_player;
 
@@ -37,6 +38,7 @@ struct s_map
     void *things;
     void *nodes;
     void *subsectors;
+    void *segs;
     t_player player;
     int direction[9][2];
     bool (*save)(t_map *map);
@@ -54,5 +56,11 @@ t_map *new_map(t_wadd_data *wad, char *name);
 // test
 void set_layout(t_map *map, char c);
 void print_layout(t_map *map);
+int remap_x_screen(t_map *map, int x_map_position);
+int remap_y_screen(t_map *map, int y_map_position, SDL_Renderer *renderer);
+bool clip_vertexes_in_fov(t_map *this, t_vertex v1, t_vertex v2);
+float angle_to_vertex(t_vertex vertex, float x_position, float y_position);
+void rotate_left(t_map *this);
+void rotate_right(t_map *this);
 
 #endif

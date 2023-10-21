@@ -1,5 +1,7 @@
 #include "Map.h"
 
+void __render_subsector(t_map *this, SDL_Renderer *renderer, int subsector_id);
+
 int remap_x_screen(t_map *map, int x_map_position)
 {
     return (x_map_position + (-map->min_x)) / map->scale;
@@ -102,29 +104,24 @@ bool is_on_left_side(t_map *map, int XPosition, int YPosition, int iNodeID)
     return (((dx * ((t_wad_node *)array(map->nodes)->get(iNodeID))->change_y_partition) - (dy * ((t_wad_node *)array(map->nodes)->get(iNodeID))->change_x_partition)) <= 0);
 }
 
-void RenderSubsector(t_map *this, SDL_Renderer *renderer, int node_id)
-{
-    // for now, just let us keep this empty
-    printf("iSubsectorID: %i\n", node_id);
-    if (node_id < array(this->nodes)->size)
-        __render_auto_map_node(this, renderer, node_id);
-}
-
 void render_bsp_nodes(t_map *this, SDL_Renderer *renderer, int node_id)
 {
     // Masking all the bits except the last one     to check
 
     if (node_id & SUBSECTORIDENTIFIER)
     {
-        RenderSubsector(this, renderer, node_id & (~SUBSECTORIDENTIFIER));
+        // SDL_RenderClear(renderer);
+        __render_subsector(this, renderer, node_id & (~SUBSECTORIDENTIFIER));
+
+        SDL_RenderPresent(renderer);
+        SDL_Delay(100);
         return;
     }
 
     // SDL_SetRenderDrawColor(renderer, 0x00, 0x00, 0x00, 0x00);
     // SDL_RenderClear(renderer);
     // __render_auto_map_node(this, renderer, node_id);
-    // SDL_RenderPresent(renderer);
-    // SDL_Delay(500);
+
     bool isOnLeft = is_on_left_side(this, this->player.x_position, this->player.y_position, node_id);
 
     if (isOnLeft)

@@ -33,7 +33,7 @@ t_sdl *new_sdl(int width, int height)
 {
     t_sdl *sdl;
 
-    if (SDL_Init(SDL_INIT_VIDEO) != 0 || IMG_Init(IMG_INIT_PNG) != IMG_INIT_PNG)
+    if (SDL_Init(SDL_INIT_EVERYTHING) != 0 || IMG_Init(IMG_INIT_PNG) != IMG_INIT_PNG)
         engine()->destroy("Error initializing SDL");
     sdl = malloc(sizeof(t_sdl));
     if (!sdl)
@@ -42,11 +42,10 @@ t_sdl *new_sdl(int width, int height)
     sdl->height = height;
     engine()->render = render_defaul;
     engine()->update = update_default;
-    if (SDL_CreateWindowAndRenderer(width, height, SDL_WINDOW_RESIZABLE, &sdl->win, &sdl->renderer))
-    {
-        SDL_LogError(SDL_LOG_CATEGORY_APPLICATION, "Couldn't create window and renderer: %s", SDL_GetError());
+    sdl->win = SDL_CreateWindow("Doom Nukem", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, width, height, SDL_WINDOW_SHOWN);
+    if (!sdl->win)
         engine()->destroy("Error initializing Window");
-    }
+    sdl->renderer = SDL_CreateRenderer(sdl->win, -1, SDL_RENDERER_SOFTWARE);
     if (!sdl->renderer)
         engine()->destroy("Error creating renderer");
     if (SDL_RenderSetLogicalSize(sdl->renderer, width, height) != 0)
@@ -70,6 +69,7 @@ void sdl_loop(t_sdl *sdl)
         prevTime = sdl->currentTime;
         even_handler(sdl);
         // engine()->update();
+        SDL_SetRenderDrawColor(sdl->renderer, 0x00, 0x00, 0x00, 0x00);
         SDL_RenderClear(sdl->renderer);
         engine()->render(sdl->renderer);
         // printf("render\n");

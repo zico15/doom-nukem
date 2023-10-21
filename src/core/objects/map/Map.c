@@ -26,6 +26,7 @@ t_map *new_map(t_wadd_data *wad, char *name)
     map->things = new_array(OBJECT);
     map->nodes = new_array(OBJECT);
     map->subsectors = new_array(OBJECT);
+    map->segs = new_array(OBJECT);
     map->name = name;
     map->x_min = INT_MAX;
     map->y_min = INT_MAX;
@@ -59,6 +60,7 @@ t_map *new_map(t_wadd_data *wad, char *name)
     read_map_things(wad, map);
     read_map_nodes(wad, map);
     read_map_subsectors(wad, map);
-    exit(0);
+    read_map_segs(wad, map);
+    // exit(0);
     return (map);
 }

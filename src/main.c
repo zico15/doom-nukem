@@ -85,11 +85,11 @@ int main(int argc, char *argv[])
 
     // test_binary_tree();
 
-    test_binary_tree();
-    exit(0);
-    // argv[1] = "resources/maps/DOOM.WAD";
+    // test_binary_tree();
+    // exit(0);
 
     // // // WADData()->init(argv[1]);
+    argv[1] = "resources/maps/DOOM.WAD";
     engine()->init(argc, argv, 320, 200);
 
     t_scene *scene = new_scene(argv[1]);

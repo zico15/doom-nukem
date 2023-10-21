@@ -7,6 +7,15 @@ static void __key(t_scene *this, bool *key, SDL_Event *event)
     size_t size;
     t_object *object;
 
+    printf("key\n");
+    if (event->type == SDL_KEYDOWN)
+    {
+        if (event->key.keysym.sym == SDLK_LEFT)
+            rotate_left(this->map);
+        if (event->key.keysym.sym == SDLK_RIGHT)
+            rotate_right(this->map);
+    }
+
     nodes = array(this->event_key)->array;
     i = 0;
     size = array(this->event_key)->size;

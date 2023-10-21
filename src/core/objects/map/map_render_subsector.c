@@ -1,17 +1,39 @@
 #include "Map.h"
 
-void render_subsector(t_map *this, int subsector_id)
+static t_vertex *get_vertex(t_map *this, int vertex_id)
 {
-    // Subsector subsector = m_Subsector[subsector_id];
-    // SDL_SetRenderDrawColor(m_pRenderer, rand() % 255, rand() % 255, rand() % 255, SDL_ALPHA_OPAQUE);
+    return array(this->vertexes)->get(vertex_id);
+}
 
-    // for (int i = 0; i < subsector.SegCount; i++)
-    // {
-    //     Seg seg = m_Segs[subsector.FirstSegID + i];
-    //     SDL_RenderDrawLine(m_pRenderer,
-    //                        RemapXToScreen(m_Vertexes[seg.StartVertexID].XPosition),
-    //                        RemapYToScreen(m_Vertexes[seg.StartVertexID].YPosition),
-    //                        RemapXToScreen(m_Vertexes[seg.EndVertexID].XPosition),
-    //                        RemapYToScreen(m_Vertexes[seg.EndVertexID].YPosition));
-    // }
+void __render_subsector(t_map *this, SDL_Renderer *renderer, int subsector_id)
+{
+    t_wad_subsector *subsector = array(this->subsectors)->get(subsector_id);
+
+    SDL_SetRenderDrawColor(renderer, rand() % 255, rand() % 255, rand() % 255, SDL_ALPHA_OPAQUE);
+
+    for (int i = 0; i < subsector->seg_count; i++)
+    {
+        t_wad_seg *seg = array(this->segs)->get(subsector->first_seg_id + i);
+        t_vertex *vStart = get_vertex(this, seg->start_vertex_id);
+        t_vertex *vEnd = get_vertex(this, seg->end_vertex_id);
+        if (clip_vertexes_in_fov(this, *vStart, *vEnd))
+            continue;
+        SDL_RenderDrawLine(renderer,
+                           remap_x_screen(this, get_vertex(this, seg->start_vertex_id)->x_position),
+                           remap_y_screen(this, get_vertex(this, seg->start_vertex_id)->y_position, renderer),
+                           remap_x_screen(this, get_vertex(this, seg->end_vertex_id)->x_position),
+                           remap_y_screen(this, get_vertex(this, seg->end_vertex_id)->y_position, renderer));
+    }
+}
+
+void rotate_left(t_map *this)
+{
+    this->player.angle += (0.1875f * 1);
+    printf("angle:%d\n", this->player.angle);
+}
+
+void rotate_right(t_map *this)
+{
+    this->player.angle -= (0.1875f * 1);
+    printf("angle:%d\n", this->player.angle);
 }

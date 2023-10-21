@@ -17,7 +17,7 @@ enum e_EMAPLUMPSINDEX
     LINEDEFS,
     SIDEDDEFS,
     VERTEXES,
-    SEAGS,
+    SEGS,
     SSECTORS,
     NODES,
     SECTORS,
@@ -129,12 +129,12 @@ struct s_wad_subsector
 
 struct s_wad_seg
 {
-    uint16_t StartVertexID;
-    uint16_t EndVertexID;
-    uint16_t Angle;
-    uint16_t LinedefID;
-    uint16_t Direction; // 0 same as linedef, 1 opposite of linedef
-    uint16_t Offset;    // distance along linedef to start of seg
+    uint16_t start_vertex_id;
+    uint16_t end_vertex_id;
+    uint16_t angle;
+    uint16_t linedef_id;
+    uint16_t direction;
+    uint16_t offset;
 };
 
 t_wadd_data init_wad_data(char *wad_path);
@@ -149,5 +149,6 @@ void read_map_things(t_wadd_data *wad_data, t_map *map);
 void read_map_linedef(t_wadd_data *wad_data, t_map *map);
 void read_map_nodes(t_wadd_data *wad_data, t_map *map);
 void read_map_subsectors(t_wadd_data *wad_data, t_map *map);
+void read_map_segs(t_wadd_data *wad_data, t_map *map);
 
 #endif

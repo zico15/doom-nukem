@@ -3,8 +3,7 @@
 
 #include <math.h>
 
-#define public
-#define private static
+#define PI 3.14159265358979323846
 
 typedef struct s_vector2
 {
@@ -37,5 +36,6 @@ double vector2_perpDot(t_vector2 a, t_vector2 b);
 void vector2_normalize(t_vector2 *this);
 double vector2_relative_angle_between(t_vector2 a, t_vector2 b);
 double toRadians(double angdeg);
+float normalize_angle(float angle);
 
 #endif
