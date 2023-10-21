@@ -43,6 +43,6 @@ void read_map_things(t_wadd_data *wad_data, t_map *map)
             map->player.flags = thing->flags;
         }
         printf("x_position: %i y_position: %i angle: %i type: %i flags: %i\n",
-               map->player.x_position, map->player.y_position, map->player.angle, map->player.type, map->player.flags);
+               map->player.x_position, map->player.y_position, (int)map->player.angle, map->player.type, map->player.flags);
     }
 }

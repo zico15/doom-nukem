@@ -29,10 +29,7 @@ void key_handler(t_sdl *sdl)
     if (sdl->keys[SDL_SCANCODE_ESCAPE])
     {
         sdl->running = false;
-        return ;
+        return;
     }
-    // else if (sdl->event.type == SDL_KEYUP)
-    //     engine()->scene->key(engine()->scene, sdl->keys, &sdl->event);
-    // else if (sdl->event.type == SDL_KEYDOWN)
-    //     engine()->scene->key(engine()->scene, sdl->keys, &sdl->event);
+    engine()->scene->key(engine()->scene, sdl->keys, &sdl->event);
 }

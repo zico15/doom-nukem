@@ -14,7 +14,7 @@ struct s_player
 {
     int x_position;
     int y_position;
-    int angle;
+    float angle;
     int type;
     int flags;
 };

@@ -58,7 +58,6 @@ t_sdl *new_sdl(int width, int height)
 
 void sdl_loop(t_sdl *sdl)
 {
-    SDL_Event event;
     Uint32 prevTime;
 
     prevTime = SDL_GetTicks();
@@ -70,7 +69,6 @@ void sdl_loop(t_sdl *sdl)
         engine()->delta_time = (sdl->currentTime - prevTime) / 1000.0f;
         prevTime = sdl->currentTime;
         even_handler(sdl);
-        // engine()->update();
         SDL_SetRenderDrawColor(sdl->renderer, 0x00, 0x00, 0x00, 0x00);
         update_default(sdl);
         SDL_RenderClear(sdl->renderer);

@@ -56,7 +56,6 @@ void __render_map_wall_player(t_map *this, SDL_Renderer *renderer, int iXShift, 
     --iRenderYSize;
     // Let's draw player in Red
     SDL_SetRenderDrawColor(renderer, 255, 0, 0, SDL_ALPHA_OPAQUE);
-    printf("__render_map_wall_player:%d / %d\n", (this->player.x_position + iXShift) / this->scale, (iRenderYSize - (this->player.y_position + iYShift) / this->scale));
     for (int i = 0; i < 9; ++i)
     {
         SDL_RenderDrawPoint(renderer,
@@ -113,8 +112,8 @@ void render_bsp_nodes(t_map *this, SDL_Renderer *renderer, int node_id)
         // SDL_RenderClear(renderer);
         __render_subsector(this, renderer, node_id & (~SUBSECTORIDENTIFIER));
 
-        SDL_RenderPresent(renderer);
-        SDL_Delay(100);
+        // SDL_RenderPresent(renderer);
+        // SDL_Delay(100);
         return;
     }
 
