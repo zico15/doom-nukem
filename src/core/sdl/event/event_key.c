@@ -23,18 +23,16 @@
 
 void key_handler(t_sdl *sdl)
 {
-    // static bool keys[SDL_NUM_SCANCODES] = {0};
-
     if (!engine()->scene->key)
         return;
-    // keys[sdl->event.key.keysym.scancode] = (sdl->event.type == SDL_KEYDOWN);
-    if (sdl->event.type == SDL_QUIT)
-        sdl->running = false;
-    else if (sdl->event.type == SDL_KEYUP)
-        engine()->scene->key(engine()->scene, NULL, &sdl->event);
-    else if (sdl->event.type == SDL_KEYDOWN)
+    sdl->keys[sdl->event.key.keysym.scancode] = (sdl->event.type == SDL_KEYDOWN);
+    if (sdl->keys[SDL_SCANCODE_ESCAPE])
     {
-        engine()->scene->key(engine()->scene, NULL, &sdl->event);
-        // key_down(keys);
+        sdl->running = false;
+        return ;
     }
+    // else if (sdl->event.type == SDL_KEYUP)
+    //     engine()->scene->key(engine()->scene, sdl->keys, &sdl->event);
+    // else if (sdl->event.type == SDL_KEYDOWN)
+    //     engine()->scene->key(engine()->scene, sdl->keys, &sdl->event);
 }

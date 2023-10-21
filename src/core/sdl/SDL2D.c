@@ -51,6 +51,8 @@ t_sdl *new_sdl(int width, int height)
     if (SDL_RenderSetLogicalSize(sdl->renderer, width, height) != 0)
         engine()->destroy("Error initializing Window");
     sdl->surface = SDL_GetWindowSurface(sdl->win);
+    for (int i = 0; i < SDL_NUM_SCANCODES; i++)
+        sdl->keys[i] = false;
     return (sdl);
 }
 
@@ -70,6 +72,7 @@ void sdl_loop(t_sdl *sdl)
         even_handler(sdl);
         // engine()->update();
         SDL_SetRenderDrawColor(sdl->renderer, 0x00, 0x00, 0x00, 0x00);
+        update_default(sdl);
         SDL_RenderClear(sdl->renderer);
         engine()->render(sdl->renderer);
         // printf("render\n");

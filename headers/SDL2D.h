@@ -33,6 +33,7 @@ struct s_sdl
     int width;
     int height;
     float currentTime;
+    bool keys[SDL_NUM_SCANCODES + 1];
 };
 
 struct s_image
