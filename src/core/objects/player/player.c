@@ -10,13 +10,13 @@ float normalize_angle(float angle)
 
 float angle_to_vertex(t_vertex vertex, float x_position, float y_position)
 {
-    return (atan2f(vertex.x_position - x_position, vertex.y_position - y_position) * 180 / PI);
+    return (atan2f(vertex.y_position - y_position, vertex.x_position - x_position) * 180 / PI);
 }
 
-bool clip_vertexes_in_fov(t_map *this, t_vertex v1, t_vertex v2)
+bool clip_vertexes_in_fov(t_map *this, t_vertex *v1, t_vertex *v2)
 {
-    float v1Angle = angle_to_vertex(v1, this->player.x_position, this->player.y_position);
-    float V2Angle = angle_to_vertex(v2, this->player.x_position, this->player.y_position);
+    float v1Angle = normalize_angle(angle_to_vertex(*v1, this->player.x_position, this->player.y_position));
+    float V2Angle = normalize_angle(angle_to_vertex(*v2, this->player.x_position, this->player.y_position));
 
     float v1ToV2Span = v1Angle - V2Angle;
 
