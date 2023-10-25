@@ -33,8 +33,18 @@ t_sdl *new_sdl(int width, int height)
 {
     t_sdl *sdl;
 
+
+#if defined(WIN32) || defined(_WIN32) || defined(__WIN32__) || defined(__NT__)
+   //define something for Windows (32-bit and 64-bit, this part is common)
+#elif __APPLE__
     if (SDL_Init(SDL_INIT_EVERYTHING) != 0 || IMG_Init(IMG_INIT_PNG) != IMG_INIT_PNG)
         engine()->destroy("Error initializing SDL");
+#elif __linux__
+    if (SDL_Init(SDL_INIT_VIDEO) != 0 || IMG_Init(IMG_INIT_PNG) != IMG_INIT_PNG)
+        engine()->destroy("Error initializing SDL");
+#endif
+
+
     sdl = malloc(sizeof(t_sdl));
     if (!sdl)
         engine()->destroy("Error initializing SDL");

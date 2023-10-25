@@ -33,6 +33,11 @@ void rotate_left(t_map *this)
     printf("angle:%f\n", this->player.angle);
 }
 
+void move_front(t_map *this)
+{
+    this->player.y_position += 5;
+}
+
 void rotate_right(t_map *this)
 {
     this->player.angle -= (0.1875f * 5);

@@ -14,6 +14,8 @@ static void __key(t_scene *this, bool *key, SDL_Event *event)
             rotate_left(this->map);
         if (event->key.keysym.sym == SDLK_RIGHT)
             rotate_right(this->map);
+        if (event->key.keysym.sym == SDLK_UP)
+            move_front(this->map);
     }
 
     nodes = array(this->event_key)->array;

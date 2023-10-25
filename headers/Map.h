@@ -62,5 +62,6 @@ bool clip_vertexes_in_fov(t_map *this, t_vertex *v1, t_vertex *v2);
 float angle_to_vertex(t_vertex vertex, float x_position, float y_position);
 void rotate_left(t_map *this);
 void rotate_right(t_map *this);
+void move_front(t_map *this);
 
 #endif

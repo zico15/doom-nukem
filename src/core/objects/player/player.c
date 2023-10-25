@@ -10,15 +10,15 @@ float normalize_angle(float angle)
 
 float angle_to_vertex(t_vertex vertex, float x_position, float y_position)
 {
-    return (atan2f(vertex.y_position - y_position, vertex.x_position - x_position) * 180 / PI);
+    return (normalize_angle(atan2f(vertex.y_position - y_position, vertex.x_position - x_position) * 180 / PI));
 }
 
 bool clip_vertexes_in_fov(t_map *this, t_vertex *v1, t_vertex *v2)
 {
-    float v1Angle = normalize_angle(angle_to_vertex(*v1, this->player.x_position, this->player.y_position));
-    float V2Angle = normalize_angle(angle_to_vertex(*v2, this->player.x_position, this->player.y_position));
+    float v1Angle = angle_to_vertex(*v1, this->player.x_position, this->player.y_position);
+    float V2Angle = angle_to_vertex(*v2, this->player.x_position, this->player.y_position);
 
-    float v1ToV2Span = v1Angle - V2Angle;
+    float v1ToV2Span = normalize_angle(v1Angle - V2Angle);
 
     if (v1ToV2Span >= 180)
     {
@@ -26,21 +26,21 @@ bool clip_vertexes_in_fov(t_map *this, t_vertex *v1, t_vertex *v2)
     }
 
     // Rotate everything.
-    v1Angle = v1Angle - this->player.angle;
-    V2Angle = V2Angle - this->player.angle;
+    v1Angle = normalize_angle(v1Angle - this->player.angle);
+    V2Angle = normalize_angle(V2Angle - this->player.angle);
 
-    float HalfFOV = FOV / 2;
+    float HalfFOV = normalize_angle(FOV / 2);
 
     // Validate and Clip v1
     // shift angles to be between 0 and 90 (now virtually we shifted FOV to be in that range)
-    float v1Moved = v1Angle + HalfFOV;
+    float v1Moved = normalize_angle(v1Angle + HalfFOV);
 
     if (v1Moved > FOV)
     {
         // now we know that v1, is outside the left side of the FOV
         // But we need to check is Also V2 is outside.
         // Let's find out what is the size of the angle outside the FOV
-        float v1MovedAngle = v1Moved - FOV;
+        float v1MovedAngle = normalize_angle(v1Moved - FOV);
 
         // Are both v1 and V2 outside?
         if (v1MovedAngle >= v1ToV2Span)
@@ -50,16 +50,16 @@ bool clip_vertexes_in_fov(t_map *this, t_vertex *v1, t_vertex *v2)
 
         // At this point V2 or part of the line should be in the FOV.
         // We need to clip the v1
-        v1Angle = HalfFOV;
+        v1Angle = normalize_angle(HalfFOV);
     }
 
     // Validate and Clip V2
-    float V2Moved = HalfFOV - V2Angle;
+    float V2Moved = normalize_angle(HalfFOV - V2Angle);
 
     // Is V2 outside the FOV?
     if (V2Moved > FOV)
     {
-        V2Angle = -HalfFOV;
+        V2Angle = normalize_angle(-HalfFOV);
     }
 
     v1Angle += 90;
