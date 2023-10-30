@@ -2,8 +2,6 @@
 #include <ft_string.h>
 #include <Map.h>
 
-
-
 int find_map_index(t_wad_data *wad_data, char *map_name)
 {
     int i;

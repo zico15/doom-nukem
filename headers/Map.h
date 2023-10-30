@@ -26,10 +26,6 @@ struct s_map
     int id;
     char *name;
     int map_index;
-    int x_min;
-    int y_min;
-    int x_max;
-    int y_max;
     int16_t min_x;
     int16_t min_y;
     int scale;

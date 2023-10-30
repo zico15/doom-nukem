@@ -1,14 +1,13 @@
 #include "Map.h"
 
-void __render_map_wall(t_map *this, SDL_Renderer *renderer, int iXShift, int iYShift);
-void __render_map_wall_player(t_map *this, SDL_Renderer *renderer, int iXShift, int iYShift);
-void __render_auto_map_node(t_map *this, SDL_Renderer *renderer, int iXShift, int iYShift);
+void __render_map_wall(t_map *this, SDL_Renderer *renderer);
+void __render_map_wall_player(t_map *this, SDL_Renderer *renderer);
 void __renderBSPNodes(t_map *map, SDL_Renderer *renderer);
 
 static void __render(t_map *this, SDL_Renderer *renderer)
 {
-    __render_map_wall(this, renderer, -this->x_min, -this->y_min);
-    __render_map_wall_player(this, renderer, -this->x_min, -this->y_min);
+    __render_map_wall(this, renderer);
+    __render_map_wall_player(this, renderer);
     __renderBSPNodes(this, renderer);
 }
 
@@ -28,10 +27,6 @@ t_map *new_map(t_wad_data *wad, char *name)
     map->subsectors = new_array(OBJECT);
     map->segs = new_array(OBJECT);
     map->name = name;
-    map->x_min = INT_MAX;
-    map->y_min = INT_MAX;
-    map->x_max = INT_MIN;
-    map->y_max = INT_MIN;
     map->min_x = __INT16_MAX__;
     map->min_y = __INT16_MAX__;
     map->scale = 15;

@@ -17,7 +17,7 @@ int remap_y_screen(t_map *map, int y_map_position, SDL_Renderer *renderer)
     return (i_render_y - (y_map_position + (-map->min_y)) / map->scale);
 }
 
-void __render_map_wall(t_map *this, SDL_Renderer *renderer, int iXShift, int iYShift)
+void __render_map_wall(t_map *this, SDL_Renderer *renderer)
 {
     t_node *linedefs;
     t_node *vertexes;
@@ -46,7 +46,7 @@ void __render_map_wall(t_map *this, SDL_Renderer *renderer, int iXShift, int iYS
     }
 }
 
-void __render_map_wall_player(t_map *this, SDL_Renderer *renderer, int iXShift, int iYShift)
+void __render_map_wall_player(t_map *this, SDL_Renderer *renderer)
 {
     int iRenderXSize;
     int iRenderYSize;
@@ -119,7 +119,7 @@ void render_bsp_nodes(t_map *this, SDL_Renderer *renderer, int node_id)
 
     // SDL_SetRenderDrawColor(renderer, 0x00, 0x00, 0x00, 0x00);
     // SDL_RenderClear(renderer);
-    // __render_auto_map_node(this, renderer, node_id);
+    //__render_auto_map_node(this, renderer, node_id);
 
     bool isOnLeft = is_on_left_side(this, this->player.x_position, this->player.y_position, node_id);
 

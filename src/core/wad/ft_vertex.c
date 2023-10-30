@@ -26,20 +26,6 @@ void normalize_vertex(t_map *map)
         if (map->min_y > ((t_wad_vertex *)(node[i]).value)->y_position)
             map->min_y = ((t_wad_vertex *)(node[i]).value)->y_position;
     }
-    i = -1;
-    // while (++i < size)
-    // {
-    //     ((t_wad_vertex *)(node[i]).value)->x_position -= map->min_x;
-    //     ((t_wad_vertex *)(node[i]).value)->y_position -= map->min_y;
-    //     if (map->x_min > ((t_wad_vertex *)(node[i]).value)->x_position)
-    //         map->x_min = ((t_wad_vertex *)(node[i]).value)->x_position;
-    //     if (map->y_min > ((t_wad_vertex *)(node[i]).value)->y_position)
-    //         map->y_min = ((t_wad_vertex *)(node[i]).value)->y_position;
-    //     if (map->x_max < ((t_wad_vertex *)(node[i]).value)->x_position)
-    //         map->x_max = ((t_wad_vertex *)(node[i]).value)->x_position;
-    //     if (map->y_max < ((t_wad_vertex *)(node[i]).value)->y_position)
-    //         map->y_max = ((t_wad_vertex *)(node[i]).value)->y_position;
-    // }
 }
 
 void read_map_vertex(t_wad_data *wad_data, t_map *map)
@@ -63,13 +49,4 @@ void read_map_vertex(t_wad_data *wad_data, t_map *map)
         i++;
         printf("(%i,%i)\n", vertex->x_position, vertex->y_position);
     }
-    // int size = array(map->vertexes)->size;
-    // t_node *node = array(map->vertexes)->array;
-    // i = -1;
-    // while (++i < size)
-    // {
-    //     // vertex = node[i];
-    //     // printf("(%i,%i)\n", vertex->x_position, vertex->y_position);
-    //     printf("%p\n", node[i].value);
-    // }
 }
