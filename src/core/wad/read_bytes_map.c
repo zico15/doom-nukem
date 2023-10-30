@@ -4,7 +4,7 @@
 
 
 
-int find_map_index(t_wadd_data *wad_data, char *map_name)
+int find_map_index(t_wad_data *wad_data, char *map_name)
 {
     int i;
 

@@ -71,7 +71,7 @@ struct s_scene
     void *event_update;
     void *event_key;
     t_map *map;
-    t_wadd_data wad;
+    t_wad_data wad;
 };
 
 struct s_plane

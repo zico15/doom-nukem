@@ -24,7 +24,7 @@ static t_wad_node *read_node_data(const uint8_t *pWADData, int offset, t_map *ma
     node->left_child_id = read_2_bytes(pWADData, offset + 26);
     return (node);
 }
-void read_map_nodes(t_wadd_data *wad_data, t_map *map)
+void read_map_nodes(t_wad_data *wad_data, t_map *map)
 {
     int i;
     int index;

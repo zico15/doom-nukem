@@ -10,7 +10,7 @@ static t_wad_subsector *read_subsector_data(const uint8_t *pWADData, int offset,
     return (subsector);
 }
 
-void read_map_subsectors(t_wadd_data *wad_data, t_map *map)
+void read_map_subsectors(t_wad_data *wad_data, t_map *map)
 {
     int i;
     int index;

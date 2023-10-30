@@ -12,7 +12,7 @@ static void __render(t_map *this, SDL_Renderer *renderer)
     __renderBSPNodes(this, renderer);
 }
 
-t_map *new_map(t_wadd_data *wad, char *name)
+t_map *new_map(t_wad_data *wad, char *name)
 {
     int fd;
     t_map *map;

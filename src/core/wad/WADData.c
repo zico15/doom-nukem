@@ -32,7 +32,7 @@
 //     readDataFromFile(wad->file, directory->offset, directory->length, directory->data);
 // }
 
-static void extractDirectories(t_wadd_data *wad, t_wad_directory *directorys)
+static void extractDirectories(t_wad_data *wad, t_wad_directory *directorys)
 {
     size_t i;
     // t_wadd_directory *directory;
@@ -62,7 +62,7 @@ static void extractDirectories(t_wadd_data *wad, t_wad_directory *directorys)
     }
 }
 
-static void loadWad(t_wadd_data *wad, char *wad_path)
+static void loadWad(t_wad_data *wad, char *wad_path)
 {
     long file_size;
 
@@ -85,9 +85,9 @@ static void loadWad(t_wadd_data *wad, char *wad_path)
     printf("map: %i\n", find_map_index(wad, "E1M1"));
 }
 
-t_wadd_data init_wad_data(char *wad_path)
+t_wad_data init_wad_data(char *wad_path)
 {
-    t_wadd_data e;
+    t_wad_data e;
 
     e.file = NULL;
     e.is_valid = wad_path == NULL;

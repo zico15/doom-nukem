@@ -42,7 +42,7 @@ void normalize_vertex(t_map *map)
     // }
 }
 
-void read_map_vertex(t_wadd_data *wad_data, t_map *map)
+void read_map_vertex(t_wad_data *wad_data, t_map *map)
 {
     int i;
     int index;

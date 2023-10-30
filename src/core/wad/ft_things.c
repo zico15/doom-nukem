@@ -1,10 +1,10 @@
 #include "Engine.h"
 
-static t_wadd_thing *read_thing_data(const uint8_t *pWADData, int offset, t_map *map)
+static t_wad_thing *read_thing_data(const uint8_t *pWADData, int offset, t_map *map)
 {
-    t_wadd_thing *thing;
+    t_wad_thing *thing;
 
-    thing = ft_calloc(sizeof(t_wadd_thing));
+    thing = ft_calloc(sizeof(t_wad_thing));
     thing->x_position = read_2_bytes(pWADData, offset);
     thing->y_position = read_2_bytes(pWADData, offset + 2);
     thing->angle = read_2_bytes(pWADData, offset + 4);
@@ -13,12 +13,12 @@ static t_wadd_thing *read_thing_data(const uint8_t *pWADData, int offset, t_map 
     return (thing);
 }
 
-void read_map_things(t_wadd_data *wad_data, t_map *map)
+void read_map_things(t_wad_data *wad_data, t_map *map)
 {
     int i;
     int index;
     int count_things;
-    t_wadd_thing *thing;
+    t_wad_thing *thing;
 
     printf("read_map_things\n");
     index = map->map_index + THINGS;
@@ -28,11 +28,11 @@ void read_map_things(t_wadd_data *wad_data, t_map *map)
         return;
     }
     printf("THINGS: %s\n", wad_data->directory[index].name);
-    count_things = wad_data->directory[index].size / sizeof(t_wadd_thing);
+    count_things = wad_data->directory[index].size / sizeof(t_wad_thing);
     i = 0;
     while (i < count_things)
     {
-        thing = (t_wadd_thing *)array(map->things)->add(read_thing_data(wad_data->data, wad_data->directory[index].offset + i * sizeof(t_wadd_thing), map))->value;
+        thing = (t_wad_thing *)array(map->things)->add(read_thing_data(wad_data->data, wad_data->directory[index].offset + i * sizeof(t_wad_thing), map))->value;
         i++;
         if (thing->type == 1)
         {

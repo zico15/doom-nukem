@@ -14,7 +14,7 @@ static t_wad_seg *read_seg_data(const uint8_t *data, int offset, t_map *map)
     return (seg);
 }
 
-void read_map_segs(t_wadd_data *wad_data, t_map *map)
+void read_map_segs(t_wad_data *wad_data, t_map *map)
 {
     int i;
     int index;

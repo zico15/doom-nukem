@@ -39,10 +39,10 @@ enum e_ELINEDEFFLAGS
     DRAW = 128
 };
 
-typedef struct s_wadd_data t_wadd_data;
+typedef struct s_wad_data t_wad_data;
 typedef struct s_wad_header t_wad_header;
 typedef struct s_map t_map;
-typedef struct s_wadd_thing t_wadd_thing;
+typedef struct s_wad_thing t_wad_thing;
 typedef struct s_wad_directory t_wad_directory;
 typedef struct s_wad_node t_wad_node;
 typedef struct s_wad_subsector t_wad_subsector;
@@ -81,7 +81,7 @@ struct s_wad_header
 
 // Estrutura de diretório de um lump WAD
 
-struct s_wadd_data
+struct s_wad_data
 {
     FILE *file;
     t_wad_header header;
@@ -91,7 +91,7 @@ struct s_wadd_data
     bool is_valid;
 };
 
-struct s_wadd_thing
+struct s_wad_thing
 {
     int16_t x_position;
     int16_t y_position;
@@ -137,18 +137,18 @@ struct s_wad_seg
     uint16_t offset;
 };
 
-t_wadd_data init_wad_data(char *wad_path);
+t_wad_data init_wad_data(char *wad_path);
 uint8_t read_1_byte(const uint8_t *data, long offset);
 int16_t read_2_bytes(const uint8_t *data, long offset);
 int32_t read_4_bytes(const uint8_t *data, long offset);
-int find_map_index(t_wadd_data *wad_data, char *map_name);
+int find_map_index(t_wad_data *wad_data, char *map_name);
 void normalize_vertex(t_map *map);
-void read_map_vertex(t_wadd_data *wad_data, t_map *map);
+void read_map_vertex(t_wad_data *wad_data, t_map *map);
 void read_header(const uint8_t *data, long offset, t_wad_header *header);
-void read_map_things(t_wadd_data *wad_data, t_map *map);
-void read_map_linedef(t_wadd_data *wad_data, t_map *map);
-void read_map_nodes(t_wadd_data *wad_data, t_map *map);
-void read_map_subsectors(t_wadd_data *wad_data, t_map *map);
-void read_map_segs(t_wadd_data *wad_data, t_map *map);
+void read_map_things(t_wad_data *wad_data, t_map *map);
+void read_map_linedef(t_wad_data *wad_data, t_map *map);
+void read_map_nodes(t_wad_data *wad_data, t_map *map);
+void read_map_subsectors(t_wad_data *wad_data, t_map *map);
+void read_map_segs(t_wad_data *wad_data, t_map *map);
 
 #endif

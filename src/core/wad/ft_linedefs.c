@@ -14,7 +14,7 @@ static t_linedef *read_linedef_data(const uint8_t *pWADData, int offset)
     linedef->left_sidedef = read_2_bytes(pWADData, offset + 12);
     return (linedef);
 }
-void read_map_linedef(t_wadd_data *wad_data, t_map *map)
+void read_map_linedef(t_wad_data *wad_data, t_map *map)
 {
     int i;
     int index;

@@ -52,7 +52,7 @@ struct s_map_data
     char layout[20][501][501];
 };
 
-t_map *new_map(t_wadd_data *wad, char *name);
+t_map *new_map(t_wad_data *wad, char *name);
 // test
 void set_layout(t_map *map, char c);
 void print_layout(t_map *map);
