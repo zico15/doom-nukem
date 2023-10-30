@@ -1,6 +1,6 @@
 #include "Map.h"
 
-static t_vertex *get_vertex(t_map *this, int vertex_id)
+static t_wad_vertex *get_vertex(t_map *this, int vertex_id)
 {
     return array(this->vertexes)->get(vertex_id);
 }
@@ -14,8 +14,8 @@ void __render_subsector(t_map *this, SDL_Renderer *renderer, int subsector_id)
     for (int i = 0; i < subsector->seg_count; i++)
     {
         t_wad_seg *seg = array(this->segs)->get(subsector->first_seg_id + i);
-        t_vertex *vStart = get_vertex(this, seg->start_vertex_id);
-        t_vertex *vEnd = get_vertex(this, seg->end_vertex_id);
+        t_wad_vertex *vStart = get_vertex(this, seg->start_vertex_id);
+        t_wad_vertex *vEnd = get_vertex(this, seg->end_vertex_id);
         if (!clip_vertexes_in_fov(this, vStart, vEnd))
             continue;
         SDL_RenderDrawLine(renderer,

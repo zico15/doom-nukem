@@ -47,14 +47,16 @@ typedef struct s_wad_directory t_wad_directory;
 typedef struct s_wad_node t_wad_node;
 typedef struct s_wad_subsector t_wad_subsector;
 typedef struct s_wad_seg t_wad_seg;
+typedef struct s_wad_vertex t_wad_vertex;
+typedef struct s_wad_linedef t_wad_linedef;
 
-typedef struct s_vertex
+struct s_wad_vertex
 {
     int16_t x_position;
     int16_t y_position;
-} t_vertex;
+};
 
-typedef struct s_linedef
+struct s_wad_linedef
 {
     uint16_t start_vertex;
     uint16_t end_vertex;
@@ -63,7 +65,7 @@ typedef struct s_linedef
     uint16_t sector_tag;
     uint16_t right_sidedef;
     uint16_t left_sidedef;
-} t_linedef;
+};
 
 struct s_wad_directory
 {

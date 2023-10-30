@@ -35,8 +35,8 @@ void __render_map_wall(t_map *this, SDL_Renderer *renderer, int iXShift, int iYS
     size = array(this->linedefs)->size;
     while (i < size)
     {
-        t_vertex *vStart = (t_vertex *)vertexes[((t_linedef *)linedefs[i].value)->start_vertex].value; // Read the first point
-        t_vertex *vEnd = (t_vertex *)vertexes[((t_linedef *)linedefs[i].value)->end_vertex].value;     // Read the second point
+        t_wad_vertex *vStart = (t_wad_vertex *)vertexes[((t_wad_linedef *)linedefs[i].value)->start_vertex].value; // Read the first point
+        t_wad_vertex *vEnd = (t_wad_vertex *)vertexes[((t_wad_linedef *)linedefs[i].value)->end_vertex].value;     // Read the second point
         SDL_RenderDrawLine(renderer,
                            remap_x_screen(this, vStart->x_position),
                            remap_y_screen(this, vStart->y_position, renderer),
