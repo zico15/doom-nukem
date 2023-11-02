@@ -1,21 +1,7 @@
 #include "Map.h"
+#include <ViewRenderer.h>
 
 void __render_subsector(t_map *this, SDL_Renderer *renderer, int subsector_id);
-
-int remap_x_screen(t_map *map, int x_map_position)
-{
-    return (x_map_position + (-map->min_x)) / map->scale;
-}
-
-int remap_y_screen(t_map *map, int y_map_position, SDL_Renderer *renderer)
-{
-    int i_render_x;
-    int i_render_y;
-
-    SDL_RenderGetLogicalSize(renderer, &i_render_x, &i_render_y);
-    --i_render_y;
-    return (i_render_y - (y_map_position + (-map->min_y)) / map->scale);
-}
 
 void __render_map_wall(t_map *this, SDL_Renderer *renderer)
 {

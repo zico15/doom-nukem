@@ -52,10 +52,9 @@ t_map *new_map(t_wad_data *wad, char *name);
 // test
 void set_layout(t_map *map, char c);
 void print_layout(t_map *map);
-int remap_x_screen(t_map *map, int x_map_position);
-int remap_y_screen(t_map *map, int y_map_position, SDL_Renderer *renderer);
-bool clip_vertexes_in_fov(t_map *this, t_wad_vertex *v1, t_wad_vertex *v2);
+bool clip_vertexes_in_fov(t_map *this, t_wad_vertex *v1, t_wad_vertex *v2, float *v1Angle, float *V2Angle);
 float angle_to_vertex(t_wad_vertex vertex, float x_position, float y_position);
+
 void rotate_left(t_map *this);
 void rotate_right(t_map *this);
 void move_front(t_map *this);
